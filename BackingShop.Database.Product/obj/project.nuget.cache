@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dvu6m3c+R+2PNXAng9O/eQIGsnhQdPGrCyukz2HW0do8nWzgoxUd+PvqJly7fsh8ef8A+wzvVr+NdWcKxMhQgA==",
+  "success": true,
+  "projectFilePath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Product\\BackingShop.Database.Product.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

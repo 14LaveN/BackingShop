@@ -1,0 +1,1021 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.GroupEvent\\BackingShop.Events.GroupEvent.csproj": {}
+  },
+  "projects": {
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj",
+        "projectName": "BackingShop.Application",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\BackingShop.Cache.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\BackingShop.Cache.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.4.1, )"
+            },
+            "prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\BackingShop.Cache.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\BackingShop.Cache.csproj",
+        "projectName": "BackingShop.Cache",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\BackingShop.Cache.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Contracts.Common\\BackingShop.Contracts.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Contracts.Common\\BackingShop.Contracts.Common.csproj",
+        "projectName": "BackingShop.Contracts.Common",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Contracts.Common\\BackingShop.Contracts.Common.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Contracts.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Attendee\\BackingShop.Database.Attendee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Attendee\\BackingShop.Database.Attendee.csproj",
+        "projectName": "BackingShop.Database.Attendee",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Attendee\\BackingShop.Database.Attendee.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Attendee\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj",
+        "projectName": "BackingShop.Database.Common",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.GroupEvent\\BackingShop.Database.GroupEvent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.GroupEvent\\BackingShop.Database.GroupEvent.csproj",
+        "projectName": "BackingShop.Database.GroupEvent",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.GroupEvent\\BackingShop.Database.GroupEvent.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.GroupEvent\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj",
+        "projectName": "BackingShop.Database.Identity",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Invitation\\BackingShop.Database.Invitation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Invitation\\BackingShop.Database.Invitation.csproj",
+        "projectName": "BackingShop.Database.Invitation",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Invitation\\BackingShop.Database.Invitation.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Invitation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Notification\\BackingShop.Database.Notification.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Notification\\BackingShop.Database.Notification.csproj",
+        "projectName": "BackingShop.Database.Notification",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Notification\\BackingShop.Database.Notification.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Notification\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj",
+        "projectName": "BackingShop.Domain.Common",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj",
+        "projectName": "BackingShop.Domain.Identity",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.GroupEvent\\BackingShop.Events.GroupEvent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.GroupEvent\\BackingShop.Events.GroupEvent.csproj",
+        "projectName": "BackingShop.Events.GroupEvent",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.GroupEvent\\BackingShop.Events.GroupEvent.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.GroupEvent\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Contracts.Common\\BackingShop.Contracts.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Contracts.Common\\BackingShop.Contracts.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Attendee\\BackingShop.Database.Attendee.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Attendee\\BackingShop.Database.Attendee.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common\\BackingShop.Database.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.GroupEvent\\BackingShop.Database.GroupEvent.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.GroupEvent\\BackingShop.Database.GroupEvent.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Identity\\BackingShop.Database.Identity.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Invitation\\BackingShop.Database.Invitation.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Invitation\\BackingShop.Database.Invitation.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Notification\\BackingShop.Database.Notification.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Notification\\BackingShop.Database.Notification.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\BackingShop.RabbitMq.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\BackingShop.RabbitMq.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\BackingShop.RabbitMq.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\BackingShop.RabbitMq.csproj",
+        "projectName": "BackingShop.RabbitMq",
+        "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\BackingShop.RabbitMq.csproj",
+        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
+        "outputPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Application\\BackingShop.Application.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.Rabbitmq": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.0.0-alpha.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

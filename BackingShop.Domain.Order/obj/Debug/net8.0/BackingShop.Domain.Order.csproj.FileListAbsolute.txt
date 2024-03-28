@@ -1,0 +1,12 @@
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\bin\Debug\net8.0\BackingShop.Domain.Order.deps.json
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\bin\Debug\net8.0\BackingShop.Domain.Order.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\bin\Debug\net8.0\BackingShop.Domain.Order.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.AssemblyInfoInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.AssemblyInfo.cs
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.sourcelink.json
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\refint\BackingShop.Domain.Order.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\BackingShop.Domain.Order.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Order\obj\Debug\net8.0\ref\BackingShop.Domain.Order.dll

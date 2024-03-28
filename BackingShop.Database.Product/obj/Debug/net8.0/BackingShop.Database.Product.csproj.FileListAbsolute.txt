@@ -1,0 +1,13 @@
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Database.Product.deps.json
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Database.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Database.Product.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.csproj.AssemblyReference.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.AssemblyInfoInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.AssemblyInfo.cs
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.sourcelink.json
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\refint\BackingShop.Database.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\ref\BackingShop.Database.Product.dll

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BackingShop.Application\BackingShop.Application.csproj" />
+      <ProjectReference Include="..\BackingShop.Contracts.Common\BackingShop.Contracts.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Attendee\BackingShop.Database.Attendee.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Common\BackingShop.Database.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.GroupEvent\BackingShop.Database.GroupEvent.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Identity\BackingShop.Database.Identity.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Invitation\BackingShop.Database.Invitation.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Notification\BackingShop.Database.Notification.csproj" />
+      <ProjectReference Include="..\BackingShop.Domain.Common\BackingShop.Domain.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.RabbitMq\BackingShop.RabbitMq.csproj" />
+    </ItemGroup>
+
+</Project>

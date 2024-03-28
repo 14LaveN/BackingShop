@@ -1,0 +1,12 @@
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\bin\Debug\net8.0\BackingShop.Domain.ShoppingCart.deps.json
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\bin\Debug\net8.0\BackingShop.Domain.ShoppingCart.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\bin\Debug\net8.0\BackingShop.Domain.ShoppingCart.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.AssemblyInfoInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.AssemblyInfo.cs
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.sourcelink.json
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\refint\BackingShop.Domain.ShoppingCart.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\BackingShop.Domain.ShoppingCart.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Domain.ShoppingCart\obj\Debug\net8.0\ref\BackingShop.Domain.ShoppingCart.dll

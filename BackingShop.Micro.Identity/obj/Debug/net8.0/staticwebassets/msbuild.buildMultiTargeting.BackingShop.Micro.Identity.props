@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BackingShop.Micro.Identity.props" />
+</Project>

@@ -1,0 +1,12 @@
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\bin\Debug\net8.0\BackingShop.Database.Coupon.deps.json
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\bin\Debug\net8.0\BackingShop.Database.Coupon.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\bin\Debug\net8.0\BackingShop.Database.Coupon.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.AssemblyInfoInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.AssemblyInfo.cs
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.sourcelink.json
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\refint\BackingShop.Database.Coupon.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\BackingShop.Database.Coupon.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Coupon\obj\Debug\net8.0\ref\BackingShop.Database.Coupon.dll

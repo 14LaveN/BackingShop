@@ -1,0 +1,12 @@
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\bin\Debug\net8.0\BackingShop.Database.Review.deps.json
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\bin\Debug\net8.0\BackingShop.Database.Review.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\bin\Debug\net8.0\BackingShop.Database.Review.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.AssemblyInfoInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.AssemblyInfo.cs
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.sourcelink.json
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\refint\BackingShop.Database.Review.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\BackingShop.Database.Review.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Review\obj\Debug\net8.0\ref\BackingShop.Database.Review.dll

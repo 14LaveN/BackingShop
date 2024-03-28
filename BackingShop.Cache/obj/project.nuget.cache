@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "n3hfZ0odHSuzS4mCDUG1XpcVMl9u2igshLdjacfU7RHi9eg64g4m07JH0/cTARHM5vDHmpHVp3o5qC+duVc+AA==",
+  "success": true,
+  "projectFilePath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Cache\\BackingShop.Cache.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting; 
 using BackingShop.Web;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

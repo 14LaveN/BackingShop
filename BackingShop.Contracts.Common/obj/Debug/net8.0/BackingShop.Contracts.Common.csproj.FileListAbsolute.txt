@@ -1,0 +1,12 @@
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\bin\Debug\net8.0\BackingShop.Contracts.Common.deps.json
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\bin\Debug\net8.0\BackingShop.Contracts.Common.dll
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\bin\Debug\net8.0\BackingShop.Contracts.Common.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.AssemblyInfoInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.AssemblyInfo.cs
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.sourcelink.json
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.dll
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\refint\BackingShop.Contracts.Common.dll
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\BackingShop.Contracts.Common.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Contracts.Common\obj\Debug\net8.0\ref\BackingShop.Contracts.Common.dll

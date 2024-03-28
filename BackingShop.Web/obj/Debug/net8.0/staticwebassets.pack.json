@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\obj\\Debug\\net8.0\\compressed\\95e692xlcr.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BackingShop.Web.styles.css",
+      "PackagePath": "staticwebassets\\BackingShop.Web.styles.css"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\BackingShop\\BackingShop.Web\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BackingShop.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BackingShop.Web.props",
+      "PackagePath": "build\\BackingShop.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BackingShop.Web.props",
+      "PackagePath": "buildMultiTargeting\\BackingShop.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BackingShop.Web.props",
+      "PackagePath": "buildTransitive\\BackingShop.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

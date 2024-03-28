@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.2.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Quartz" Version="3.8.1" />
+      <PackageReference Include="Quartz.Extensions.Hosting" Version="3.8.1" />
+      <PackageReference Include="RabbitMQ.Client" Version="7.0.0-alpha.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BackingShop.Database.Attendee\BackingShop.Database.Attendee.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Common\BackingShop.Database.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.GroupEvent\BackingShop.Database.GroupEvent.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.MetricsAndRabbitMessages\BackingShop.Database.MetricsAndRabbitMessages.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Notification\BackingShop.Database.Notification.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.PersonalEvent\BackingShop.Database.PersonalEvent.csproj" />
+      <ProjectReference Include="..\BackingShop.Email\BackingShop.Email.csproj" />
+      <ProjectReference Include="..\BackingShop.Events.GroupEvent\BackingShop.Events.GroupEvent.csproj" />
+      <ProjectReference Include="..\BackingShop.Events.Invitation\BackingShop.Events.Invitation.csproj" />
+      <ProjectReference Include="..\BackingShop.RabbitMq\BackingShop.RabbitMq.csproj" />
+    </ItemGroup>
+
+</Project>
