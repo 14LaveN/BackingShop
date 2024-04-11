@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Events.Attendee.Commands.CreateAttendee;
+namespace BackingShop.Events.Attendee.Commands.CreateAttendee;
 
 public sealed record CreateAttendeeCommand
 {

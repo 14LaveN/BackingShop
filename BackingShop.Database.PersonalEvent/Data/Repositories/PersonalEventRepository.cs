@@ -1,8 +1,8 @@
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.PersonalEvent.Data.Interfaces;
+using BackingShop.Database.Common;
+using BackingShop.Database.PersonalEvent.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetNetwork.Database.PersonalEvent.Data.Repositories;
+namespace BackingShop.Database.PersonalEvent.Data.Repositories;
 
 /// <summary>
 /// Represents the attendee repository.

@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
 
-namespace AspNetNetwork.Domain.Common.Core.Primitives;
+namespace BackingShop.Domain.Common.Core.Primitives;
 
 /// <summary>
 /// Represents an enumeration type.

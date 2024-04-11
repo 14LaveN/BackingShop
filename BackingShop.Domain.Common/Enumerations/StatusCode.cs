@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Domain.Common.Enumerations;
+namespace BackingShop.Domain.Common.Enumerations;
 
 /// <summary>
 /// Represents the status code enumeration.

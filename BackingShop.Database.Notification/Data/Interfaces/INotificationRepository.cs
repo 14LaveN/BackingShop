@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Identity.Entities;
+﻿using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Notification.Data.Interfaces;
+namespace BackingShop.Database.Notification.Data.Interfaces;
 
 /// <summary>
 /// Represents the notifications repository.

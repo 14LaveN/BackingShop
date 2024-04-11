@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
+namespace BackingShop.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
 
 public sealed class AddToGroupEventAttendeeCommandValidator
     : AbstractValidator<AddToGroupEventAttendeeCommand>

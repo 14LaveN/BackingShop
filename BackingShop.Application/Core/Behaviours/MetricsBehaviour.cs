@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using MediatR;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Application.Core.Helpers.Metric;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Application.Core.Helpers.Metric;
 
-namespace AspNetNetwork.Application.Core.Behaviours;
+namespace BackingShop.Application.Core.Behaviours;
 
 /// <summary>
 /// The metrics behaviour class.

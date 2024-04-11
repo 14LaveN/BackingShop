@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
+﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Attendee.Data.Interfaces;
+namespace BackingShop.Database.Attendee.Data.Interfaces;
 
 /// <summary>
 /// Represents the attendee repository interface.

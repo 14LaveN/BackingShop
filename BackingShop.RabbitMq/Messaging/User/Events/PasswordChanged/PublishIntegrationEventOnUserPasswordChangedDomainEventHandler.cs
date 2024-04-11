@@ -1,10 +1,10 @@
 ﻿
 
 
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.User;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.User;
 
-namespace AspNetNetwork.RabbitMq.Messaging.User.Events.PasswordChanged;
+namespace BackingShop.RabbitMq.Messaging.User.Events.PasswordChanged;
 
 /// <summary>
 /// Represents the <see cref="UserPasswordChangedDomainEvent"/> handler.

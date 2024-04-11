@@ -1,10 +1,10 @@
-﻿using AspNetNetwork.Domain.Common.Core.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Core.Utility;
+﻿using BackingShop.Domain.Common.Core.Abstractions;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Core.Utility;
 
-namespace AspNetNetwork.Domain.Identity.Entities;
+namespace BackingShop.Domain.Identity.Entities;
 
 /// <summary>
 /// Represents an attendee to a group event.

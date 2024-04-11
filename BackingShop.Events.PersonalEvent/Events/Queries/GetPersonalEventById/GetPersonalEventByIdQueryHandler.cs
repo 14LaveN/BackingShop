@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Identity;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Domain.Identity.Enumerations;
-using AspNetNetwork.Events.PersonalEvent.Contracts.PersonalEvents;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Identity;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Enumerations;
+using BackingShop.Events.PersonalEvent.Contracts.PersonalEvents;
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Queries.GetPersonalEventById;
+namespace BackingShop.Events.PersonalEvent.Events.Queries.GetPersonalEventById;
 
 /// <summary>
 /// Represents the <see cref="GetPersonalEventByIdQuery"/> handler.

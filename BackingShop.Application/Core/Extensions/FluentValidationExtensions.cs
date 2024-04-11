@@ -1,7 +1,7 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 using FluentValidation;
 
-namespace AspNetNetwork.Application.Core.Extensions;
+namespace BackingShop.Application.Core.Extensions;
 
 /// <summary>
 /// Contains extension methods for fluent validations.

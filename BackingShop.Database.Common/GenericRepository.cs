@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Database.Common.Specifications;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Database.Common.Specifications;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
 
-namespace AspNetNetwork.Database.Common;
+namespace BackingShop.Database.Common;
 
 /// <summary>
 /// Represents the generic repository with the most common repository methods.

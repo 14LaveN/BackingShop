@@ -1,10 +1,10 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
 using FluentValidation;
 using FluentValidation.Results;
 using MediatR;
-using ValidationException = AspNetNetwork.Application.Core.Exceptions.ValidationException;
+using ValidationException = BackingShop.Application.Core.Exceptions.ValidationException;
 
-namespace AspNetNetwork.Application.Core.Behaviours;
+namespace BackingShop.Application.Core.Behaviours;
 
 /// <summary>
 /// Represents the validation behaviour middleware.

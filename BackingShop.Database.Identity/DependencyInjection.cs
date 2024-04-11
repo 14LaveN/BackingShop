@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
-using AspNetNetwork.Database.Identity.Data.Repositories;
+using BackingShop.Database.Identity.Data.Interfaces;
+using BackingShop.Database.Identity.Data.Repositories;
 
-namespace AspNetNetwork.Database.Identity;
+namespace BackingShop.Database.Identity;
 
 public static class DependencyInjection
 {

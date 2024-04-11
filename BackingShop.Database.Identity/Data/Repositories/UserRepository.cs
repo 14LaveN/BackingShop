@@ -1,12 +1,12 @@
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.ValueObjects;
+using BackingShop.Database.Common;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.ValueObjects;
 using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
-using IUserRepository = AspNetNetwork.Database.Identity.Data.Interfaces.IUserRepository;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
+using IUserRepository = BackingShop.Database.Identity.Data.Interfaces.IUserRepository;
 
-namespace AspNetNetwork.Database.Identity.Data.Repositories;
+namespace BackingShop.Database.Identity.Data.Repositories;
 
 public class UserRepository(BaseDbContext userDbContext)
     : IUserRepository

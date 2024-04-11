@@ -1,9 +1,9 @@
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.BackgroundTasks.Services;
-using AspNetNetwork.BackgroundTasks.Tasks;
+using BackingShop.BackgroundTasks.Services;
+using BackingShop.BackgroundTasks.Tasks;
 
-namespace AspNetNetwork.BackgroundTasks;
+namespace BackingShop.BackgroundTasks;
 
 public static class DiIntegrationEvent
 {

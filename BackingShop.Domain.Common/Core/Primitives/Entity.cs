@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Core.Utility;
+﻿using BackingShop.Domain.Core.Utility;
 
-namespace AspNetNetwork.Domain.Common.Core.Primitives;
+namespace BackingShop.Domain.Common.Core.Primitives;
 
 /// <summary>
 /// Represents the base class that all entities derive from.

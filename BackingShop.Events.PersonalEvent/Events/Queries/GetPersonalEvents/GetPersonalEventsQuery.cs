@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.PersonalEvent.Contracts.PersonalEvents;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.PersonalEvent.Contracts.PersonalEvents;
 using BackingShop.Contracts.Common;
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Queries.GetPersonalEvents;
+namespace BackingShop.Events.PersonalEvent.Events.Queries.GetPersonalEvents;
 
 /// <summary>
 /// Represents the query for getting the paged list of the users personal events.

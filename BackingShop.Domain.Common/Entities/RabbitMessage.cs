@@ -1,7 +1,7 @@
-using AspNetNetwork.Domain.Common.Entities;
+using BackingShop.Domain.Common.Entities;
 using BackingShop.Domain.Common.Entities;
 
-namespace AspNetNetwork.Domain.Entities;
+namespace BackingShop.Domain.Entities;
 
 /// <summary>
 /// Represents the RabbitMQ message class.

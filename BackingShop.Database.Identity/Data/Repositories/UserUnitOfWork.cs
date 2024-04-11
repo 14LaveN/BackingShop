@@ -1,9 +1,9 @@
-using AspNetNetwork.Database.Common;
+using BackingShop.Database.Common;
 using Microsoft.EntityFrameworkCore.Storage;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Database.Identity.Data.Interfaces;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Identity.Data.Repositories;
+namespace BackingShop.Database.Identity.Data.Repositories;
 
 /// <summary>
 /// Represents the user unit of work.

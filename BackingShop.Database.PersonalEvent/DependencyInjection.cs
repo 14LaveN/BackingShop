@@ -1,11 +1,11 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.PersonalEvent.Data.Interfaces;
-using AspNetNetwork.Database.PersonalEvent.Data.Repositories;
+using BackingShop.Database.Common;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.PersonalEvent.Data.Interfaces;
+using BackingShop.Database.PersonalEvent.Data.Repositories;
 
-namespace AspNetNetwork.Database.PersonalEvent;
+namespace BackingShop.Database.PersonalEvent;
 
 public static class DependencyInjection
 {
@@ -24,7 +24,6 @@ public static class DependencyInjection
         }
         
         services.AddScoped<IPersonalEventRepository, PersonalEventRepository>();
-        services.AddScoped<IUnitOfWork<Domain.Identity.Entities.PersonalEvent>, UnitOfWork<Domain.Identity.Entities.PersonalEvent>>();
 
         return services;
     }

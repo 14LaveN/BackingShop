@@ -1,11 +1,11 @@
-﻿using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Common.ValueObjects;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
-using AspNetNetwork.Domain.Identity.Enumerations;
-using AspNetNetwork.Domain.Identity.Events.Invitation;
+﻿using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.ValueObjects;
+using BackingShop.Domain.Identity.Events.GroupEvent;
+using BackingShop.Domain.Identity.Enumerations;
+using BackingShop.Domain.Identity.Events.Invitation;
 
-namespace AspNetNetwork.Domain.Identity.Entities;
+namespace BackingShop.Domain.Identity.Entities;
 
 /// <summary>
 /// Represents a group event.

@@ -16,3 +16,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.Common\obj\Debug\net8.0\Backi
 G:\DotNetProjects\BackingShop\BackingShop.Database.Common\obj\Debug\net8.0\refint\BackingShop.Database.Common.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.Common\obj\Debug\net8.0\BackingShop.Database.Common.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.Common\obj\Debug\net8.0\ref\BackingShop.Database.Common.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Common\bin\Debug\net8.0\BackingShop.Domain.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Common\bin\Debug\net8.0\BackingShop.Domain.Product.pdb

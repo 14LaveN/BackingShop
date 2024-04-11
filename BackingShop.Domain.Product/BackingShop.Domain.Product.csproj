@@ -7,10 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="DTO\" />
-      <Folder Include="Entities\" />
-      <Folder Include="Enumerations\" />
-      <Folder Include="Events\" />
+      <ProjectReference Include="..\BackingShop.Domain.Common\BackingShop.Domain.Common.csproj" />
     </ItemGroup>
 
 </Project>

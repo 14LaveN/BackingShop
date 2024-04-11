@@ -1,15 +1,15 @@
 ﻿using System.Text;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
+using BackingShop.Application.Core.Abstractions.Messaging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using AspNetNetwork.BackgroundTasks.Services;
-using AspNetNetwork.RabbitMq.Messaging.Settings;
+using BackingShop.BackgroundTasks.Services;
+using BackingShop.RabbitMq.Messaging.Settings;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace AspNetNetwork.BackgroundTasks.Tasks;
+namespace BackingShop.BackgroundTasks.Tasks;
 
 internal  sealed class IntegrationEventConsumerBackgroundService : IHostedService, IDisposable
 {

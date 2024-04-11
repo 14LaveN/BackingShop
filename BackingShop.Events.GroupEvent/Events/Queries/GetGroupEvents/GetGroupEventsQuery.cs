@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.GroupEvent.Contracts.GroupEvents;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.GroupEvent.Contracts.GroupEvents;
 using BackingShop.Contracts.Common;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Queries.GetGroupEvents;
+namespace BackingShop.Events.GroupEvent.Events.Queries.GetGroupEvents;
 
 /// <summary>
 /// Represents the query for getting the paged list of the users group events.

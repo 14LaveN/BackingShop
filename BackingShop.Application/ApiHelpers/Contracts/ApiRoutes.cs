@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Application.ApiHelpers.Contracts;
+﻿namespace BackingShop.Application.ApiHelpers.Contracts;
 
 /// <summary>
 /// Contains the API endpoint routes.

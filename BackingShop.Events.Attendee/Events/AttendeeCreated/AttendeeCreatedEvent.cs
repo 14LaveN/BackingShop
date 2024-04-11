@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
 
-namespace AspNetNetwork.Events.Attendee.Events.AttendeeCreated;
+namespace BackingShop.Events.Attendee.Events.AttendeeCreated;
 
 /// <summary>
 /// Represents the event that is published when an attendee is created.

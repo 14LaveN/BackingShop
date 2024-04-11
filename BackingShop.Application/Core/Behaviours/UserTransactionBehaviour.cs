@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
 using MediatR;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
+using BackingShop.Database.Identity.Data.Interfaces;
 
-namespace AspNetNetwork.Application.Core.Behaviours;
+namespace BackingShop.Application.Core.Behaviours;
 
 /// <summary>
 /// Represents the transaction behaviour middleware.

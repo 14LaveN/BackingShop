@@ -1,12 +1,12 @@
 ﻿using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MailKit.Net.Smtp;
-using AspNetNetwork.Email.Emails.Settings;
+using BackingShop.Email.Emails.Settings;
 using MimeKit;
 using MimeKit.Text;
-using AspNetNetwork.Email.Contracts.Emails;
+using BackingShop.Email.Contracts.Emails;
 
-namespace AspNetNetwork.Email.Emails;
+namespace BackingShop.Email.Emails;
 
 /// <summary>
 /// Represents the email service.

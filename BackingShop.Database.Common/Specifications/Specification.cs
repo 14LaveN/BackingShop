@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
-using AspNetNetwork.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Database.Common.Specifications;
+namespace BackingShop.Database.Common.Specifications;
 
 /// <summary>
 /// Represents the abstract base class for specifications.

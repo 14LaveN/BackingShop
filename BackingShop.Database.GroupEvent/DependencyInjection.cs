@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Common.Interceptors;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Database.GroupEvent.Data.Repositories;
+using BackingShop.Database.Common;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Common.Interceptors;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Database.GroupEvent.Data.Repositories;
 
-namespace AspNetNetwork.Database.GroupEvent;
+namespace BackingShop.Database.GroupEvent;
 
 public static class DependencyInjection
 {
@@ -29,7 +29,6 @@ public static class DependencyInjection
         }
         
         services.AddScoped<IGroupEventRepository, GroupEventRepository>();
-        services.AddScoped<IUnitOfWork<Domain.Identity.Entities.GroupEvent>, UnitOfWork<Domain.Identity.Entities.GroupEvent>>();
 
         return services;
     }

@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.Invitation;
-using AspNetNetwork.RabbitMq.Messaging;
+﻿using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.Invitation;
+using BackingShop.RabbitMq.Messaging;
 
-namespace AspNetNetwork.Events.Invitation.Events.InvitationAccepted;
+namespace BackingShop.Events.Invitation.Events.InvitationAccepted;
 
 /// <summary>
 /// Represents the <see cref="InvitationAcceptedDomainEvent"/> handler.

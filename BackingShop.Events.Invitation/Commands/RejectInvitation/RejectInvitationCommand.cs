@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
 
-namespace AspNetNetwork.Events.Invitation.Commands.RejectInvitation;
+namespace BackingShop.Events.Invitation.Commands.RejectInvitation;
 
 /// <summary>
 /// Represents the reject invitation command.

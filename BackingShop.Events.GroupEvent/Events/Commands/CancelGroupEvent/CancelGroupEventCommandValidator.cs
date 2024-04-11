@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using AspNetNetwork.Application.Core.Errors;
-using AspNetNetwork.Application.Core.Extensions;
+using BackingShop.Application.Core.Errors;
+using BackingShop.Application.Core.Extensions;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.CancelGroupEvent;
+namespace BackingShop.Events.GroupEvent.Events.Commands.CancelGroupEvent;
 
 /// <summary>
 /// Represents the <see cref="CancelGroupEventCommand"/> validator.

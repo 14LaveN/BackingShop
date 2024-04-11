@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
+﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.GroupEvent.Data.Interfaces;
+namespace BackingShop.Database.GroupEvent.Data.Interfaces;
 
 /// <summary>
 /// Represents the group event repository interface.

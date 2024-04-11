@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
+﻿using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Domain.Identity.Enumerations;
+namespace BackingShop.Domain.Identity.Enumerations;
 
 /// <summary>
 /// Represents the notification types enumeration.

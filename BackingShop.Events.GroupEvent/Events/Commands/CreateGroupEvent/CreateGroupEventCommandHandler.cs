@@ -1,17 +1,17 @@
 ﻿using MediatR;
-using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Common.ValueObjects;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Domain.Identity.Enumerations;
+using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Database.Identity.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.ValueObjects;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Enumerations;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.CreateGroupEvent;
+namespace BackingShop.Events.GroupEvent.Events.Commands.CreateGroupEvent;
 
 /// <summary>
 /// Represents the <see cref="CreateGroupEventCommand"/> handler.
@@ -20,7 +20,7 @@ internal sealed class CreateGroupEventCommandHandler : ICommandHandler<CreateGro
 {
     private readonly IUserRepository _userRepository;
     private readonly IGroupEventRepository _groupEventRepository;
-    private readonly IUnitOfWork<Domain.Identity.Entities.GroupEvent> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IDateTime _dateTime;
 
     /// <summary>
@@ -33,7 +33,7 @@ internal sealed class CreateGroupEventCommandHandler : ICommandHandler<CreateGro
     public CreateGroupEventCommandHandler(
         IUserRepository userRepository,
         IGroupEventRepository groupEventRepository,
-        IUnitOfWork<Domain.Identity.Entities.GroupEvent> unitOfWork,
+        IUnitOfWork unitOfWork,
         IDateTime dateTime)
     {
         _userRepository = userRepository;

@@ -1,13 +1,13 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.PersonalEvent.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Common.ValueObjects;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.PersonalEvent.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.ValueObjects;
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Commands.UpdatePersonalEvent;
+namespace BackingShop.Events.PersonalEvent.Events.Commands.UpdatePersonalEvent;
 
 /// <summary>
 /// Represents the <see cref="UpdatePersonalEventCommand"/> handler.
@@ -15,7 +15,7 @@ namespace AspNetNetwork.Events.PersonalEvent.Events.Commands.UpdatePersonalEvent
 internal sealed class UpdatePersonalEventCommandHandler : ICommandHandler<UpdatePersonalEventCommand, Result>
 {
     private readonly IPersonalEventRepository _personalEventRepository;
-    private readonly IUnitOfWork<Domain.Identity.Entities.PersonalEvent> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IDateTime _dateTime;
 
     /// <summary>
@@ -26,7 +26,7 @@ internal sealed class UpdatePersonalEventCommandHandler : ICommandHandler<Update
     /// <param name="dateTime">The date and time.</param>
     public UpdatePersonalEventCommandHandler(
         IPersonalEventRepository personalEventRepository,
-        IUnitOfWork<Domain.Identity.Entities.PersonalEvent> unitOfWork,
+        IUnitOfWork unitOfWork,
         IDateTime dateTime)
     {
         _personalEventRepository = personalEventRepository;

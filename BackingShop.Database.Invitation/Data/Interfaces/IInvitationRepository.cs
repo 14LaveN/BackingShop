@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Identity.Entities;
+﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Invitation.Data.Interfaces;
+namespace BackingShop.Database.Invitation.Data.Interfaces;
 
 /// <summary>
 /// Represents the invitation repository interface.

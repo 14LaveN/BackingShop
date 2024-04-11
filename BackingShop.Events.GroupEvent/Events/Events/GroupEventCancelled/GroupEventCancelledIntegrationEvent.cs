@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Identity.Events.GroupEvent;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Events.GroupEventCancelled;
+namespace BackingShop.Events.GroupEvent.Events.Events.GroupEventCancelled;
 
 /// <summary>
 /// Represents the event that is raised when a group event is cancelled.

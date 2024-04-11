@@ -1,11 +1,11 @@
 ﻿using MediatR;
-using AspNetNetwork.Database.Attendee.Data.Interfaces;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.Invitation;
-using AspNetNetwork.Events.Attendee.Events.AttendeeCreated;
+using BackingShop.Database.Attendee.Data.Interfaces;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.Invitation;
+using BackingShop.Events.Attendee.Events.AttendeeCreated;
 
-namespace AspNetNetwork.Events.Invitation.Events.InvitationAccepted;
+namespace BackingShop.Events.Invitation.Events.InvitationAccepted;
 
 /// <summary>
 /// Represents the <see cref="InvitationAcceptedDomainEvent"/> handler.
@@ -13,7 +13,7 @@ namespace AspNetNetwork.Events.Invitation.Events.InvitationAccepted;
 internal sealed class CreateAttendeeOnInvitationAcceptedDomainEventHandler : IDomainEventHandler<InvitationAcceptedDomainEvent>
 {
     private readonly IAttendeeRepository _attendeeRepository;
-    private readonly IUnitOfWork<Domain.Identity.Entities.Attendee> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IPublisher _publisher;
 
     /// <summary>
@@ -24,7 +24,7 @@ internal sealed class CreateAttendeeOnInvitationAcceptedDomainEventHandler : IDo
     /// <param name="publisher">The publisher.</param>
     public CreateAttendeeOnInvitationAcceptedDomainEventHandler(
         IAttendeeRepository attendeeRepository,
-        IUnitOfWork<Domain.Identity.Entities.Attendee> unitOfWork,
+        IUnitOfWork unitOfWork,
         IPublisher publisher)
     {
         _attendeeRepository = attendeeRepository;

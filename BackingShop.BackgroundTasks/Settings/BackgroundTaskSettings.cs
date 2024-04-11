@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.BackgroundTasks.Settings;
+﻿namespace BackingShop.BackgroundTasks.Settings;
 
 /// <summary>
 /// Represents the background task settings.

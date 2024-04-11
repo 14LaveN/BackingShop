@@ -1,7 +1,7 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
-namespace AspNetNetwork.Events.Invitation.Commands.AcceptInvitation;
+namespace BackingShop.Events.Invitation.Commands.AcceptInvitation;
 
 /// <summary>
 /// Represents the accept invitation command.

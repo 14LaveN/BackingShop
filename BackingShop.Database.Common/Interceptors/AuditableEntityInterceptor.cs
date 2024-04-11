@@ -1,10 +1,10 @@
-using AspNetNetwork.Domain.Common.Core.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Abstractions;
+using BackingShop.Domain.Common.Core.Primitives;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace AspNetNetwork.Database.Common.Interceptors;
+namespace BackingShop.Database.Common.Interceptors;
 
 public sealed class AuditableEntityInterceptor<T>(
     TimeProvider dateTime) : SaveChangesInterceptor where T : Entity

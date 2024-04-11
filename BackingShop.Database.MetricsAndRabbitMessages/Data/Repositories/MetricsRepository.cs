@@ -1,7 +1,7 @@
-using AspNetNetwork.Application.Core.Settings;
-using AspNetNetwork.Database.MetricsAndMessages.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Entities;
+using BackingShop.Application.Core.Settings;
+using BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Entities;
 using MongoDB.Driver;
 
 namespace BackingShop.Database.MetricsAndRabbitMessages.Data.Repositories;

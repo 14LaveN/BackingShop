@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Events.Attendee.Contracts;
+﻿namespace BackingShop.Events.Attendee.Contracts;
 
 /// <summary>
 /// Represents the attendee list response.

@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Events.Invitation.Contracts;
-using AspNetNetwork.Events.Invitation.Queries.GetPendingInvitations;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Events.Invitation.Contracts;
+using BackingShop.Events.Invitation.Queries.GetPendingInvitations;
 
-namespace AspNetNetwork.Events.Invitation.Queries.GetSentInvitations;
+namespace BackingShop.Events.Invitation.Queries.GetSentInvitations;
 
 /// <summary>
 /// Represents the <see cref="GetPendingInvitationsQuery"/> handler.

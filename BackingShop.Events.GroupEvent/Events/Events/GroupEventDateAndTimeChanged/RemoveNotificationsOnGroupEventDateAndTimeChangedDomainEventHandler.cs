@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.GroupEvent;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Events.GroupEventDateAndTimeChanged;
+namespace BackingShop.Events.GroupEvent.Events.Events.GroupEventDateAndTimeChanged;
 
 /// <summary>
 /// Represents the <see cref="GroupEventDateAndTimeChangedDomainEvent"/> class.

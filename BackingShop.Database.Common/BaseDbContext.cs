@@ -3,18 +3,18 @@ using MediatR;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Domain.Common.Core.Abstractions;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using AspNetNetwork.Domain.Identity.Enumerations;
+using BackingShop.Domain.Identity.Enumerations;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace AspNetNetwork.Database.Common;
+namespace BackingShop.Database.Common;
 
 /// <summary>
 /// Represents the application database context base class.
@@ -47,7 +47,7 @@ public class BaseDbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.ForeignKeyPropertiesMappedToUnrelatedTables));
-        optionsBuilder.UseNpgsql("Server=localhost;Port=5433;Database=ANGenericDb;User Id=postgres;Password=1111;");
+        optionsBuilder.UseNpgsql("Server=localhost;Port=5433;Database=BSGenericDb;User Id=postgres;Password=1111;");
     }
 
     /// <inheritdoc />

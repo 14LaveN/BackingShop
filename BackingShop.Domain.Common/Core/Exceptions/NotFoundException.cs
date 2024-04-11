@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Domain.Common.Core.Exceptions;
+namespace BackingShop.Domain.Common.Core.Exceptions;
 
 public sealed class NotFoundException : Exception
 {

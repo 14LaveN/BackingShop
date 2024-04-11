@@ -1,10 +1,10 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Database.Attendee.Data.Interfaces;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Database.Attendee.Data.Interfaces;
+using BackingShop.Database.Common;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Attendee.Data.Repositories;
+namespace BackingShop.Database.Attendee.Data.Repositories;
 
 /// <summary>
 /// Represents the attendee repository.

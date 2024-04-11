@@ -1,9 +1,9 @@
 ﻿using System.Text.RegularExpressions;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
-namespace AspNetNetwork.Domain.Common.ValueObjects;
+namespace BackingShop.Domain.Common.ValueObjects;
 
 /// <summary>
 /// Represents the emailAddress value object.

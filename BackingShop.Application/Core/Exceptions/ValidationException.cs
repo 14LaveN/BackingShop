@@ -1,7 +1,7 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 using FluentValidation.Results;
 
-namespace AspNetNetwork.Application.Core.Exceptions;
+namespace BackingShop.Application.Core.Exceptions;
 
 /// <summary>
 /// Represents an exception that occurs when a validation fails.

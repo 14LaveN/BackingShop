@@ -18,3 +18,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\obj\Debug\net8.0\Bac
 G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\obj\Debug\net8.0\refint\BackingShop.Database.Identity.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\obj\Debug\net8.0\BackingShop.Database.Identity.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\obj\Debug\net8.0\ref\BackingShop.Database.Identity.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\bin\Debug\net8.0\BackingShop.Domain.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\bin\Debug\net8.0\BackingShop.Domain.Product.pdb

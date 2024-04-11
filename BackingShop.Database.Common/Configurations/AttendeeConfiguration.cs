@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Event = AspNetNetwork.Domain.Identity.Entities.Event;
-using User = AspNetNetwork.Domain.Identity.Entities.User;
+using Event = BackingShop.Domain.Identity.Entities.Event;
+using User = BackingShop.Domain.Identity.Entities.User;
 
-namespace AspNetNetwork.Database.Common.Configurations;
+namespace BackingShop.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="Attendee"/> entity.

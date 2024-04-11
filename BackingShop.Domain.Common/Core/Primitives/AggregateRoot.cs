@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Events;
+﻿using BackingShop.Domain.Common.Core.Events;
 
-namespace AspNetNetwork.Domain.Common.Core.Primitives;
+namespace BackingShop.Domain.Common.Core.Primitives;
 
 /// <summary>
 /// Represents the aggregate root.

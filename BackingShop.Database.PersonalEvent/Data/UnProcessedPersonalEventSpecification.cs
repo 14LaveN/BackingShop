@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
-using AspNetNetwork.Database.Common.Specifications;
+using BackingShop.Database.Common.Specifications;
 
-namespace AspNetNetwork.Database.PersonalEvent.Data;
+namespace BackingShop.Database.PersonalEvent.Data;
 
 /// <summary>
 /// Represents the specification for determining the unprocessed personal event.

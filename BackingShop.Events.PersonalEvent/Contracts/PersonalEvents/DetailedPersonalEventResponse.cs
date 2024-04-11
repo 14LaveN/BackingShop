@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Events.PersonalEvent.Contracts.PersonalEvents;
+﻿namespace BackingShop.Events.PersonalEvent.Contracts.PersonalEvents;
 
 /// <summary>
 /// Represents the personal event response.

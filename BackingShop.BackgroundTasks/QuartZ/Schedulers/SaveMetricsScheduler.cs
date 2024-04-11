@@ -1,9 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 using Quartz.Impl;
-using AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
+using BackingShop.BackgroundTasks.QuartZ.Jobs;
 
-namespace AspNetNetwork.BackgroundTasks.QuartZ.Schedulers;
+namespace BackingShop.BackgroundTasks.QuartZ.Schedulers;
 
 /// <summary>
 /// Represents the save metrics scheduler class.
@@ -17,7 +17,6 @@ public sealed class SaveMetricsScheduler
     public override async void Start(IServiceCollection serviceProvider)
     {
         IScheduler scheduler = await StdSchedulerFactory.GetDefaultScheduler();
-            //scheduler.JobFactory = serviceProvider.GetService<QuartzJobFactory>();
         await scheduler.Start();
 
         IJobDetail jobDetail = JobBuilder.Create<SaveMetricsJob>().Build();

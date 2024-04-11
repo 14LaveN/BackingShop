@@ -1,16 +1,16 @@
-﻿using AspNetNetwork.Database.Common.Abstractions;
+﻿using BackingShop.Database.Common.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace AspNetNetwork.Database.Common;
+namespace BackingShop.Database.Common;
 
 public static class DependencyInjection
 {
@@ -28,7 +28,7 @@ public static class DependencyInjection
             throw new ArgumentNullException(nameof(services));
         }
 
-        var connectionString = configuration.GetConnectionString("ANGenericDb");
+        var connectionString = configuration.GetConnectionString("BSGenericDb");
 
         if (connectionString is not null)
             services.AddHealthChecks()
@@ -40,6 +40,7 @@ public static class DependencyInjection
             {
                 act.EnableRetryOnFailure(3);
                 act.CommandTimeout(30);
+                act.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
             })
                 .ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.ForeignKeyPropertiesMappedToUnrelatedTables))
                 .LogTo(Console.WriteLine)

@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.Invitation.Contracts;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.Invitation.Contracts;
 
-namespace AspNetNetwork.Events.Invitation.Queries.GetSentInvitations;
+namespace BackingShop.Events.Invitation.Queries.GetSentInvitations;
 
 /// <summary>
 /// Represents the query for getting the sent invitations for the user identifier.

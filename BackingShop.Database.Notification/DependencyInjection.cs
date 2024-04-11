@@ -1,11 +1,11 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Database.Notification.Data.Repositories;
+using BackingShop.Database.Common;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Database.Notification.Data.Repositories;
 
-namespace AspNetNetwork.Database.Notification;
+namespace BackingShop.Database.Notification;
 
 public static class DependencyInjection
 {
@@ -26,7 +26,6 @@ public static class DependencyInjection
         services.AddTransient<BaseDbContext>();
         
         services.AddScoped<INotificationRepository, NotificationRepository>();
-        services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Notification>, UnitOfWork<Domain.Identity.Entities.Notification>>();
 
         return services;
     }

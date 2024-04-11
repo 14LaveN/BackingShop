@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AspNetNetwork.Application.ApiHelpers.Middlewares;
+namespace BackingShop.Application.ApiHelpers.Middlewares;
 
 /// <summary>
 /// Represents the response caching middleware class.

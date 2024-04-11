@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Email.Contracts.Emails;
+﻿namespace BackingShop.Email.Contracts.Emails;
 
 /// <summary>
 /// Represents the attendee created email.

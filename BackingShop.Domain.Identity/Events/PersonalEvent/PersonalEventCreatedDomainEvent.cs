@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Events;
+﻿using BackingShop.Domain.Common.Core.Events;
 
-namespace AspNetNetwork.Domain.Identity.Events.PersonalEvent;
+namespace BackingShop.Domain.Identity.Events.PersonalEvent;
 
 /// <summary>
 /// Represents the event that is a raised when a new personal event is created.

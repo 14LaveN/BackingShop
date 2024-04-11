@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Application.Core.Settings.User;
+namespace BackingShop.Application.Core.Settings.User;
 
 /// <summary>
 /// Represents the scope class.

@@ -1,7 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace AspNetNetwork.Application.Core.Settings.User;
+namespace BackingShop.Application.Core.Settings.User;
 
 /// <summary>
 /// Represents the user info class.

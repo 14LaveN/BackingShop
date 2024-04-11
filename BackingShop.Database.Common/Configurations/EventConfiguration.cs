@@ -1,8 +1,8 @@
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AspNetNetwork.Database.Common.Configurations;
+namespace BackingShop.Database.Common.Configurations;
 
 /// <summary>
 /// Represents the configuration for the <see cref="Event"/> entity.

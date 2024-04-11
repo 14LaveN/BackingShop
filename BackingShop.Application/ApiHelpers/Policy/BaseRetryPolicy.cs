@@ -2,7 +2,7 @@ using Polly;
 using Polly.Retry;
 using Polly.Timeout;
 
-namespace AspNetNetwork.Application.ApiHelpers.Policy;
+namespace BackingShop.Application.ApiHelpers.Policy;
 
 /// <summary>
 /// Represents the base retry polly policy class. 

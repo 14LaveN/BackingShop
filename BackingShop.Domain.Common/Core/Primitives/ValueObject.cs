@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Domain.Common.Core.Primitives;
+﻿namespace BackingShop.Domain.Common.Core.Primitives;
 
 /// <summary>
 /// Represents the base class all value objects derive from.

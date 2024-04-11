@@ -1,12 +1,12 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Invitation.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Invitation.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
-namespace AspNetNetwork.Events.Invitation.Commands.RejectInvitation;
+namespace BackingShop.Events.Invitation.Commands.RejectInvitation;
 
 /// <summary>
 /// Represents the <see cref="RejectInvitationCommand"/> class.
@@ -14,7 +14,7 @@ namespace AspNetNetwork.Events.Invitation.Commands.RejectInvitation;
 internal sealed class RejectInvitationCommandHandler : ICommandHandler<RejectInvitationCommand, Result>
 {
     private readonly IInvitationRepository _invitationRepository;
-    private readonly IUnitOfWork<Domain.Identity.Entities.Invitation> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IDateTime _dateTime;
 
     /// <summary>
@@ -25,7 +25,7 @@ internal sealed class RejectInvitationCommandHandler : ICommandHandler<RejectInv
     /// <param name="dateTime">The date and time.</param>
     public RejectInvitationCommandHandler(
         IInvitationRepository invitationRepository,
-        IUnitOfWork<Domain.Identity.Entities.Invitation> unitOfWork,
+        IUnitOfWork unitOfWork,
         IDateTime dateTime)
     {
         _invitationRepository = invitationRepository;

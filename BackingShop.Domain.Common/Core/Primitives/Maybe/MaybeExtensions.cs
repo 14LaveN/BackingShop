@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+﻿namespace BackingShop.Domain.Common.Core.Primitives.Maybe;
 
 /// <summary>
 /// Contains extension methods for the maybe class.

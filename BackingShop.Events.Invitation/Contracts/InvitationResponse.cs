@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Events.Invitation.Contracts;
+﻿namespace BackingShop.Events.Invitation.Contracts;
 
 /// <summary>
 /// Represents the invitation response.

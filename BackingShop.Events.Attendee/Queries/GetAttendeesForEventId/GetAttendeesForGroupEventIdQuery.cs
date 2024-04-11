@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.Attendee.Contracts;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.Attendee.Contracts;
 
-namespace AspNetNetwork.Events.Attendee.Queries.GetAttendeesForEventId;
+namespace BackingShop.Events.Attendee.Queries.GetAttendeesForEventId;
 
 /// <summary>
 /// Represents the query for getting group event attendees.

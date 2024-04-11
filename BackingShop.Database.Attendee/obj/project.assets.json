@@ -1147,6 +1147,7 @@
           "AspNetCore.HealthChecks.NpgSql": "8.0.0",
           "BackingShop.Domain.Common": "1.0.0",
           "BackingShop.Domain.Identity": "1.0.0",
+          "BackingShop.Domain.Product": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
           "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.3",
@@ -1185,6 +1186,19 @@
         },
         "runtime": {
           "bin/placeholder/BackingShop.Domain.Identity.dll": {}
+        }
+      },
+      "BackingShop.Domain.Product/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BackingShop.Domain.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BackingShop.Domain.Product.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BackingShop.Domain.Product.dll": {}
         }
       }
     }
@@ -3174,6 +3188,11 @@
       "type": "project",
       "path": "../BackingShop.Domain.Identity/BackingShop.Domain.Identity.csproj",
       "msbuildProject": "../BackingShop.Domain.Identity/BackingShop.Domain.Identity.csproj"
+    },
+    "BackingShop.Domain.Product/1.0.0": {
+      "type": "project",
+      "path": "../BackingShop.Domain.Product/BackingShop.Domain.Product.csproj",
+      "msbuildProject": "../BackingShop.Domain.Product/BackingShop.Domain.Product.csproj"
     }
   },
   "projectFileDependencyGroups": {

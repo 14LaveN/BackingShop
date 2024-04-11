@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Domain.Identity.Enumerations;
+namespace BackingShop.Domain.Identity.Enumerations;
 
 /// <summary>
 /// Represents the category enumeration.

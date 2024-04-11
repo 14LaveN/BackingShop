@@ -1,11 +1,11 @@
-﻿using AspNetNetwork.Domain.Common.Core.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Core.Utility;
-using AspNetNetwork.Domain.Identity.Enumerations;
+﻿using BackingShop.Domain.Common.Core.Abstractions;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Core.Utility;
+using BackingShop.Domain.Identity.Enumerations;
 
-namespace AspNetNetwork.Domain.Identity.Entities;
+namespace BackingShop.Domain.Identity.Entities;
 
 /// <summary>
 /// Represents the notification.

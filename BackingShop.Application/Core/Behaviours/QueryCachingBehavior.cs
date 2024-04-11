@@ -1,10 +1,10 @@
 using MediatR;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Cache.Service;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Cache.Service;
 
-namespace AspNetNetwork.Application.Core.Behaviours;
+namespace BackingShop.Application.Core.Behaviours;
 
 /// <summary>
 /// Represents the transaction behaviour middleware.

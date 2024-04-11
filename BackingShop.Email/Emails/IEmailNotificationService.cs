@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Email.Contracts.Emails;
+﻿using BackingShop.Email.Contracts.Emails;
 
-namespace AspNetNetwork.Application.Core.Abstractions.Notifications;
+namespace BackingShop.Application.Core.Abstractions.Notifications;
 
 /// <summary>
 /// Represents the emailAddress notification service interface.

@@ -1,10 +1,10 @@
 ﻿
 
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.Invitation;
-using AspNetNetwork.RabbitMq.Messaging;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.Invitation;
+using BackingShop.RabbitMq.Messaging;
 
-namespace AspNetNetwork.Events.Invitation.Events.InvitationSent;
+namespace BackingShop.Events.Invitation.Events.InvitationSent;
 
 /// <summary>
 /// Represents the <see cref="InvitationRejectedDomainEvent"/> handler.

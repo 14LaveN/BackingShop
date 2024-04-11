@@ -2,9 +2,9 @@ using System.Diagnostics;
 using System.Globalization;
 using Microsoft.Extensions.Caching.Distributed;
 using Prometheus;
-using AspNetNetwork.Cache.Service;
+using BackingShop.Cache.Service;
 
-namespace AspNetNetwork.Application.Core.Helpers.Metric;
+namespace BackingShop.Application.Core.Helpers.Metric;
 
 /// <summary>
 /// Represents the create metrics helper.

@@ -1,12 +1,12 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.CancelGroupEvent;
+namespace BackingShop.Events.GroupEvent.Events.Commands.CancelGroupEvent;
 
 /// <summary>
 /// Represents the <see cref="CancelGroupEventCommand"/> handler.
@@ -14,7 +14,7 @@ namespace AspNetNetwork.Events.GroupEvent.Events.Commands.CancelGroupEvent;
 internal sealed class CancelGroupEventCommandHandler : ICommandHandler<CancelGroupEventCommand, Result>
 {
     private readonly IGroupEventRepository _groupEventRepository;
-    private readonly IUnitOfWork<AspNetNetwork.Domain.Identity.Entities.GroupEvent> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IDateTime _dateTime;
 
     /// <summary>
@@ -25,7 +25,7 @@ internal sealed class CancelGroupEventCommandHandler : ICommandHandler<CancelGro
     /// <param name="dateTime">The date and time.</param>
     public CancelGroupEventCommandHandler(
         IGroupEventRepository groupEventRepository,
-        IUnitOfWork<Domain.Identity.Entities.GroupEvent> unitOfWork,
+        IUnitOfWork unitOfWork,
         IDateTime dateTime)
     {
         _groupEventRepository = groupEventRepository;

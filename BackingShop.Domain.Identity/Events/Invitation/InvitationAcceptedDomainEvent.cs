@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Events;
+﻿using BackingShop.Domain.Common.Core.Events;
 
-namespace AspNetNetwork.Domain.Identity.Events.Invitation;
+namespace BackingShop.Domain.Identity.Events.Invitation;
 
 /// <summary>
 /// Represents the event that is raised when an invitation is accepted.

@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.PersonalEvent.Contracts.PersonalEvents;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.PersonalEvent.Contracts.PersonalEvents;
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Queries.GetPersonalEventById;
+namespace BackingShop.Events.PersonalEvent.Events.Queries.GetPersonalEventById;
 
 /// <summary>
 /// Represents the query for getting the personal event by identifier.

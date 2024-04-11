@@ -4,14 +4,14 @@ using Microsoft.Extensions.Options;
 using Prometheus;
 using Quartz;
 using Quartz.Util;
-using AspNetNetwork.Application.Core.Settings;
-using AspNetNetwork.Cache.Service;
-using AspNetNetwork.Database.MetricsAndMessages.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Exceptions;
-using AspNetNetwork.Domain.Common.Entities;
+using BackingShop.Application.Core.Settings;
+using BackingShop.Cache.Service;
+using BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Exceptions;
+using BackingShop.Domain.Common.Entities;
 using Microsoft.Extensions.Logging;
 
-namespace AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
+namespace BackingShop.BackgroundTasks.QuartZ.Jobs;
 
 /// <summary>
 /// Represents the save metrics job class.

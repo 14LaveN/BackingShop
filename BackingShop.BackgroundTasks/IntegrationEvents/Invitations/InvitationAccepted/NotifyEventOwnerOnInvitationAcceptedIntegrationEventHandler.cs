@@ -1,17 +1,17 @@
 ﻿using System.Globalization;
-using AspNetNetwork.Application.Core.Abstractions.Notifications;
-using AspNetNetwork.BackgroundTasks.Abstractions.Messaging;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
-using AspNetNetwork.Database.Invitation.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Exceptions;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Email.Contracts.Emails;
-using AspNetNetwork.Events.Invitation.Events.InvitationAccepted;
+using BackingShop.Application.Core.Abstractions.Notifications;
+using BackingShop.BackgroundTasks.Abstractions.Messaging;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Database.Identity.Data.Interfaces;
+using BackingShop.Database.Invitation.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Exceptions;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Email.Contracts.Emails;
+using BackingShop.Events.Invitation.Events.InvitationAccepted;
 
-namespace AspNetNetwork.BackgroundTasks.IntegrationEvents.Invitations.InvitationAccepted
+namespace BackingShop.BackgroundTasks.IntegrationEvents.Invitations.InvitationAccepted
 {
     /// <summary>
     /// Represents the <see cref="InvitationAcceptedIntegrationEvent"/> handler.

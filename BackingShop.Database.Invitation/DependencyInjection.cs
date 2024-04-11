@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Invitation.Data.Interfaces;
-using AspNetNetwork.Database.Invitation.Data.Repositories;
+using BackingShop.Database.Common;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Invitation.Data.Interfaces;
+using BackingShop.Database.Invitation.Data.Repositories;
 
-namespace AspNetNetwork.Database.Invitation;
+namespace BackingShop.Database.Invitation;
 
 public static class DependencyInjection
 {
@@ -25,7 +25,6 @@ public static class DependencyInjection
         }
         
         services.AddScoped<IInvitationRepository, InvitationRepository>();
-        services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Invitation>, UnitOfWork<Domain.Identity.Entities.Invitation>>();
 
         return services;
     }

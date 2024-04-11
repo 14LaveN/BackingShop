@@ -1,6 +1,6 @@
 using System.IdentityModel.Tokens.Jwt;
 
-namespace AspNetNetwork.Application.Core.Helpers.JWT;
+namespace BackingShop.Application.Core.Helpers.JWT;
 
 /// <summary>
 /// Represents the Get claim by jwt token class.

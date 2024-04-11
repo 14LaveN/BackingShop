@@ -1,9 +1,9 @@
-using AspNetNetwork.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace AspNetNetwork.Database.Common.Interceptors;
+namespace BackingShop.Database.Common.Interceptors;
 
 public sealed class DispatchDomainEventsInterceptor(IMediator mediator) : SaveChangesInterceptor
 {

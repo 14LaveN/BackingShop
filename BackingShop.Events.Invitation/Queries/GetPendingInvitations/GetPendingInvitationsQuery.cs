@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.Invitation.Contracts;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.Invitation.Contracts;
 
-namespace AspNetNetwork.Events.Invitation.Queries.GetPendingInvitations;
+namespace BackingShop.Events.Invitation.Queries.GetPendingInvitations;
 
 /// <summary>
 /// Represents the query for getting the pending invitations for the user identifier.

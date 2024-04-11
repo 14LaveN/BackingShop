@@ -11,3 +11,12 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\Back
 G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\refint\BackingShop.Database.Product.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\ref\BackingShop.Database.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Database.Common.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Common.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Identity.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Database.Common.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Common.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Identity.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Product.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.csproj.CopyComplete

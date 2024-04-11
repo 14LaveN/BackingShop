@@ -1,10 +1,10 @@
-using AspNetNetwork.Application.Core.Settings;
+using BackingShop.Application.Core.Settings;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using AspNetNetwork.Domain.Common.Entities;
-using AspNetNetwork.Domain.Entities;
+using BackingShop.Domain.Common.Entities;
+using BackingShop.Domain.Entities;
 
-namespace AspNetNetwork.Database.MetricsAndMessages;
+namespace BackingShop.Database.MetricsAndMessages;
 
 /// <summary>
 /// The metrics database context.

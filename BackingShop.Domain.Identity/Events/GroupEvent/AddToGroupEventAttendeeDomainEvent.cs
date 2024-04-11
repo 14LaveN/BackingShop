@@ -1,7 +1,7 @@
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Domain.Identity.Events.GroupEvent;
+namespace BackingShop.Domain.Identity.Events.GroupEvent;
 
 /// <summary>
 /// Represents the event that is raised when add to group event attendee.

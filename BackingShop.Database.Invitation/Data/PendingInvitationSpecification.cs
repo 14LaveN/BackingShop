@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
-using AspNetNetwork.Database.Common.Specifications;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Database.Common.Specifications;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Invitation.Data;
+namespace BackingShop.Database.Invitation.Data;
 
 /// <summary>
 /// Represents the specification for determining the pending invitation.

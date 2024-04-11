@@ -1,8 +1,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Application.Core.Settings;
+using BackingShop.Application.Core.Settings;
 
-namespace AspNetNetwork.Database.MetricsAndMessages;
+namespace BackingShop.Database.MetricsAndMessages;
 
 public static class DependencyInjection
 {

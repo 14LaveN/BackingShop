@@ -1,7 +1,7 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.UpdateGroupEvent;
+namespace BackingShop.Events.GroupEvent.Events.Commands.UpdateGroupEvent;
 
 /// <summary>
 /// Represents the update group event command.

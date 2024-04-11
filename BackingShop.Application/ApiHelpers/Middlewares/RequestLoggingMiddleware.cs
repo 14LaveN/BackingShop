@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace AspNetNetwork.Application.ApiHelpers.Middlewares;
+namespace BackingShop.Application.ApiHelpers.Middlewares;
 
 /// <summary>
 /// Represents the request logging middleware class.

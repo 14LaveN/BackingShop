@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AspNetNetwork.Application.Core.Abstractions.Common;
+namespace BackingShop.Application.Core.Abstractions.Common;
 
 /// <summary>
 /// Represents the interface for getting the current date and time.

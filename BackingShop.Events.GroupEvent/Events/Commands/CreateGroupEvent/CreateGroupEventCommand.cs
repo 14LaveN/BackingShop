@@ -1,7 +1,7 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.CreateGroupEvent;
+namespace BackingShop.Events.GroupEvent.Events.Commands.CreateGroupEvent;
 
 /// <summary>
 /// Represents the create group event command.

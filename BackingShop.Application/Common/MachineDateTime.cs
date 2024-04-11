@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
+﻿using BackingShop.Application.Core.Abstractions.Common;
 
-namespace AspNetNetwork.Application.Common;
+namespace BackingShop.Application.Common;
 
 /// <summary>
 /// Represents the machine date time service.

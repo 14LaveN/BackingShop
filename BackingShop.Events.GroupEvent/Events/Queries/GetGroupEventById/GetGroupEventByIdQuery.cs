@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Events.GroupEvent.Contracts.GroupEvents;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Events.GroupEvent.Contracts.GroupEvents;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Queries.GetGroupEventById;
+namespace BackingShop.Events.GroupEvent.Events.Queries.GetGroupEventById;
 
 /// <summary>
 /// Represents the query for getting the group event by identifier.

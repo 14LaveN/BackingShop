@@ -1,7 +1,7 @@
-using AspNetNetwork.Application.Core.Abstractions.Notifications;
-using AspNetNetwork.Email.Contracts.Emails;
+using BackingShop.Application.Core.Abstractions.Notifications;
+using BackingShop.Email.Contracts.Emails;
 
-namespace AspNetNetwork.Email.Emails;
+namespace BackingShop.Email.Emails;
 
 /// <summary>
 /// Represents the email notification service.

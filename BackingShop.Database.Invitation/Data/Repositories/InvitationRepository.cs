@@ -1,14 +1,14 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.Data.SqlClient;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Invitation.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Domain.Identity.Events.Invitation;
+using BackingShop.Database.Common;
+using BackingShop.Database.Invitation.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Events.Invitation;
 
-namespace AspNetNetwork.Database.Invitation.Data.Repositories;
+namespace BackingShop.Database.Invitation.Data.Repositories;
 
 /// <summary>
 /// Represents the invitation repository.

@@ -1,9 +1,9 @@
-using AspNetNetwork.Application.ApiHelpers.Responses;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Application.ApiHelpers.Responses;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
+namespace BackingShop.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
 
 /// <summary>
 /// Represents the add to group event attendee command record class.

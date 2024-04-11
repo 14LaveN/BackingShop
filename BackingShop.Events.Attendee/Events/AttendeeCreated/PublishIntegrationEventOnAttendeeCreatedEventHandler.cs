@@ -1,7 +1,7 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.RabbitMq.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.RabbitMq.Messaging;
 
-namespace AspNetNetwork.Events.Attendee.Events.AttendeeCreated;
+namespace BackingShop.Events.Attendee.Events.AttendeeCreated;
 
 /// <summary>
 /// Represents the <see cref="AttendeeCreatedEvent"/> handler.

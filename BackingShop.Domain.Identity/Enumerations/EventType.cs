@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Domain.Identity.Enumerations;
+namespace BackingShop.Domain.Identity.Enumerations;
 
 /// <summary>
 /// Represents the event type.

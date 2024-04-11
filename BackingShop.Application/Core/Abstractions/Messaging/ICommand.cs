@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace AspNetNetwork.Application.Core.Abstractions.Messaging;
+namespace BackingShop.Application.Core.Abstractions.Messaging;
 
 /// <summary>
 /// Represents the command interface.

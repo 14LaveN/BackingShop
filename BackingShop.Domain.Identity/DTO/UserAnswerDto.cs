@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Domain.Identity.DTO;
+namespace BackingShop.Domain.Identity.DTO;
 
 /// <summary>
 /// Represents the user answer dto record.

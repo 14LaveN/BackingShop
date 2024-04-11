@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿namespace BackingShop.Domain.Common.Core.Primitives.Result;
 
 /// <summary>
 /// Contains extension methods for the result class.

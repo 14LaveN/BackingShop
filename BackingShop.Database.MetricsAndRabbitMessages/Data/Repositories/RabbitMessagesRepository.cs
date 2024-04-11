@@ -1,11 +1,11 @@
-using AspNetNetwork.Application.Core.Settings;
-using AspNetNetwork.Database.MetricsAndMessages.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Entities;
-using AspNetNetwork.Domain.Entities;
+using BackingShop.Application.Core.Settings;
+using BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+using BackingShop.Domain.Common.Entities;
+using BackingShop.Domain.Entities;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace AspNetNetwork.Database.MetricsAndMessages.Data.Repositories;
+namespace BackingShop.Database.MetricsAndMessages.Data.Repositories;
 
 /// <summary>
 /// Represents the generic metrics repository class.

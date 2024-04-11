@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
-using AspNetNetwork.RabbitMq.Messaging;
+﻿using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.GroupEvent;
+using BackingShop.RabbitMq.Messaging;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Events.GroupEventDateAndTimeChanged;
+namespace BackingShop.Events.GroupEvent.Events.Events.GroupEventDateAndTimeChanged;
 
 /// <summary>
 /// Represents the <see cref="GroupEventDateAndTimeChangedDomainEvent"/> class.

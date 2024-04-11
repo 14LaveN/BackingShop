@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
-using AspNetNetwork.Domain.Common.Entities;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Domain.Common.Entities;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.Common.Specifications;
+namespace BackingShop.Database.Common.Specifications;
 
 /// <summary>
 /// Represents the specification for determining the notifications within a particular time-frame.

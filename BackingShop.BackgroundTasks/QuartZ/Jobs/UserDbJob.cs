@@ -1,10 +1,10 @@
-﻿using AspNetNetwork.Database.Common;
+﻿using BackingShop.Database.Common;
 using Quartz;
-using AspNetNetwork.Database.Identity;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Database.Identity;
+using BackingShop.Domain.Identity.Entities;
 using static System.Console;
 
-namespace AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
+namespace BackingShop.BackgroundTasks.QuartZ.Jobs;
 
 /// <summary>
 /// Represents the user database job.

@@ -1,11 +1,11 @@
-using AspNetNetwork.Application.Core.Abstractions.Notifications;
+using BackingShop.Application.Core.Abstractions.Notifications;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using AspNetNetwork.Email.Emails;
-using AspNetNetwork.Email.Emails.Settings;
+using BackingShop.Email.Emails;
+using BackingShop.Email.Emails.Settings;
 
-namespace AspNetNetwork.Email;
+namespace BackingShop.Email;
 
 public static class DependencyInjection
 {

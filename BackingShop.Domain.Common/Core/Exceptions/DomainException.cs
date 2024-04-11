@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Domain.Common.Core.Exceptions;
+namespace BackingShop.Domain.Common.Core.Exceptions;
 
 /// <summary>
 /// Represents an exception that occurred in the domain.

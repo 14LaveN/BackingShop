@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Caching.Memory;
 
-namespace AspNetNetwork.Cache.Service;
+namespace BackingShop.Cache.Service;
 
 /// <summary>
 /// Represents the memory cache extenstion static class.

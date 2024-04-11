@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Application.ApiHelpers.Contracts;
+namespace BackingShop.Application.ApiHelpers.Contracts;
 
 /// <summary>
 /// Represents API an error response.

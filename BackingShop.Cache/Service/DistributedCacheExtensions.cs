@@ -2,7 +2,7 @@ using System.Text.Json;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace AspNetNetwork.Cache.Service;
+namespace BackingShop.Cache.Service;
 
 /// <summary>
 /// Represents the distributed cache extenstion static class.

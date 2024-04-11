@@ -1,16 +1,13 @@
 using Microsoft.EntityFrameworkCore.Storage;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Primitives;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Database.Common;
+namespace BackingShop.Database.Common;
 
 /// <summary>
 /// Represents the generic unit of work.
 /// </summary>
-/// <typeparam name="TEntity">The entity type.</typeparam>
-public sealed class UnitOfWork<TEntity>
-    : IUnitOfWork<TEntity>
-    where TEntity : Entity
+public sealed class UnitOfWork
 {
     private readonly BaseDbContext _baseDbContext;
 

@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿namespace BackingShop.Domain.Common.Core.Primitives.Result;
 
 /// <summary>
 /// Represents the result of some operation, with status information and possibly a value and an error.

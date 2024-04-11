@@ -1,13 +1,13 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Database.Attendee.Data.Interfaces;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Domain.Identity.Enumerations;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Database.Attendee.Data.Interfaces;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Enumerations;
 
-namespace AspNetNetwork.BackgroundTasks.Services;
+namespace BackingShop.BackgroundTasks.Services;
 
 /// <summary>
 /// Represents the group event notifications producer.
@@ -18,7 +18,7 @@ internal sealed class GroupEventNotificationsProducer : IGroupEventNotifications
     private readonly IAttendeeRepository _attendeeRepository;
     private readonly INotificationRepository _notificationRepository;
     private readonly IDateTime _dateTime;
-    private readonly IUnitOfWork<Notification> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GroupEventNotificationsProducer"/> class.
@@ -33,7 +33,7 @@ internal sealed class GroupEventNotificationsProducer : IGroupEventNotifications
         IAttendeeRepository attendeeRepository,
         INotificationRepository notificationRepository,
         IDateTime dateTime,
-        IUnitOfWork<Notification> unitOfWork)
+        IUnitOfWork unitOfWork)
     {
         _groupEventRepository = groupEventRepository;
         _attendeeRepository = attendeeRepository;

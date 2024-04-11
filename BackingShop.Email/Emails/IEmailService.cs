@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Email.Contracts.Emails;
+﻿using BackingShop.Email.Contracts.Emails;
 
-namespace AspNetNetwork.Email.Emails;
+namespace BackingShop.Email.Emails;
 
 /// <summary>
 /// Represents the email service interface.

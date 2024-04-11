@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Application.Core.Errors;
+namespace BackingShop.Application.Core.Errors;
 
 /// <summary>
 /// Contains the validation errors.

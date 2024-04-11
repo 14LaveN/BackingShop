@@ -1,16 +1,16 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using AspNetNetwork.Application.ApiHelpers.Contracts;
-using AspNetNetwork.Application.ApiHelpers.Policy;
-using AspNetNetwork.Application.Core.Helpers.JWT;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Application.ApiHelpers.Contracts;
+using BackingShop.Application.ApiHelpers.Policy;
+using BackingShop.Application.Core.Helpers.JWT;
+using BackingShop.Database.Identity.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Application.ApiHelpers.Infrastructure;
+namespace BackingShop.Application.ApiHelpers.Infrastructure;
 
 /// <summary>
 /// Represents the api controller class.

@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
 
-namespace AspNetNetwork.RabbitMq.Messaging;
+namespace BackingShop.RabbitMq.Messaging;
 
 /// <summary>
 /// Represents the integration event publisher interface.

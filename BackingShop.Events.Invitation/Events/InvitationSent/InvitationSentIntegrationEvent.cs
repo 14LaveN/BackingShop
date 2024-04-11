@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Identity.Events.Invitation;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Identity.Events.Invitation;
 
-namespace AspNetNetwork.Events.Invitation.Events.InvitationSent;
+namespace BackingShop.Events.Invitation.Events.InvitationSent;
 
 /// <summary>
 /// Represents the integration event that is raised when an invitation is sent.

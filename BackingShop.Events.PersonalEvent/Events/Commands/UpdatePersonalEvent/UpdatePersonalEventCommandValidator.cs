@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using AspNetNetwork.Application.Core.Errors;
-using AspNetNetwork.Application.Core.Extensions;
+using BackingShop.Application.Core.Errors;
+using BackingShop.Application.Core.Extensions;
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Commands.UpdatePersonalEvent;
+namespace BackingShop.Events.PersonalEvent.Events.Commands.UpdatePersonalEvent;
 
 /// <summary>
 /// Represents the <see cref="UpdatePersonalEventCommand"/> validator.

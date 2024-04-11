@@ -1,9 +1,9 @@
-using AspNetNetwork.Domain.Common.ValueObjects;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Domain.Common.ValueObjects;
+using BackingShop.Domain.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AspNetNetwork.Database.Common.Configurations;
+namespace BackingShop.Database.Common.Configurations;
 
 internal class GroupEventConfiguration : IEntityTypeConfiguration<Domain.Identity.Entities.GroupEvent>
 {

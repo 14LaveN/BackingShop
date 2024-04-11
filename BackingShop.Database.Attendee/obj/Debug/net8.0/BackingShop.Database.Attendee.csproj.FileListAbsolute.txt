@@ -18,3 +18,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.Attendee\obj\Debug\net8.0\Bac
 G:\DotNetProjects\BackingShop\BackingShop.Database.Attendee\obj\Debug\net8.0\refint\BackingShop.Database.Attendee.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.Attendee\obj\Debug\net8.0\BackingShop.Database.Attendee.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.Attendee\obj\Debug\net8.0\ref\BackingShop.Database.Attendee.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Attendee\bin\Debug\net8.0\BackingShop.Domain.Product.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.Attendee\bin\Debug\net8.0\BackingShop.Domain.Product.pdb

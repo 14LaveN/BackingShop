@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Events;
+﻿using BackingShop.Domain.Common.Core.Events;
 
-namespace AspNetNetwork.Domain.Identity.Events.User;
+namespace BackingShop.Domain.Identity.Events.User;
 
 /// <summary>
 /// Represents the event that is raised when a users first and last name is changed.

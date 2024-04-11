@@ -1,7 +1,7 @@
-using AspNetNetwork.Domain.Common.Entities;
+using BackingShop.Domain.Common.Entities;
 using BackingShop.Domain.Common.Entities;
 
-namespace AspNetNetwork.Database.MetricsAndMessages.Data.Interfaces;
+namespace BackingShop.Database.MetricsAndMessages.Data.Interfaces;
 
 /// <summary>
 /// Represents the generic mongo repository interface.

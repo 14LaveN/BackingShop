@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.BackgroundTasks.Services;
+﻿namespace BackingShop.BackgroundTasks.Services;
 
 /// <summary>
 /// Represents the group events notifications producer interface.

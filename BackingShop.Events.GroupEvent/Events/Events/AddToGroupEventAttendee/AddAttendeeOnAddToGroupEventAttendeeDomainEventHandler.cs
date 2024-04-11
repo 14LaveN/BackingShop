@@ -1,9 +1,9 @@
-using AspNetNetwork.Database.Attendee.Data.Interfaces;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
+using BackingShop.Database.Attendee.Data.Interfaces;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.GroupEvent;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Events.AddToGroupEventAttendee;
+namespace BackingShop.Events.GroupEvent.Events.Events.AddToGroupEventAttendee;
 
 /// <summary>
 /// Represents the <see cref="AddToGroupEventAttendeeDomainEvent"/> class handler.
@@ -12,7 +12,7 @@ internal sealed class AddAttendeeOnAddToGroupEventAttendeeDomainEventHandler
     : IDomainEventHandler<AddToGroupEventAttendeeDomainEvent>
 {
     private readonly IAttendeeRepository _attendeeRepository;
-    private readonly IUnitOfWork<Domain.Identity.Entities.GroupEvent> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="AddAttendeeOnAddToGroupEventAttendeeDomainEventHandler"/> class.
@@ -21,7 +21,7 @@ internal sealed class AddAttendeeOnAddToGroupEventAttendeeDomainEventHandler
     /// <param name="unitOfWork">The unit of work.</param>
     public AddAttendeeOnAddToGroupEventAttendeeDomainEventHandler(
         IAttendeeRepository attendeeRepository,
-        IUnitOfWork<Domain.Identity.Entities.GroupEvent> unitOfWork)
+        IUnitOfWork unitOfWork)
     {
         _attendeeRepository = attendeeRepository;
         _unitOfWork = unitOfWork;

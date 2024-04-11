@@ -1,8 +1,8 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Commands.CreatePersonalEvent;
+namespace BackingShop.Events.PersonalEvent.Events.Commands.CreatePersonalEvent;
 
 /// <summary>
 /// Represents the create personal event command.

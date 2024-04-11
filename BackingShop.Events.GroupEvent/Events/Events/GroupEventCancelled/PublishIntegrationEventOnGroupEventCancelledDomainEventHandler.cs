@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
-using AspNetNetwork.RabbitMq.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.GroupEvent;
+using BackingShop.RabbitMq.Messaging;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Events.GroupEventCancelled;
+namespace BackingShop.Events.GroupEvent.Events.Events.GroupEventCancelled;
 
 /// <summary>
 /// Represents the <see cref="GroupEventCancelledDomainEvent"/> class.

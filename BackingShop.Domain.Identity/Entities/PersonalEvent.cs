@@ -1,12 +1,12 @@
-﻿using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Common.Enumerations;
-using AspNetNetwork.Domain.Common.ValueObjects;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Enumerations;
-using AspNetNetwork.Domain.Identity.Events.PersonalEvent;
+﻿using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.Enumerations;
+using BackingShop.Domain.Common.ValueObjects;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Enumerations;
+using BackingShop.Domain.Identity.Events.PersonalEvent;
 
-namespace AspNetNetwork.Domain.Identity.Entities;
+namespace BackingShop.Domain.Identity.Entities;
 
 /// <summary>
 /// Represents a personal event.

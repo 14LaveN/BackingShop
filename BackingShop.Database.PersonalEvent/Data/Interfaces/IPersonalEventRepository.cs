@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
 
-namespace AspNetNetwork.Database.PersonalEvent.Data.Interfaces;
+namespace BackingShop.Database.PersonalEvent.Data.Interfaces;
 
 /// <summary>
 /// Represents the personal event repository interface.

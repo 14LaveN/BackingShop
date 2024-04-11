@@ -1,12 +1,12 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Database.PersonalEvent.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Domain.Identity.Enumerations;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Database.PersonalEvent.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Enumerations;
 
-namespace AspNetNetwork.BackgroundTasks.Services;
+namespace BackingShop.BackgroundTasks.Services;
 
 /// <summary>
 /// Represents the personal event notifications producer.
@@ -16,7 +16,7 @@ internal sealed class PersonalEventNotificationsProducer : IPersonalEventNotific
     private readonly IPersonalEventRepository _personalEventRepository;
     private readonly INotificationRepository _notificationRepository;
     private readonly IDateTime _dateTime;
-    private readonly IUnitOfWork<Notification> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PersonalEventNotificationsProducer"/> class.
@@ -29,7 +29,7 @@ internal sealed class PersonalEventNotificationsProducer : IPersonalEventNotific
         IPersonalEventRepository personalEventRepository,
         INotificationRepository notificationRepository,
         IDateTime dateTime,
-        IUnitOfWork<Notification> unitOfWork)
+        IUnitOfWork unitOfWork)
     {
         _personalEventRepository = personalEventRepository;
         _notificationRepository = notificationRepository;

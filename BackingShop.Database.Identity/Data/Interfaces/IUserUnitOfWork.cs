@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace AspNetNetwork.Database.Identity.Data.Interfaces;
+namespace BackingShop.Database.Identity.Data.Interfaces;
 
 /// <summary>
 /// Represents the user unit of work interface.

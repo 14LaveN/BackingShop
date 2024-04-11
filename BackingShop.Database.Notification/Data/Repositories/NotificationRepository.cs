@@ -1,10 +1,10 @@
-﻿using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Domain.Identity.Entities;
+﻿using BackingShop.Database.Common;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Domain.Identity.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetNetwork.Database.Notification.Data.Repositories;
+namespace BackingShop.Database.Notification.Data.Repositories;
 
 /// <summary>
 /// Represents the notification repository.

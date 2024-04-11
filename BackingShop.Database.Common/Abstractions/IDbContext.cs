@@ -1,9 +1,9 @@
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetNetwork.Database.Common.Abstractions;
+namespace BackingShop.Database.Common.Abstractions;
 
 /// <summary>
 /// Represents the application database context interface.

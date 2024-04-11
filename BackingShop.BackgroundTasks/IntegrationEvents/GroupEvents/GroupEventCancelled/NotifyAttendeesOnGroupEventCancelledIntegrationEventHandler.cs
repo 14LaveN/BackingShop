@@ -1,16 +1,16 @@
 ﻿using System.Globalization;
-using AspNetNetwork.Application.Core.Abstractions.Notifications;
-using AspNetNetwork.BackgroundTasks.Abstractions.Messaging;
-using AspNetNetwork.Database.Attendee.Data.Interfaces;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Exceptions;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Email.Contracts.Emails;
-using AspNetNetwork.Events.GroupEvent.Events.Events.GroupEventCancelled;
+using BackingShop.Application.Core.Abstractions.Notifications;
+using BackingShop.BackgroundTasks.Abstractions.Messaging;
+using BackingShop.Database.Attendee.Data.Interfaces;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Exceptions;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Email.Contracts.Emails;
+using BackingShop.Events.GroupEvent.Events.Events.GroupEventCancelled;
 
-namespace AspNetNetwork.BackgroundTasks.IntegrationEvents.GroupEvents.GroupEventCancelled
+namespace BackingShop.BackgroundTasks.IntegrationEvents.GroupEvents.GroupEventCancelled
 {
     /// <summary>
     /// Represents the <see cref="GroupEventCancelledIntegrationEvent"/> class.

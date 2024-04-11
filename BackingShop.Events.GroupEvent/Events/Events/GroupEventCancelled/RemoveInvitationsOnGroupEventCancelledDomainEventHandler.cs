@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Database.Invitation.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.GroupEvent;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Database.Invitation.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.GroupEvent;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Events.GroupEventCancelled;
+namespace BackingShop.Events.GroupEvent.Events.Events.GroupEventCancelled;
 
 /// <summary>
 /// Represents the <see cref="GroupEventCancelledDomainEvent"/> class.

@@ -13,4 +13,9 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Commands\" />
+      <Folder Include="Common\" />
+    </ItemGroup>
+
 </Project>

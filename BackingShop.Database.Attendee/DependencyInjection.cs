@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Database.Attendee.Data.Interfaces;
-using AspNetNetwork.Database.Attendee.Data.Repositories;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Common.Abstractions;
+using BackingShop.Database.Attendee.Data.Interfaces;
+using BackingShop.Database.Attendee.Data.Repositories;
+using BackingShop.Database.Common;
+using BackingShop.Database.Common.Abstractions;
 
-namespace AspNetNetwork.Database.Attendee;
+namespace BackingShop.Database.Attendee;
 
 public static class DependencyInjection
 {
@@ -26,7 +26,6 @@ public static class DependencyInjection
         }
 
         services.AddScoped<IAttendeeRepository, AttendeeRepository>();
-        services.AddScoped<IUnitOfWork<Domain.Identity.Entities.Attendee>, UnitOfWork<Domain.Identity.Entities.Attendee>>();
 
         return services;
     }

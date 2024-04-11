@@ -1,11 +1,11 @@
 using Microsoft.Extensions.DependencyInjection;
-using AspNetNetwork.Application.Common;
-using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Application.Core.Abstractions.Helpers.JWT;
-using AspNetNetwork.Application.Core.Helpers.JWT;
-using AspNetNetwork.Application.Core.Helpers.Metric;
+using BackingShop.Application.Common;
+using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Application.Core.Abstractions.Helpers.JWT;
+using BackingShop.Application.Core.Helpers.JWT;
+using BackingShop.Application.Core.Helpers.Metric;
 
-namespace AspNetNetwork.Application;
+namespace BackingShop.Application;
 
 public static class DependencyInjection
 {

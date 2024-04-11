@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Events.Attendee.Contracts;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Events.Attendee.Contracts;
 
-namespace AspNetNetwork.Events.Attendee.Queries.GetAttendeesForEventId;
+namespace BackingShop.Events.Attendee.Queries.GetAttendeesForEventId;
 
 /// <summary>
 /// Represents the <see cref="GetAttendeesForGroupEventIdQuery"/> handler.

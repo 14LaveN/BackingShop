@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Database.Common;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Common.Specifications;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Entities;
-using AspNetNetwork.Domain.Identity.Entities;
+using BackingShop.Database.Common;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Common.Specifications;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Entities;
+using BackingShop.Domain.Identity.Entities;
 
-namespace AspNetNetwork.Database.GroupEvent.Data.Repositories;
+namespace BackingShop.Database.GroupEvent.Data.Repositories;
 
 /// <summary>
 /// Represents the group event repository.

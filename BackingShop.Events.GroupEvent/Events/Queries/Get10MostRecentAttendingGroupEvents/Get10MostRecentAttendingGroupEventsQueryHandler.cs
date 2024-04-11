@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Domain.Identity.Enumerations;
-using AspNetNetwork.Events.GroupEvent.Contracts.GroupEvents;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Domain.Identity.Enumerations;
+using BackingShop.Events.GroupEvent.Contracts.GroupEvents;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Queries.Get10MostRecentAttendingGroupEvents;
+namespace BackingShop.Events.GroupEvent.Events.Queries.Get10MostRecentAttendingGroupEvents;
 
 /// <summary>
 /// Represents the <see cref="Get10MostRecentAttendingGroupEventsQuery"/> handler.

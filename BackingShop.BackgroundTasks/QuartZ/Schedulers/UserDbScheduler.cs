@@ -1,9 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 using Quartz.Impl;
-using AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
+using BackingShop.BackgroundTasks.QuartZ.Jobs;
 
-namespace AspNetNetwork.BackgroundTasks.QuartZ.Schedulers;
+namespace BackingShop.BackgroundTasks.QuartZ.Schedulers;
 
 /// <summary>
 /// Represents the user database scheduler class.

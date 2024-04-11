@@ -1,6 +1,6 @@
-﻿using AspNetNetwork.Domain.Common.Core.Primitives;
+﻿using BackingShop.Domain.Common.Core.Primitives;
 
-namespace AspNetNetwork.Domain.Common.Core.Errors;
+namespace BackingShop.Domain.Common.Core.Errors;
 
 /// <summary>
 /// Contains the domain errors.

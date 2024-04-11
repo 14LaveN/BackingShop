@@ -1,4 +1,4 @@
-﻿namespace AspNetNetwork.Events.GroupEvent.Contracts.GroupEvents;
+﻿namespace BackingShop.Events.GroupEvent.Contracts.GroupEvents;
 
 /// <summary>
 /// Represents the update group event request.

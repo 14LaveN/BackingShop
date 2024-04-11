@@ -1,14 +1,14 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Notifications;
-using AspNetNetwork.BackgroundTasks.Abstractions.Messaging;
-using AspNetNetwork.Database.Identity.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Exceptions;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Email.Contracts.Emails;
-using AspNetNetwork.RabbitMq.Messaging.User.Events.PasswordChanged;
+﻿using BackingShop.Application.Core.Abstractions.Notifications;
+using BackingShop.BackgroundTasks.Abstractions.Messaging;
+using BackingShop.Database.Identity.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Exceptions;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Email.Contracts.Emails;
+using BackingShop.RabbitMq.Messaging.User.Events.PasswordChanged;
 
-namespace AspNetNetwork.BackgroundTasks.IntegrationEvents.Users.UserPasswordChanged;
+namespace BackingShop.BackgroundTasks.IntegrationEvents.Users.UserPasswordChanged;
 
 /// <summary>
 /// Represents the <see cref="UserPasswordChangedIntegrationEvent"/> handler.

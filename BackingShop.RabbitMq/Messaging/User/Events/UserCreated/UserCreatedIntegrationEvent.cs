@@ -1,9 +1,9 @@
 ﻿using System.Text.Json.Serialization;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
+using BackingShop.Application.Core.Abstractions.Messaging;
 
-using AspNetNetwork.Domain.Identity.Events.User;
+using BackingShop.Domain.Identity.Events.User;
 
-namespace AspNetNetwork.RabbitMq.Messaging.User.Events.UserCreated;
+namespace BackingShop.RabbitMq.Messaging.User.Events.UserCreated;
 
 /// <summary>
 /// Represents the integration event that is raised when a user is created.

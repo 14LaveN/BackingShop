@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 
-namespace AspNetNetwork.Database.Common.Abstractions;
+namespace BackingShop.Database.Common.Abstractions;
 
 /// <summary>
 /// Represents the unit of work interface.
 /// </summary>
-/// <typeparam name="TEntity">The entity type.</typeparam>
-public interface IUnitOfWork<TEntity>
+public interface IUnitOfWork
 {
     /// <summary>
     /// Saves all of the pending changes in the unit of work.

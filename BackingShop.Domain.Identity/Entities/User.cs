@@ -1,18 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using AspNetNetwork.Domain.Common.Core.Abstractions;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Common.Core.Primitives;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Common.Entities;
-using AspNetNetwork.Domain.Common.ValueObjects;
-using AspNetNetwork.Domain.Core.Utility;
-using AspNetNetwork.Domain.Identity.Enumerations;
-using AspNetNetwork.Domain.Identity.Events.PersonalEvent;
-using AspNetNetwork.Domain.Identity.Events.User;
+using BackingShop.Domain.Common.Core.Abstractions;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.Entities;
+using BackingShop.Domain.Common.ValueObjects;
+using BackingShop.Domain.Core.Utility;
+using BackingShop.Domain.Identity.Enumerations;
+using BackingShop.Domain.Identity.Events.PersonalEvent;
+using BackingShop.Domain.Identity.Events.User;
 using Microsoft.AspNetCore.Identity;
 
-namespace AspNetNetwork.Domain.Identity.Entities;
+namespace BackingShop.Domain.Identity.Entities;
 
 /// <summary>
 /// Represents the user entity.

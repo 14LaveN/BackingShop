@@ -1,12 +1,12 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Application.Core.Abstractions.Notifications;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Identity.Entities;
-using AspNetNetwork.Email.Contracts.Emails;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Application.Core.Abstractions.Notifications;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Identity.Entities;
+using BackingShop.Email.Contracts.Emails;
 
-namespace AspNetNetwork.BackgroundTasks.Services;
+namespace BackingShop.BackgroundTasks.Services;
 
 /// <summary>
 /// Represents the emailAddress notifications consumer.
@@ -14,7 +14,7 @@ namespace AspNetNetwork.BackgroundTasks.Services;
 internal sealed class EmailNotificationsConsumer : IEmailNotificationsConsumer
 {
     private readonly INotificationRepository _notificationRepository;
-    private readonly IUnitOfWork<Notification> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IDateTime _dateTime;
     private readonly IEmailNotificationService _emailNotificationService;
         
@@ -27,7 +27,7 @@ internal sealed class EmailNotificationsConsumer : IEmailNotificationsConsumer
     /// <param name="emailNotificationService">The emailAddress notification service.</param>
     public EmailNotificationsConsumer(
         INotificationRepository notificationRepository,
-        IUnitOfWork<Notification> unitOfWork,
+        IUnitOfWork unitOfWork,
         IDateTime dateTime,
         IEmailNotificationService emailNotificationService)
     {

@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using AspNetNetwork.Domain.Core.Utility;
+using BackingShop.Domain.Core.Utility;
 using BackingShop.Domain.Common.Entities;
 
-namespace AspNetNetwork.Domain.Common.Entities;
+namespace BackingShop.Domain.Common.Entities;
 
 /// <summary>
 /// Represents metric entity class.

@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Application.Core.Abstractions.Messaging;
+namespace BackingShop.Application.Core.Abstractions.Messaging;
 
 /// <summary>
 /// Represents the generic Cached query class. 

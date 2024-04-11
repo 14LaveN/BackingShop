@@ -1,9 +1,9 @@
-﻿using AspNetNetwork.Application.Core.Abstractions.Common;
-using AspNetNetwork.Database.Notification.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Events;
-using AspNetNetwork.Domain.Identity.Events.PersonalEvent;
+﻿using BackingShop.Application.Core.Abstractions.Common;
+using BackingShop.Database.Notification.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Events;
+using BackingShop.Domain.Identity.Events.PersonalEvent;
 
-namespace AspNetNetwork.Events.PersonalEvent.Events.Events.PersonalEventCancelled;
+namespace BackingShop.Events.PersonalEvent.Events.Events.PersonalEventCancelled;
 
 /// <summary>
 /// Represents the <see cref="PersonalEventCancelledDomainEvent"/> class.

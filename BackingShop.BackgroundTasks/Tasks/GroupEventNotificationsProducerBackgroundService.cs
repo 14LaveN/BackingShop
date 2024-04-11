@@ -2,10 +2,10 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using AspNetNetwork.BackgroundTasks.Services;
-using AspNetNetwork.BackgroundTasks.Settings;
+using BackingShop.BackgroundTasks.Services;
+using BackingShop.BackgroundTasks.Settings;
 
-namespace AspNetNetwork.BackgroundTasks.Tasks;
+namespace BackingShop.BackgroundTasks.Tasks;
 
 /// <summary>
 /// Represents the background service for producing group event notifications.

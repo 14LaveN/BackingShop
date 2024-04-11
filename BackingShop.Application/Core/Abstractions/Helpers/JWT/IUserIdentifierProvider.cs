@@ -1,4 +1,4 @@
-namespace AspNetNetwork.Application.Core.Abstractions.Helpers.JWT;
+namespace BackingShop.Application.Core.Abstractions.Helpers.JWT;
 
 /// <summary>
 /// Represents the user identifier provider interface.

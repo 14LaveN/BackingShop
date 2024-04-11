@@ -1,17 +1,17 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.Configuration;
-using AspNetNetwork.BackgroundTasks.QuartZ;
-using AspNetNetwork.BackgroundTasks.QuartZ.Jobs;
-using AspNetNetwork.BackgroundTasks.QuartZ.Schedulers;
-using AspNetNetwork.BackgroundTasks.Services;
-using AspNetNetwork.BackgroundTasks.Settings;
-using AspNetNetwork.BackgroundTasks.Tasks;
+using BackingShop.BackgroundTasks.QuartZ;
+using BackingShop.BackgroundTasks.QuartZ.Jobs;
+using BackingShop.BackgroundTasks.QuartZ.Schedulers;
+using BackingShop.BackgroundTasks.Services;
+using BackingShop.BackgroundTasks.Settings;
+using BackingShop.BackgroundTasks.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 using Quartz.Impl;
 using Quartz.Spi;
 
-namespace AspNetNetwork.BackgroundTasks;
+namespace BackingShop.BackgroundTasks;
 
 public static class BDependencyInjection
 {

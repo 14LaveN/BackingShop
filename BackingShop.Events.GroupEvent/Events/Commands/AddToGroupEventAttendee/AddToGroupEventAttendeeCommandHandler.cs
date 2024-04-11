@@ -1,16 +1,16 @@
 using Microsoft.Extensions.Logging;
-using AspNetNetwork.Application.ApiHelpers.Responses;
-using AspNetNetwork.Application.Core.Abstractions.Helpers.JWT;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Database.Common.Abstractions;
-using AspNetNetwork.Database.GroupEvent.Data.Interfaces;
-using AspNetNetwork.Domain.Common.Core.Errors;
-using AspNetNetwork.Domain.Common.Core.Exceptions;
-using AspNetNetwork.Domain.Common.Core.Primitives.Maybe;
-using AspNetNetwork.Domain.Common.Core.Primitives.Result;
-using AspNetNetwork.Domain.Common.Enumerations;
+using BackingShop.Application.ApiHelpers.Responses;
+using BackingShop.Application.Core.Abstractions.Helpers.JWT;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Database.Common.Abstractions;
+using BackingShop.Database.GroupEvent.Data.Interfaces;
+using BackingShop.Domain.Common.Core.Errors;
+using BackingShop.Domain.Common.Core.Exceptions;
+using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
+using BackingShop.Domain.Common.Enumerations;
 
-namespace AspNetNetwork.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
+namespace BackingShop.Events.GroupEvent.Events.Commands.AddToGroupEventAttendee;
 
 /// <summary>
 /// Represents the <see cref="AddToGroupEventAttendeeCommandHandler"/> class.
@@ -21,7 +21,7 @@ internal sealed class AddToGroupEventAttendeeCommandHandler
     private readonly IGroupEventRepository _groupEventRepository;
     private readonly IUserIdentifierProvider _userIdentifierProvider;
     private readonly ILogger<AddToGroupEventAttendeeCommandHandler> _logger;
-    private readonly IUnitOfWork<Domain.Identity.Entities.GroupEvent> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="AddToGroupEventAttendeeCommandHandler"/> class.
@@ -32,7 +32,7 @@ internal sealed class AddToGroupEventAttendeeCommandHandler
     /// <param name="logger">The logger.</param>
     public AddToGroupEventAttendeeCommandHandler(
         IGroupEventRepository groupEventRepository,
-        IUnitOfWork<Domain.Identity.Entities.GroupEvent> unitOfWork,
+        IUnitOfWork unitOfWork,
         IUserIdentifierProvider userIdentifierProvider,
         ILogger<AddToGroupEventAttendeeCommandHandler> logger)
     {

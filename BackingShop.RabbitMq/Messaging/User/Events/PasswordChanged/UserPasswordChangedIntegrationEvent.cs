@@ -1,9 +1,9 @@
 ﻿using System.Text.Json.Serialization;
-using AspNetNetwork.Application.Core.Abstractions.Messaging;
-using AspNetNetwork.Domain.Identity.Events.User;
+using BackingShop.Application.Core.Abstractions.Messaging;
+using BackingShop.Domain.Identity.Events.User;
 
 
-namespace AspNetNetwork.RabbitMq.Messaging.User.Events.PasswordChanged;
+namespace BackingShop.RabbitMq.Messaging.User.Events.PasswordChanged;
 
 /// <summary>
 /// Represents the integration event that is raised when a user's password is changed.

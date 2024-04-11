@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using AspNetNetwork.Application.Core.Errors;
-using AspNetNetwork.Application.Core.Extensions;
+using BackingShop.Application.Core.Errors;
+using BackingShop.Application.Core.Extensions;
 
-namespace AspNetNetwork.Events.Invitation.Commands.RejectInvitation;
+namespace BackingShop.Events.Invitation.Commands.RejectInvitation;
 
 /// <summary>
 /// Represents the <see cref="RejectInvitationCommand"/> validator.
