@@ -69,6 +69,21 @@ internal sealed class ProductsRepository
                         .AsNoTrackingWithIdentityResolution()
                         .Where(p => p.ProductType == productType)
                         .OrderByDescending(p => p.CreatedOnUtc));
+    
+    /// <inheritdoc />
+    public async Task<IOrderedQueryable<ProductDto>> GetProductsByProductType(ProductType productType, int batchSize) =>
+        await GetProductsByProductTypeWithBatchSizeDelegate(dbContext, productType, batchSize);
+    
+    private static readonly Func<BaseDbContext, ProductType,int, Task<IOrderedQueryable<ProductDto>>>
+        GetProductsByProductTypeWithBatchSizeDelegate =
+            EF.CompileAsyncQuery(
+                (BaseDbContext context, ProductType productType, int batchSize) =>
+                    (IOrderedQueryable<ProductDto>)context.Set<Domain.Product.Entities.Product>()
+                        .AsSingleQuery()
+                        .AsNoTrackingWithIdentityResolution()
+                        .Where(p => p.ProductType == productType)
+                        .OrderByDescending(p => p.CreatedOnUtc)
+                        .Take(batchSize));
 
     /// <inheritdoc />
     public async Task<IQueryable<ProductDto>> GetProductsByCompanyName(string companyName) =>

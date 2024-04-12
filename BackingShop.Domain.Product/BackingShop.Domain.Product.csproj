@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BackingShop.Domain.Common\BackingShop.Domain.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.Domain.Identity\BackingShop.Domain.Identity.csproj" />
     </ItemGroup>
 
 </Project>

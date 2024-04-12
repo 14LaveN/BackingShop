@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BackingShop.Database.Common.Interceptors;
 using BackingShop.Domain.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,7 +35,7 @@ public static class DependencyInjection
             services.AddHealthChecks()
                 .AddNpgSql(connectionString);
         
-        services.AddDbContext<BaseDbContext>(o =>
+        services.AddDbContext<BaseDbContext>((sp, o) =>
             o.UseNpgsql(connectionString, act
                     =>
             {
@@ -42,6 +43,8 @@ public static class DependencyInjection
                 act.CommandTimeout(30);
                 act.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
             })
+                .AddInterceptors(sp.GetRequiredService<AuditableEntityInterceptor>())
+                .AddInterceptors(sp.GetRequiredService<DispatchDomainEventsInterceptor>())
                 .ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.ForeignKeyPropertiesMappedToUnrelatedTables))
                 .LogTo(Console.WriteLine)
                 .EnableServiceProviderCaching()

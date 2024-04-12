@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NcObVAKPzgSVRYnD2r/QaWrlFQcUBTuxPl8bHo+CIK6GBmF+/cGfewd0SkKOCkMHYxXd96XcoQNrdiPtgKtH1Q==",
+  "dgSpecHash": "v2lgNzgSwbMRECywlpeZs3i7PvqwdMofxcSVpFxd0YJcFlNtn0vCTlNn4Nk2P2ox2Nsauj3BcMDXA0FZ47Xe4A==",
   "success": false,
   "projectFilePath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.MetricsAndRabbitMessages\\BackingShop.Database.MetricsAndRabbitMessages.csproj",
   "expectedPackageFiles": [

@@ -1192,7 +1192,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "BackingShop.Domain.Common": "1.0.0"
+          "BackingShop.Domain.Common": "1.0.0",
+          "BackingShop.Domain.Identity": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BackingShop.Domain.Product.dll": {}

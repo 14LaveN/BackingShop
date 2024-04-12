@@ -50,6 +50,14 @@ public interface IProductsRepository
     /// <param name="productType">The product type.</param>
     /// <returns>The maybe instance that may contain the enumerable product DTO with the specified product class.</returns>
     Task<IOrderedQueryable<ProductDto>> GetProductsByProductType(ProductType productType);
+
+    /// <summary>
+    /// Gets the enumerable products by product type with the specified product type and batch size.
+    /// </summary>
+    /// <param name="productType">The product type.</param>
+    /// <param name="batchSize">The batch size.</param>
+    /// <returns>The maybe instance that may contain the enumerable product DTO with the specified product class.</returns>
+    Task<IOrderedQueryable<ProductDto>> GetProductsByProductType(ProductType productType, int batchSize);
     
     /// <summary>
     /// Gets the enumerable products by company name with the specified company name.

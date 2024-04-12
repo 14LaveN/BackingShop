@@ -6,8 +6,12 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace BackingShop.Database.Common.Interceptors;
 
-public sealed class AuditableEntityInterceptor<T>(
-    TimeProvider dateTime) : SaveChangesInterceptor where T : Entity
+/// <summary>
+/// Represents the auditable entity interceptor class.
+/// </summary>
+/// <param name="dateTime">The date/time.</param>
+internal sealed class AuditableEntityInterceptor(
+    TimeProvider dateTime) : SaveChangesInterceptor
 {
     public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
     {
@@ -21,7 +25,10 @@ public sealed class AuditableEntityInterceptor<T>(
         return base.SavingChanges(eventData, result);
     }
 
-    public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
+    public override ValueTask<InterceptionResult<int>> SavingChangesAsync(
+        DbContextEventData eventData,
+        InterceptionResult<int> result,
+        CancellationToken cancellationToken = default)
     {
         DateTimeOffset utcNow = dateTime.GetUtcNow();
 
@@ -86,11 +93,15 @@ public sealed class AuditableEntityInterceptor<T>(
             return;
         }
 
-        foreach (ReferenceEntry referenceEntry in entityEntry.References.Where(r => r.TargetEntry.State == EntityState.Deleted))
+        foreach (ReferenceEntry referenceEntry in entityEntry.References
+                     .Where(r => r.TargetEntry!.State == EntityState.Deleted))
         {
-            referenceEntry.TargetEntry.State = EntityState.Unchanged;
+            if (referenceEntry.TargetEntry != null)
+            {
+                referenceEntry.TargetEntry.State = EntityState.Unchanged;
 
-            UpdateDeletedEntityEntryReferencesToUnchanged(referenceEntry.TargetEntry);
+                UpdateDeletedEntityEntryReferencesToUnchanged(referenceEntry.TargetEntry);
+            }
         }
     }
 }

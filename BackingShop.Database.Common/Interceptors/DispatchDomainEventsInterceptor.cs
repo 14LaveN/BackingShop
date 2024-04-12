@@ -5,7 +5,11 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace BackingShop.Database.Common.Interceptors;
 
-public sealed class DispatchDomainEventsInterceptor(IMediator mediator) : SaveChangesInterceptor
+/// <summary>
+/// Represents the dispatch domain events interceptor class.
+/// </summary>
+/// <param name="publisher">The publisher.</param>
+internal sealed class DispatchDomainEventsInterceptor(IPublisher publisher) : SaveChangesInterceptor
 {
     public override InterceptionResult<int> SavingChanges(
         DbContextEventData eventData,
@@ -41,12 +45,10 @@ public sealed class DispatchDomainEventsInterceptor(IMediator mediator) : SaveCh
         var domainEvents = auditableBaseEntities
             .SelectMany(e => e.DomainEvents)
             .ToList();
-        
-        Console.WriteLine("fgdgfdg");
 
         auditableBaseEntities.ToList().ForEach(e => e.ClearDomainEvents());
 
         foreach (var domainEvent in domainEvents)
-            await mediator.Publish(domainEvent);
+            await publisher.Publish(domainEvent);
     }
 }

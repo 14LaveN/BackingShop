@@ -664,6 +664,9 @@
             "projectReferences": {
               "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj": {
                 "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common\\BackingShop.Domain.Common.csproj"
+              },
+              "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj": {
+                "projectPath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity\\BackingShop.Domain.Identity.csproj"
               }
             }
           }

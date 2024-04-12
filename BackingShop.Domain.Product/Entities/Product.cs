@@ -2,6 +2,7 @@ using BackingShop.Domain.Common.Core.Abstractions;
 using BackingShop.Domain.Common.Core.Primitives;
 using BackingShop.Domain.Common.ValueObjects;
 using BackingShop.Domain.Core.Utility;
+using BackingShop.Domain.Identity.Entities;
 using BackingShop.Domain.Product.Enumerations;
 using BackingShop.Domain.Product.Events;
 
@@ -22,18 +23,21 @@ public sealed class Product
     /// <param name="tag">The tag.</param>
     /// <param name="companyName">The company name.</param>
     /// <param name="productType">The product type.</param>
+    /// <param name="userId">The user identifier.</param>
     public Product(
         Name title, 
         string description,
         decimal price, 
         string tag,
         string companyName,
-        ProductType productType)
+        ProductType productType,
+        Guid userId)
     {
         Ensure.NotEmpty(title, "The title is required.", nameof(title));
         Ensure.NotEmpty(tag, "The tag is required.", nameof(tag));
         Ensure.NotEmpty(companyName, "The company name is required.", nameof(companyName));
         Ensure.NotEmpty(description, "The description is required.", nameof(description));
+        Ensure.NotEmpty(userId, "The user identifier is required.", nameof(userId));
         
         Price = price;
         ProductType = productType;
@@ -50,6 +54,16 @@ public sealed class Product
     /// Gets or sets price.
     /// </summary>
     public decimal Price { get; set; }
+
+    /// <summary>
+    /// Gets or sets user identifier.
+    /// </summary>
+    public Guid UserId { get; set; }
+
+    /// <summary>
+    /// Gets or sets author.
+    /// </summary>
+    public User Author { get; set; }
 
     /// <summary>
     /// Gets or sets tag.
@@ -90,6 +104,7 @@ public sealed class Product
     /// <param name="tag">The tag.</param>
     /// <param name="companyName">The company name.</param>
     /// <param name="productType">The product type.</param>
+    /// <param name="userId">The user identifier.</param>
     /// <returns>The newly created product instance.</returns>
     public static Product Create(
         Name title,
@@ -97,9 +112,10 @@ public sealed class Product
         decimal price,
         string tag,
         string companyName,
-        ProductType productType)
+        ProductType productType,
+        Guid userId)
     {
-        var product = new Product(title, description, price, tag, companyName, productType);
+        var product = new Product(title, description, price, tag, companyName, productType,userId);
 
         product.AddDomainEvent(new ProductCreatedDomainEvent(product));
 
