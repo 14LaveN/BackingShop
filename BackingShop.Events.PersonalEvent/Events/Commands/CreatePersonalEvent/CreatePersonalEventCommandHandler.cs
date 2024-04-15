@@ -46,33 +46,33 @@ internal sealed class CreatePersonalEventCommandHandler : ICommandHandler<Create
     {
         if (request.UserId != Guid.Empty)
         {
-            return Result.Failure(DomainErrors.User.InvalidPermissions);
+            return await  Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
         if (request.DateTimeUtc <= _dateTime.UtcNow)
         {
-            return Result.Failure(DomainErrors.PersonalEvent.DateAndTimeIsInThePast);
+            return await  Result.Failure(DomainErrors.PersonalEvent.DateAndTimeIsInThePast);
         }
 
         Maybe<User> maybeUser = await _userRepository.GetByIdAsync(request.UserId);
 
         if (maybeUser.HasNoValue)
         {
-            return Result.Failure(DomainErrors.User.NotFound);
+            return await  Result.Failure(DomainErrors.User.NotFound);
         }
 
         Maybe<Category> maybeCategory = Category.FromValue(request.CategoryId);
 
         if (maybeCategory.HasNoValue)
         {
-            return Result.Failure(DomainErrors.Category.NotFound);
+            return await  Result.Failure(DomainErrors.Category.NotFound);
         }
 
         Result<Name> nameResult = Name.Create(request.Name);
 
         if (nameResult.IsFailure)
         {
-            return Result.Failure(nameResult.Error);
+            return await  Result.Failure(nameResult.Error);
         }
 
         User user = maybeUser.Value;

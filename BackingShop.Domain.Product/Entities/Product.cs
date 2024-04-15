@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using BackingShop.Domain.Common.Core.Abstractions;
 using BackingShop.Domain.Common.Core.Primitives;
 using BackingShop.Domain.Common.ValueObjects;
@@ -61,11 +62,6 @@ public sealed class Product
     public Guid UserId { get; set; }
 
     /// <summary>
-    /// Gets or sets author.
-    /// </summary>
-    public User Author { get; set; }
-
-    /// <summary>
     /// Gets or sets tag.
     /// </summary>
     public string Tag { get; set; } = null!;
@@ -95,6 +91,18 @@ public sealed class Product
     /// </summary>
     public string CompanyName { get; set; } = null!;
 
+    /// <inheritdoc/>
+    public DateTime CreatedOnUtc { get; } = DateTime.UtcNow;
+    
+    /// <inheritdoc/>
+    public DateTime? ModifiedOnUtc { get; }
+    
+    /// <inheritdoc/>
+    public DateTime? DeletedOnUtc { get; }
+    
+    /// <inheritdoc/>
+    public bool Deleted { get; }
+    
     /// <summary>
     /// Creates a new product with the specified title, description, price, tag and product type.
     /// </summary>
@@ -121,16 +129,4 @@ public sealed class Product
 
         return product;
     }
-
-    /// <inheritdoc/>
-    public DateTime CreatedOnUtc { get; } = DateTime.UtcNow;
-    
-    /// <inheritdoc/>
-    public DateTime? ModifiedOnUtc { get; }
-    
-    /// <inheritdoc/>
-    public DateTime? DeletedOnUtc { get; }
-    
-    /// <inheritdoc/>
-    public bool Deleted { get; }
 }

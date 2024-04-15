@@ -1,11 +1,10 @@
 using BackingShop.Application.Core.Settings;
-using BackingShop.Database.MetricsAndMessages.Data.Interfaces;
-using BackingShop.Domain.Common.Entities;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 using BackingShop.Domain.Entities;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace BackingShop.Database.MetricsAndMessages.Data.Repositories;
+namespace BackingShop.Database.MetricsAndRabbitMessages.Data.Repositories;
 
 /// <summary>
 /// Represents the generic metrics repository class.
@@ -32,15 +31,19 @@ public sealed class RabbitMessagesRepository
             dbSettings.Value.MetricsCollectionName);
     }
 
+    /// <inheritdoc />
     public async Task<List<RabbitMessage>> GetAllAsync() =>
         await _rabbitMessagesCollection.Find(_ => true).ToListAsync();
 
+    /// <inheritdoc />
     public async Task InsertAsync(RabbitMessage type) =>
         await _rabbitMessagesCollection.InsertOneAsync(type);
 
+    /// <inheritdoc />
     public async Task InsertRangeAsync(IEnumerable<RabbitMessage> types) =>
         await _rabbitMessagesCollection.InsertManyAsync(types);
 
+    /// <inheritdoc />
     public async Task RemoveAsync(string id) =>
         await _rabbitMessagesCollection.DeleteOneAsync(x => x.Id == id);
 }

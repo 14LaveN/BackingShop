@@ -40,14 +40,14 @@ internal sealed class CancelGroupEventCommandHandler : ICommandHandler<CancelGro
 
         if (maybeGroupEvent.HasNoValue)
         {
-            return Result.Failure(DomainErrors.GroupEvent.NotFound);
+            return await Result.Failure(DomainErrors.GroupEvent.NotFound);
         }
 
         Domain.Identity.Entities.GroupEvent groupEvent = maybeGroupEvent.Value;
 
         if (groupEvent.UserId != request.UserId)
         {
-            return Result.Failure(DomainErrors.User.InvalidPermissions);
+            return await Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
         Result result = groupEvent.Cancel(_dateTime.UtcNow);

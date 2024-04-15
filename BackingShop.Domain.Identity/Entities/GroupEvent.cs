@@ -61,7 +61,7 @@ public sealed class GroupEvent : Event
             return await Result.Success();
         }
 
-        return Result.Failure(DomainErrors.GroupEvent.IsCancelled);
+        return await Result.Failure(DomainErrors.GroupEvent.IsCancelled);
     }    
 
     /// <summary>

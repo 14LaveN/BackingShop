@@ -22,13 +22,24 @@ namespace BackingShop.Database.Common;
 public class BaseDbContext
     : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IDbContext
 {
+    private readonly IMediator _mediator = null!;
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="BaseDbContext"/> class.
     /// </summary>
     /// <param name="options">The database context options.</param>
-    public BaseDbContext(DbContextOptions<BaseDbContext> options)
-        : base(options) { }
-    
+    /// <param name="mediator"></param>
+    public BaseDbContext(DbContextOptions<BaseDbContext> options,
+        IMediator mediator)
+        : base(options)
+    {
+        _mediator = mediator;
+    }
+
+    /// <param name="dbContextOptions"></param>
+    /// <inheritdoc />
+    public BaseDbContext(DbContextOptions<BaseDbContext> dbContextOptions)
+        : base(dbContextOptions) { }
 
     /// <inheritdoc />
     public BaseDbContext() { }
@@ -43,18 +54,16 @@ public class BaseDbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        
-        #region Build some elements.
 
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         modelBuilder.HasDefaultSchema("dbo");
 
         modelBuilder.Entity<IdentityUserLogin<Guid>>()
-            .HasKey(l => new { l.LoginProvider, l.ProviderKey });
+           .HasKey(l => new { l.LoginProvider, l.ProviderKey });
 
         modelBuilder.Entity<IdentityUserRole<Guid>>()
-            .HasKey(l => new { l.UserId, l.RoleId });
+             .HasKey(l => new { l.UserId, l.RoleId });
 
         modelBuilder.Entity<IdentityUserToken<Guid>>()
             .HasKey(l => new { l.UserId, l.LoginProvider, l.Name });
@@ -66,8 +75,6 @@ public class BaseDbContext
             .HasOne(g => g.Author)
             .WithMany(u => u.YourGroupEvents)
             .HasForeignKey(g => g.UserId);
-
-        #endregion
     }
 
     /// <inheritdoc />
@@ -102,4 +109,111 @@ public class BaseDbContext
     /// <inheritdoc />
     public Task<int> ExecuteSqlAsync(string sql, IEnumerable<SqlParameter> parameters, CancellationToken cancellationToken = default)
         => Database.ExecuteSqlRawAsync(sql, parameters, cancellationToken);
-}
+    
+   /// <summary>
+   /// Saves all of the pending changes in the unit of work.
+   /// </summary>
+   /// <param name="cancellationToken">The cancellation token.</param>
+   /// <returns>The number of entities that have been saved.</returns>
+   public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+   {
+       DateTime utcNow = DateTime.UtcNow;
+
+       UpdateAuditableEntities(utcNow);
+
+       UpdateSoftDeletableEntities(utcNow);
+
+       await PublishDomainEvents(cancellationToken);
+
+       return await base.SaveChangesAsync(cancellationToken);
+    }
+
+    /// <summary>
+    /// Updates the entities implementing <see cref="IAuditableEntity"/> interface.
+    /// </summary>
+    /// <param name="utcNow">The current date and time in UTC format.</param>
+    private void UpdateAuditableEntities(DateTime utcNow)
+    {
+        foreach (EntityEntry<IAuditableEntity> entityEntry in ChangeTracker.Entries<IAuditableEntity>())
+        {
+            if (entityEntry.State == EntityState.Added)
+            {
+                entityEntry.Property(nameof(IAuditableEntity.CreatedOnUtc)).CurrentValue = utcNow;
+            }
+
+            if (entityEntry.State == EntityState.Modified)
+            {
+                entityEntry.Property(nameof(IAuditableEntity.ModifiedOnUtc)).CurrentValue = utcNow;
+            }
+        }
+    }
+
+        /// <summary>
+        /// Updates the entities implementing <see cref="ISoftDeletableEntity"/> interface.
+        /// </summary>
+        /// <param name="utcNow">The current date and time in UTC format.</param>
+        private void UpdateSoftDeletableEntities(DateTime utcNow)
+        {
+            foreach (EntityEntry<ISoftDeletableEntity> entityEntry in ChangeTracker.Entries<ISoftDeletableEntity>())
+            {
+                if (entityEntry.State != EntityState.Deleted)
+                {
+                    continue;
+                }
+
+                entityEntry.Property(nameof(ISoftDeletableEntity.DeletedOnUtc)).CurrentValue = utcNow;
+
+                entityEntry.Property(nameof(ISoftDeletableEntity.Deleted)).CurrentValue = true;
+
+                entityEntry.State = EntityState.Modified;
+
+                UpdateDeletedEntityEntryReferencesToUnchanged(entityEntry);
+            }
+        }
+
+        /// <summary>
+        /// Updates the specified entity entry's referenced entries in the deleted state to the modified state.
+        /// This method is recursive.
+        /// </summary>
+        /// <param name="entityEntry">The entity entry.</param>
+        private static void UpdateDeletedEntityEntryReferencesToUnchanged(EntityEntry entityEntry)
+        {
+            if (!entityEntry.References.Any())
+            {
+                return;
+            }
+
+            foreach (ReferenceEntry referenceEntry in entityEntry.References
+                         .Where(r => r.TargetEntry!.State == EntityState.Deleted))
+            {
+                if (referenceEntry.TargetEntry != null)
+                {
+                    referenceEntry.TargetEntry.State = EntityState.Unchanged;
+
+                    UpdateDeletedEntityEntryReferencesToUnchanged(referenceEntry.TargetEntry);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Publishes and then clears all the domain events that exist within the current transaction.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        private async Task PublishDomainEvents(CancellationToken cancellationToken)
+        {
+            List<EntityEntry<AggregateRoot>> aggregateRoots = ChangeTracker
+                .Entries<AggregateRoot>()
+                .Where(entityEntry => entityEntry.Entity.DomainEvents.Any())
+                .ToList();
+
+            List<IDomainEvent> domainEvents = aggregateRoots
+                .SelectMany(entityEntry => entityEntry.Entity.DomainEvents).ToList();
+
+            aggregateRoots.ForEach(entityEntry => entityEntry.Entity.ClearDomainEvents());
+
+            IEnumerable<Task> tasks = domainEvents.Select(async domainEvent => 
+                await _mediator.Publish(domainEvent, cancellationToken));
+
+            await Task.WhenAll(tasks);
+        }
+    }

@@ -2,6 +2,7 @@
 using BackingShop.Database.Common.Specifications;
 using BackingShop.Domain.Common.Core.Primitives;
 using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
 namespace BackingShop.Database.Common;
 
@@ -36,8 +37,12 @@ public abstract class GenericRepository<TEntity>
     /// Inserts the specified entity into the database.
     /// </summary>
     /// <param name="entity">The entity to be inserted into the database.</param>
-    public async Task Insert(TEntity entity) 
-        => await DbContext.Insert(entity);
+    public async Task<Result> Insert(TEntity entity)
+    {
+        await DbContext.Insert(entity);
+
+        return await Result.Success();
+    }
 
     /// <summary>
     /// Inserts the specified entities to the databases.

@@ -39,28 +39,28 @@ internal sealed class UpdatePersonalEventCommandHandler : ICommandHandler<Update
     {
         if (request.DateTimeUtc <= _dateTime.UtcNow)
         {
-            return Result.Failure(DomainErrors.PersonalEvent.DateAndTimeIsInThePast);
+            return await  Result.Failure(DomainErrors.PersonalEvent.DateAndTimeIsInThePast);
         }
 
         Maybe<Domain.Identity.Entities.PersonalEvent> maybePersonalEvent = await _personalEventRepository.GetByIdAsync(request.PersonalEventId);
 
         if (maybePersonalEvent.HasNoValue)
         {
-            return Result.Failure(DomainErrors.PersonalEvent.NotFound);
+            return await  Result.Failure(DomainErrors.PersonalEvent.NotFound);
         }
 
         Domain.Identity.Entities.PersonalEvent personalEvent = maybePersonalEvent.Value;
 
         if (personalEvent.UserId != request.UserId)
         {
-            return Result.Failure(DomainErrors.User.InvalidPermissions);
+            return await  Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
         Result<Name> nameResult = Name.Create(request.Name);
 
         if (nameResult.IsFailure)
         {
-            return Result.Failure(nameResult.Error);
+            return await  Result.Failure(nameResult.Error);
         }
 
         personalEvent.ChangeName(nameResult.Value);

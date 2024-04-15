@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackingShop.Micro.Order")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d88189d7c7d085c03fbf9f5a1b9969e0f1083f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9b6c9e325dd6124af7143ea360c80d0c588f37e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackingShop.Micro.Order")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackingShop.Micro.Order")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,6 @@
+{
+  "BackingShop.Database.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.Common",
+  "BackingShop.Domain.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Common",
+  "BackingShop.Domain.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Identity",
+  "BackingShop.Domain.Product, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Domain.Product"
+}

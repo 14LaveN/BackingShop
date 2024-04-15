@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "v2lgNzgSwbMRECywlpeZs3i7PvqwdMofxcSVpFxd0YJcFlNtn0vCTlNn4Nk2P2ox2Nsauj3BcMDXA0FZ47Xe4A==",
-  "success": false,
+  "dgSpecHash": "J+fKMTog77Hu+AOBBAU3gDl8hgZpgDZWB/ILJzvjDXIua208UXaH+ApSQAMXDSzLMO6kzXkZz2I4G6C/GJE66g==",
+  "success": true,
   "projectFilePath": "G:\\DotNetProjects\\BackingShop\\BackingShop.Database.MetricsAndRabbitMessages\\BackingShop.Database.MetricsAndRabbitMessages.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\8.0.0\\aspnetcore.healthchecks.mongodb.8.0.0.nupkg.sha512",
@@ -32,7 +32,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.0\\microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\8.0.3\\microsoft.extensions.diagnostics.healthchecks.8.0.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\8.0.3\\microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.3.nupkg.sha512",
@@ -93,15 +93,5 @@
     "C:\\Users\\ponom\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.Database.MetricsAndRabbitMessages -> BackingShop.Application -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.Database.MetricsAndRabbitMessages -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

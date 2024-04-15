@@ -45,21 +45,21 @@ internal sealed class AcceptInvitationCommandHandler : ICommandHandler<AcceptInv
 
         if (maybeInvitation.HasNoValue)
         {
-            return Result.Failure(DomainErrors.Invitation.NotFound);
+            return await  Result.Failure(DomainErrors.Invitation.NotFound);
         }
 
         Domain.Identity.Entities.Invitation invitation = maybeInvitation.Value;
 
         if (invitation.UserId != request.UserId)
         {
-            return Result.Failure(DomainErrors.User.InvalidPermissions);
+            return await  Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
         Result result = invitation.Accept(_dateTime.UtcNow);
 
         if (result.IsFailure)
         {
-            return Result.Failure(result.Error);
+            return await  Result.Failure(result.Error);
         }
 
         await _unitOfWork.SaveChangesAsync(cancellationToken);

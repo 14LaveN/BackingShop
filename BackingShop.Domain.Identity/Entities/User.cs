@@ -192,7 +192,7 @@ public sealed class User : IdentityUser<Guid>, IAuditableEntity, ISoftDeletableE
     {
         if (passwordHash == PasswordHash)
         {
-            return Result.Failure(DomainErrors.User.CannotChangePassword);
+            return Result.Failure(DomainErrors.User.CannotChangePassword).GetAwaiter().GetResult();
         }
 
         PasswordHash = passwordHash;

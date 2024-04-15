@@ -49,6 +49,21 @@ public static class Ensure
             throw new ArgumentException(message, argumentName);
         }
     }
+    
+    /// <summary>
+    /// Ensures that the specified <see cref="int"/> value is not zero.
+    /// </summary>
+    /// <param name="value">The value to check.</param>
+    /// <param name="message">The message to show if the check fails.</param>
+    /// <param name="argumentName">The name of the argument being checked.</param>
+    /// <exception cref="ArgumentException"> if the specified value is the default value for the type.</exception>
+    public static void NotZero(int value, string message, string argumentName)
+    {
+        if (value is 0)
+        {
+            throw new ArgumentNullException(argumentName, message);
+        }
+    }
 
     /// <summary>
     /// Ensures that the specified value is not null.

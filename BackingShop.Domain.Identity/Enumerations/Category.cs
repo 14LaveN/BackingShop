@@ -15,7 +15,7 @@ public sealed class Category : Enumeration<Category>
     /// </summary>
     /// <param name="value">The value.</param>
     /// <param name="name">The name.</param>
-    private Category(int value, string name)
+    public Category(int value, string name)
         : base(value, name)
     {
     }

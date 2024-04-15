@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "kmjMdYCqIKGXkTYqnHkkNHOfC2KpFbYP6SkVhpGkLfkTsQZtaKGU7lbSMZsG3W/5iEBi1cGOsaq4cmW3V5Cqlw==",
-  "success": false,
+  "dgSpecHash": "NgzUVzkcMIaxinnPXqgIRd/I4MafGcX/jEUaQ+yYWdY+wx/zi9TmqO/frRb5bMQ8prgbHxJozm3wTLr3hmjCbw==",
+  "success": true,
   "projectFilePath": "G:\\DotNetProjects\\BackingShop\\BackingShop.BackgroundTasks\\BackingShop.BackgroundTasks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ponom\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\8.0.0\\aspnetcore.healthchecks.mongodb.8.0.0.nupkg.sha512",
@@ -35,7 +35,7 @@
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.0\\microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\8.0.3\\microsoft.extensions.diagnostics.healthchecks.8.0.3.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\8.0.3\\microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.3.nupkg.sha512",
@@ -106,105 +106,5 @@
     "C:\\Users\\ponom\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ponom\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Database.Attendee -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Database.GroupEvent -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Database.PersonalEvent -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.RabbitMq -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Database.MetricsAndRabbitMessages -> BackingShop.Application -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Events.GroupEvent -> BackingShop.Application -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Events.GroupEvent -> BackingShop.Database.Identity -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Events.GroupEvent -> BackingShop.Database.Invitation -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Events.Invitation -> BackingShop.Application -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Events.Invitation -> BackingShop.Database.Invitation -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Обнаружено понижение версии пакета Microsoft.Extensions.DependencyInjection.Abstractions с 8.0.1 на 8.0.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n BackingShop.BackgroundTasks -> BackingShop.Database.Common -> Microsoft.Extensions.Diagnostics.HealthChecks 8.0.3 -> Microsoft.Extensions.Logging.Abstractions 8.0.1 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n BackingShop.BackgroundTasks -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

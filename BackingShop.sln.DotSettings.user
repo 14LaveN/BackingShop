@@ -1,0 +1,39 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41cc456c_002D0084_002D4b66_002Da58e_002Dd4e4a55a8bfe/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="InsertProduct_AssertWithOk #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests.InsertProduct_AssertWithOk&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=486c751d_002Dfc22_002D4195_002Dbb1a_002Dbf763b77ed17/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UserRepositoryTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5093b106_002Df477_002D48f3_002Da144_002D71e7abea2ce5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProduct_AssertWithOk #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests.InsertProduct_AssertWithOk&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=847118f1_002Ddf18_002D406b_002Da2c3_002D73777bc70594/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProduct_AssertWithOk #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests.InsertProduct_AssertWithOk&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c57e3a58_002Df6a7_002D4811_002D84c1_002D6ef005555835/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProduct_AssertWithOk #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests.InsertProduct_AssertWithOk&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=caf79e49_002D6446_002D4219_002D804d_002Df7c74ff21018/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProducts_AssertWithOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="G:\DotNetProjects\BackingShop\BackingShop.Tests.Product" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;BackingShop.Tests.Product&amp;gt;" /&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::8CF7BEB3-0B31-4A23-A9D4-3CE45362788E::net8.0::BackingShop.Tests.Identity.UnitTests.Repository.ProductsRepositoryTests.InsertProduct_AssertWithOk&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8ac6691_002Da91f_002D4ace_002D82c8_002D7003daa8dec3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProduct_AssertWithOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

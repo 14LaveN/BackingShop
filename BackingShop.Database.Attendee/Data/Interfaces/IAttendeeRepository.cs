@@ -1,4 +1,5 @@
 ﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 using BackingShop.Domain.Entities;
 using BackingShop.Domain.Identity.Entities;
 
@@ -34,7 +35,7 @@ public interface IAttendeeRepository
     /// Inserts the specified attendee to the database.
     /// </summary>
     /// <param name="attendee">The attendee to be inserted into the database.</param>
-    Task Insert(Domain.Identity.Entities.Attendee attendee);
+    Task<Result> Insert(Domain.Identity.Entities.Attendee attendee);
 
     /// <summary>
     /// Marks the attendees as unprocessed for the specified group event.

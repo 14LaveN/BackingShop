@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lND9uGyLJ+8bUy3U1Y6gHyd8l2QqAe7jHp1psGW7v0I3IDJLKmBJMvH9FXsZuqeCqm+nUh0OB+wRPT1/NGMDIA==",
+  "dgSpecHash": "yh8WNZ2aAHWQfcqPJDDSu2RHklqmmLmiqzzy1Az2qziWV8EDg+N+VHRUHSoNdupAElLzfo0lfPDiSGycToyfuw==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq\\BackingShop.RabbitMq.csproj",
   "expectedPackageFiles": [

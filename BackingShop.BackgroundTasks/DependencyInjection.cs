@@ -28,22 +28,23 @@ public static class BDependencyInjection
         services.AddMediatR(x=>
             x.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-        //TODO services.Configure<BackgroundTaskSettings>(configuration.GetSection(BackgroundTaskSettings.SettingsKey);
-        
-        services.AddHostedService<GroupEventNotificationsProducerBackgroundService>();
-
-        services.AddHostedService<PersonalEventNotificationsProducerBackgroundService>();
-
-        services.AddHostedService<EmailNotificationConsumerBackgroundService>();
-
-        services.AddHostedService<IntegrationEventConsumerBackgroundService>();
-
-
-        services.AddScoped<IPersonalEventNotificationsProducer, PersonalEventNotificationsProducer>();
-
-        services.AddScoped<IEmailNotificationsConsumer, EmailNotificationsConsumer>();
-
-        services.AddScoped<IIntegrationEventConsumer, IntegrationEventConsumer>();
+        //TODO services.Configure<BackgroundTaskSettings>(configuration.GetSection(BackgroundTaskSettings.SettingsKey));
+        //TODO 
+        //TODO services.AddHostedService<GroupEventNotificationsProducerBackgroundService>();
+//TODO 
+        //TODO services.AddHostedService<PersonalEventNotificationsProducerBackgroundService>();
+//TODO 
+        //TODO services.AddHostedService<EmailNotificationConsumerBackgroundService>();
+//TODO 
+        //TODO services.AddHostedService<IntegrationEventConsumerBackgroundService>();
+//TODO 
+        //TODO services.AddScoped<IGroupEventNotificationsProducer, GroupEventNotificationsProducer>();
+        //TODO 
+        //TODO services.AddScoped<IPersonalEventNotificationsProducer, PersonalEventNotificationsProducer>();
+//TODO 
+        //TODO services.AddScoped<IEmailNotificationsConsumer, EmailNotificationsConsumer>();
+//TODO 
+        //TODO services.AddScoped<IIntegrationEventConsumer, IntegrationEventConsumer>();
 
         services.AddQuartz(configure =>
         {

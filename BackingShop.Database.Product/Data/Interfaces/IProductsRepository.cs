@@ -29,13 +29,13 @@ public interface IProductsRepository
     /// Inserts the specified product to the database.
     /// </summary>
     /// <param name="product">The product to be inserted to the database.</param>
-    Task Insert(Domain.Product.Entities.Product product);
+    Task<Result> Insert(Domain.Product.Entities.Product product);
 
     /// <summary>
     /// Remove the specified product entity to the database.
     /// </summary>
     /// <param name="product">The product to be inserted to the database.</param>
-    Task Remove(Domain.Product.Entities.Product product);
+    Task<Result> Remove(Domain.Product.Entities.Product product);
     
     /// <summary>
     /// Update the specified product entity to the database.

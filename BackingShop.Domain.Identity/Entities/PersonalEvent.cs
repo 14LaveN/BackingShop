@@ -48,7 +48,7 @@ public sealed class PersonalEvent : Event
     {
         if (Processed)
         {
-            return Result.Failure(DomainErrors.PersonalEvent.AlreadyProcessed);
+            return Result.Failure(DomainErrors.PersonalEvent.AlreadyProcessed).GetAwaiter().GetResult();
         }
 
         Processed = true;

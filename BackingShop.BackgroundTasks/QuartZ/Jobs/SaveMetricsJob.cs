@@ -6,7 +6,7 @@ using Quartz;
 using Quartz.Util;
 using BackingShop.Application.Core.Settings;
 using BackingShop.Cache.Service;
-using BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 using BackingShop.Domain.Common.Core.Exceptions;
 using BackingShop.Domain.Common.Entities;
 using Microsoft.Extensions.Logging;

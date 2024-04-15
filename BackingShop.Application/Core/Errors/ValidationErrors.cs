@@ -48,6 +48,16 @@ public static class ValidationErrors
     }
 
     /// <summary>
+    /// Contains the change name errors.
+    /// </summary>
+    public static class ChangeName
+    {
+        public static Error UserIdIsRequired => new Error("ChangeName.UserIdIsRequired", "The user identifier is required.");
+
+        public static Error NameIsRequired => new Error("ChangeName.NameIsRequired", "The name is required.");
+    }
+    
+    /// <summary>
     /// Contains the update group event errors.
     /// </summary>
     public static class UpdateGroupEvent

@@ -9,7 +9,8 @@ namespace BackingShop.Database.Common.Interceptors;
 /// Represents the dispatch domain events interceptor class.
 /// </summary>
 /// <param name="publisher">The publisher.</param>
-internal sealed class DispatchDomainEventsInterceptor(IPublisher publisher) : SaveChangesInterceptor
+internal sealed class DispatchDomainEventsInterceptor(IPublisher publisher) 
+    : SaveChangesInterceptor
 {
     public override InterceptionResult<int> SavingChanges(
         DbContextEventData eventData,

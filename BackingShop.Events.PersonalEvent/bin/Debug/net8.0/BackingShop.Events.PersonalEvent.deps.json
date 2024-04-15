@@ -854,7 +854,8 @@
       },
       "BackingShop.Domain.Product/1.0.0": {
         "dependencies": {
-          "BackingShop.Domain.Common": "1.0.0"
+          "BackingShop.Domain.Common": "1.0.0",
+          "BackingShop.Domain.Identity": "1.0.0"
         },
         "runtime": {
           "BackingShop.Domain.Product.dll": {}

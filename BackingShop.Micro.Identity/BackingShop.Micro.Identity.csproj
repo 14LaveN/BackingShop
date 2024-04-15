@@ -13,4 +13,31 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BackingShop.Application\BackingShop.Application.csproj" />
+      <ProjectReference Include="..\BackingShop.BackgroundTasks\BackingShop.BackgroundTasks.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Common\BackingShop.Database.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.Email\BackingShop.Email.csproj" />
+      <ProjectReference Include="..\BackingShop.RabbitMq\BackingShop.RabbitMq.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+      <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.4" />
+      <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
+      <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0" />
+      <PackageReference Include="Serilog" Version="4.0.0-dev-02149" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.1-dev-00582" />
+    </ItemGroup>
+
 </Project>

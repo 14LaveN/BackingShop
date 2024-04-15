@@ -1,3 +1,4 @@
+using BackingShop.Domain.Identity.Entities;
 using BackingShop.Domain.Product.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -20,19 +21,20 @@ internal sealed class ProductConfiguration: IEntityTypeConfiguration<Product>
             .HasDatabaseName("IdProductIndex");
         
         builder.HasIndex(x => x.UserId)
-            .HasDatabaseName("UserIdProductIndex")
-            .IncludeProperties(x=>x.Author);
+            .HasDatabaseName("UserIdProductIndex");
         
         builder.HasIndex(x => x.Title)
             .HasDatabaseName("TitleProductIndex");
 
-        builder.HasOne(x => x.Author)
+        builder.Ignore(x => x.Title);
+        
+        builder.HasOne<User>()
             .WithMany()
             .HasForeignKey(x=>x.UserId)
             .IsRequired()
             .OnDelete(DeleteBehavior.Restrict);
         
-        builder.HasChangeTrackingStrategy(ChangeTrackingStrategy.ChangingAndChangedNotificationsWithOriginalValues);
+        //TODO builder.HasChangeTrackingStrategy(ChangeTrackingStrategy.ChangingAndChangedNotificationsWithOriginalValues);
         
         builder
             .Property(product => product.CreatedOnUtc)

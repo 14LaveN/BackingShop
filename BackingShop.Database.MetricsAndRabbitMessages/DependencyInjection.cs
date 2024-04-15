@@ -1,8 +1,8 @@
+using BackingShop.Application.Core.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using BackingShop.Application.Core.Settings;
 
-namespace BackingShop.Database.MetricsAndMessages;
+namespace BackingShop.Database.MetricsAndRabbitMessages;
 
 public static class DependencyInjection
 {

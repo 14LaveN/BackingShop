@@ -1,4 +1,5 @@
 ﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 using BackingShop.Domain.Entities;
 using BackingShop.Domain.Identity.Entities;
 
@@ -20,7 +21,7 @@ public interface IGroupEventRepository
     /// Inserts the specified group event to the database.
     /// </summary>
     /// <param name="groupEvent">The group event to be inserted to the database.</param>
-    Task Insert(Domain.Identity.Entities.GroupEvent groupEvent);
+    Task<Result> Insert(Domain.Identity.Entities.GroupEvent groupEvent);
     
     /// <summary>
     /// Gets the distinct group events for the specified attendees.

@@ -19,7 +19,11 @@ public sealed class SaveMetricsScheduler
         IScheduler scheduler = await StdSchedulerFactory.GetDefaultScheduler();
         await scheduler.Start();
 
-        IJobDetail jobDetail = JobBuilder.Create<SaveMetricsJob>().Build();
+        IJobDetail jobDetail = JobBuilder.Create<SaveMetricsJob>()
+            .WithIdentity("SaveMetricsJob")
+            .StoreDurably()
+            .Build();
+        
         ITrigger trigger = TriggerBuilder
             .Create()
             .WithIdentity($"{nameof(SaveMetricsJob)}Trigger", "default")

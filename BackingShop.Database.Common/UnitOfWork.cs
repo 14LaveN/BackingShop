@@ -8,6 +8,7 @@ namespace BackingShop.Database.Common;
 /// Represents the generic unit of work.
 /// </summary>
 public sealed class UnitOfWork
+    : IUnitOfWork
 {
     private readonly BaseDbContext _baseDbContext;
 

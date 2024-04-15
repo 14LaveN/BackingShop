@@ -83,12 +83,12 @@ public sealed class Invitation : AggregateRoot, IAuditableEntity, ISoftDeletable
     {
         if (Accepted)
         {
-            return Result.Failure(DomainErrors.Invitation.AlreadyAccepted);
+            return Result.Failure(DomainErrors.Invitation.AlreadyAccepted).GetAwaiter().GetResult();
         }
 
         if (Rejected)
         {
-            return Result.Failure(DomainErrors.Invitation.AlreadyRejected);
+            return Result.Failure(DomainErrors.Invitation.AlreadyRejected).GetAwaiter().GetResult();
         }
 
         Accepted = true;
@@ -109,12 +109,12 @@ public sealed class Invitation : AggregateRoot, IAuditableEntity, ISoftDeletable
     {
         if (Accepted)
         {
-            return Result.Failure(DomainErrors.Invitation.AlreadyAccepted);
+            return Result.Failure(DomainErrors.Invitation.AlreadyAccepted).GetAwaiter().GetResult();
         }
 
         if (Rejected)
         {
-            return Result.Failure(DomainErrors.Invitation.AlreadyRejected);
+            return Result.Failure(DomainErrors.Invitation.AlreadyRejected).GetAwaiter().GetResult();
         }
 
         Rejected = true;

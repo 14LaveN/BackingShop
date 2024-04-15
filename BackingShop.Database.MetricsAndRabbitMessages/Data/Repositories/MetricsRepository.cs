@@ -1,5 +1,5 @@
 using BackingShop.Application.Core.Settings;
-using BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 using BackingShop.Domain.Common.Core.Primitives.Maybe;
 using BackingShop.Domain.Common.Entities;
 using MongoDB.Driver;

@@ -18,7 +18,7 @@ public sealed class LastName : ValueObject
     /// Initializes a new instance of the <see cref="LastName"/> class.
     /// </summary>
     /// <param name="value">The last name value.</param>
-    private LastName(string value) => Value = value;
+    public LastName(string value) => Value = value;
 
     /// <summary>
     /// Gets the last name value.

@@ -1,4 +1,5 @@
 ﻿using BackingShop.Domain.Common.Core.Primitives.Maybe;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 
 namespace BackingShop.Database.PersonalEvent.Data.Interfaces;
 
@@ -25,5 +26,5 @@ public interface IPersonalEventRepository
     /// Inserts the specified personal event to the database.
     /// </summary>
     /// <param name="personalEvent">The personal event to be inserted to the database.</param>
-    Task Insert(Domain.Identity.Entities.PersonalEvent personalEvent);
+    Task<Result> Insert(Domain.Identity.Entities.PersonalEvent personalEvent);
 }

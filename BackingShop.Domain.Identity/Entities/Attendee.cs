@@ -95,7 +95,7 @@ public sealed class Attendee : Entity, IAuditableEntity, ISoftDeletableEntity
     {
         if (Processed)
         {
-            return Result.Failure(DomainErrors.Attendee.AlreadyProcessed);
+            return Result.Failure(DomainErrors.Attendee.AlreadyProcessed).GetAwaiter().GetResult();
         }
 
         Processed = true;

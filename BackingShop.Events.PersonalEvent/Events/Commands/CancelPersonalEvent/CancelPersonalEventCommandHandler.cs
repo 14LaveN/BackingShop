@@ -40,14 +40,14 @@ internal sealed class CancelPersonalEventCommandHandler : ICommandHandler<Cancel
 
         if (maybePersonalEvent.HasNoValue)
         {
-            return Result.Failure(DomainErrors.PersonalEvent.NotFound);
+            return await  Result.Failure(DomainErrors.PersonalEvent.NotFound);
         }
 
         Domain.Identity.Entities.PersonalEvent personalEvent = maybePersonalEvent.Value;
 
         if (personalEvent.UserId != request.UserId)
         {
-            return Result.Failure(DomainErrors.User.InvalidPermissions);
+            return await  Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
         Result result = personalEvent.Cancel(_dateTime.UtcNow);

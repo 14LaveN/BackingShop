@@ -1158,7 +1158,10 @@
         },
         "runtime": {
           "bin/placeholder/BackingShop.Database.Common.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "BackingShop.Domain.Common/1.0.0": {
         "type": "project",

@@ -14,3 +14,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Domain.Product\bin\Debug\net8.0\Backin
 G:\DotNetProjects\BackingShop\BackingShop.Domain.Product\bin\Debug\net8.0\BackingShop.Domain.Common.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Domain.Product\obj\Debug\net8.0\BackingShop.Domain.Product.csproj.AssemblyReference.cache
 G:\DotNetProjects\BackingShop\BackingShop.Domain.Product\obj\Debug\net8.0\BackingShop.Domain.Product.csproj.CopyComplete
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Product\bin\Debug\net8.0\BackingShop.Domain.Identity.dll
+G:\DotNetProjects\BackingShop\BackingShop.Domain.Product\bin\Debug\net8.0\BackingShop.Domain.Identity.pdb

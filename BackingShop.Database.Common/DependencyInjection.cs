@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BackingShop.Database.Common.Interceptors;
 using BackingShop.Domain.Identity.Entities;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -43,14 +44,14 @@ public static class DependencyInjection
                 act.CommandTimeout(30);
                 act.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
             })
-                .AddInterceptors(sp.GetRequiredService<AuditableEntityInterceptor>())
-                .AddInterceptors(sp.GetRequiredService<DispatchDomainEventsInterceptor>())
                 .ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.ForeignKeyPropertiesMappedToUnrelatedTables))
                 .LogTo(Console.WriteLine)
                 .EnableServiceProviderCaching()
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors());
 
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        
         return services;
     }
 }

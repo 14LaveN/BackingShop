@@ -39,28 +39,28 @@ public sealed class UpdateGroupEventCommandHandler : ICommandHandler<UpdateGroup
     {
         if (request.DateTimeUtc <= _dateTime.UtcNow)
         {
-            return Result.Failure(DomainErrors.GroupEvent.DateAndTimeIsInThePast);
+            return await  Result.Failure(DomainErrors.GroupEvent.DateAndTimeIsInThePast);
         }
 
         Maybe<Domain.Identity.Entities.GroupEvent> maybeGroupEvent = await _groupEventRepository.GetByIdAsync(request.GroupEventId);
 
         if (maybeGroupEvent.HasNoValue)
         {
-            return Result.Failure(DomainErrors.GroupEvent.NotFound);
+            return await  Result.Failure(DomainErrors.GroupEvent.NotFound);
         }
 
         Domain.Identity.Entities.GroupEvent groupEvent = maybeGroupEvent.Value;
 
         if (groupEvent.UserId != request.UserId)
         {
-            return Result.Failure(DomainErrors.User.InvalidPermissions);
+            return await  Result.Failure(DomainErrors.User.InvalidPermissions);
         }
 
         Result<Name> nameResult = Name.Create(request.Name);
 
         if (nameResult.IsFailure)
         {
-            return Result.Failure(nameResult.Error);
+            return await  Result.Failure(nameResult.Error);
         }
 
         groupEvent.ChangeName(nameResult.Value);

@@ -28,7 +28,7 @@ public interface IInvitationRepository
     /// Inserts the specified invitation to the database.
     /// </summary>
     /// <param name="invitation">The invitation to be inserted to the database.</param>
-    Task Insert(Domain.Identity.Entities.Invitation invitation);
+    Task<Result> Insert(Domain.Identity.Entities.Invitation invitation);
 
     /// <summary>
     /// Removes all of the invitations for the specified group event.

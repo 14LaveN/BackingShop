@@ -105,12 +105,12 @@ public abstract class Event : AggregateRoot, IAuditableEntity, ISoftDeletableEnt
     {
         if (Cancelled)
         {
-            return Result.Failure(DomainErrors.Event.AlreadyCancelled);
+            return Result.Failure(DomainErrors.Event.AlreadyCancelled).GetAwaiter().GetResult();
         }
 
         if (utcNow > DateTimeUtc)
         {
-            return Result.Failure(DomainErrors.Event.EventHasPassed);
+            return Result.Failure(DomainErrors.Event.AlreadyCancelled).GetAwaiter().GetResult();
         }
 
         Cancelled = true;

@@ -1,7 +1,7 @@
 using BackingShop.Domain.Common.Core.Primitives.Maybe;
 using BackingShop.Domain.Common.Entities;
 
-namespace BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+namespace BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 
 /// <summary>
 /// Represents the metrics repository interface.

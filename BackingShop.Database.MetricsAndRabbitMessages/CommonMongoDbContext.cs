@@ -1,10 +1,10 @@
 using BackingShop.Application.Core.Settings;
-using Microsoft.Extensions.Options;
-using MongoDB.Driver;
 using BackingShop.Domain.Common.Entities;
 using BackingShop.Domain.Entities;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 
-namespace BackingShop.Database.MetricsAndMessages;
+namespace BackingShop.Database.MetricsAndRabbitMessages;
 
 /// <summary>
 /// The metrics database context.

@@ -10,8 +10,8 @@ namespace BackingShop.Database.Common.Interceptors;
 /// Represents the auditable entity interceptor class.
 /// </summary>
 /// <param name="dateTime">The date/time.</param>
-internal sealed class AuditableEntityInterceptor(
-    TimeProvider dateTime) : SaveChangesInterceptor
+internal sealed class AuditableEntityInterceptor(TimeProvider dateTime)
+    : SaveChangesInterceptor
 {
     public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
     {

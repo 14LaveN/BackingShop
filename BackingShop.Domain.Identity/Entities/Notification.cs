@@ -88,7 +88,7 @@ public sealed class Notification
     {
         if (Sent)
         {
-            return Result.Failure(DomainErrors.Notification.AlreadySent);
+            return Result.Failure(DomainErrors.Notification.AlreadySent).GetAwaiter().GetResult();
         }
 
         Sent = true;

@@ -1,7 +1,6 @@
 using BackingShop.Domain.Common.Entities;
-using BackingShop.Domain.Common.Entities;
 
-namespace BackingShop.Database.MetricsAndMessages.Data.Interfaces;
+namespace BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 
 /// <summary>
 /// Represents the generic mongo repository interface.
