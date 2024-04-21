@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using BackingShop.Domain.Common.Core.Abstractions;
 using BackingShop.Domain.Common.Core.Primitives;
+using BackingShop.Domain.Common.Core.Primitives.Result;
 using BackingShop.Domain.Common.ValueObjects;
 using BackingShop.Domain.Core.Utility;
 using BackingShop.Domain.Identity.Entities;
@@ -25,7 +26,7 @@ public sealed class Product
     /// <param name="companyName">The company name.</param>
     /// <param name="productType">The product type.</param>
     /// <param name="userId">The user identifier.</param>
-    public Product(
+    private Product(
         Name title, 
         string description,
         decimal price, 
@@ -49,7 +50,7 @@ public sealed class Product
     }
 
     /// <inheritdoc />
-    private Product() { }
+    public Product() { }
 
     /// <summary>
     /// Gets or sets price.
@@ -79,13 +80,13 @@ public sealed class Product
     /// <summary>
     /// Gets or sets title.
     /// </summary>
-    public Name Title { get; set; } = null!;
+    public Name Title { get; set; }
 
     /// <summary>
     /// Gets or sets description.
     /// </summary>
     public string Description { get; set; } = null!;
-
+    
     /// <summary>
     /// Gets or sets company name.
     /// </summary>
@@ -115,7 +116,7 @@ public sealed class Product
     /// <param name="userId">The user identifier.</param>
     /// <returns>The newly created product instance.</returns>
     public static Product Create(
-        Name title,
+        string title,
         string description,
         decimal price,
         string tag,
@@ -128,5 +129,17 @@ public sealed class Product
         product.AddDomainEvent(new ProductCreatedDomainEvent(product));
 
         return product;
+    }
+    
+    /// <summary>
+    /// Creates a new product domain event.
+    /// </summary>
+    /// <returns>The result after creating domain event.</returns>
+    public async Task<Result> CreateDomainEvent(
+        )
+    {
+        this.AddDomainEvent(new ProductCreatedDomainEvent(this));
+
+        return await Result.Success();
     }
 }

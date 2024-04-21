@@ -21,10 +21,10 @@ public abstract class AbstractScheduler<T>
         IScheduler scheduler = await StdSchedulerFactory.GetDefaultScheduler();
         await scheduler.Start();
 
-        IJobDetail jobDetail = JobBuilder.Create<UserDbJob>().Build();
+        IJobDetail jobDetail = JobBuilder.Create<BaseDbJob>().Build();
         ITrigger trigger = TriggerBuilder
             .Create()
-            .WithIdentity($"{nameof(UserDbJob)}Trigger", "default")
+            .WithIdentity($"{nameof(BaseDbJob)}Trigger", "default")
             .StartNow()
             .WithSimpleSchedule(x => x
                 .WithIntervalInSeconds(160)

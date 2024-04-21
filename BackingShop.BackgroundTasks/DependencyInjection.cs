@@ -6,6 +6,9 @@ using BackingShop.BackgroundTasks.QuartZ.Schedulers;
 using BackingShop.BackgroundTasks.Services;
 using BackingShop.BackgroundTasks.Settings;
 using BackingShop.BackgroundTasks.Tasks;
+using BackingShop.Database.MetricsAndRabbitMessages;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 using Quartz.Impl;
@@ -28,7 +31,8 @@ public static class BDependencyInjection
         services.AddMediatR(x=>
             x.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-        //TODO services.Configure<BackgroundTaskSettings>(configuration.GetSection(BackgroundTaskSettings.SettingsKey));
+        services.Configure<BackgroundTaskSettings>(configuration.GetSection(BackgroundTaskSettings.SettingsKey));
+        
         //TODO 
         //TODO services.AddHostedService<GroupEventNotificationsProducerBackgroundService>();
 //TODO 
@@ -36,7 +40,8 @@ public static class BDependencyInjection
 //TODO 
         //TODO services.AddHostedService<EmailNotificationConsumerBackgroundService>();
 //TODO 
-        //TODO services.AddHostedService<IntegrationEventConsumerBackgroundService>();
+        services.AddHostedService<IntegrationEventConsumerBackgroundService>();
+        services.AddHostedService<SaveMetricsBackgroundService>();
 //TODO 
         //TODO services.AddScoped<IGroupEventNotificationsProducer, GroupEventNotificationsProducer>();
         //TODO 
@@ -44,15 +49,10 @@ public static class BDependencyInjection
 //TODO 
         //TODO services.AddScoped<IEmailNotificationsConsumer, EmailNotificationsConsumer>();
 //TODO 
-        //TODO services.AddScoped<IIntegrationEventConsumer, IntegrationEventConsumer>();
+        services.AddScoped<IIntegrationEventConsumer, IntegrationEventConsumer>();
 
         services.AddQuartz(configure =>
         {
-            var jobKey = new JobKey(nameof(SaveMetricsJob));
-
-            configure
-                .AddJob<SaveMetricsJob>(jobKey);
-            
             configure.UseMicrosoftDependencyInjectionJobFactory();
         });
 
@@ -62,27 +62,13 @@ public static class BDependencyInjection
         });
         
         services.AddTransient<IJobFactory, QuartzJobFactory>();
-        services.AddSingleton(_ =>
-        {
-            var schedulerFactory = new StdSchedulerFactory();
-            var scheduler = schedulerFactory.GetScheduler().Result;
-            
-            return scheduler;
-        });
         
-        services.AddTransient<IJobFactory, QuartzJobFactory>();
-        services.AddSingleton(_ =>
-        {
-            var schedulerFactory = new StdSchedulerFactory();
-            var scheduler = schedulerFactory.GetScheduler().Result;
-            
-            return scheduler;
-        });
         services.AddTransient<UserDbScheduler>();
-        services.AddTransient<SaveMetricsScheduler>();
         
-        var scheduler = new SaveMetricsScheduler();
-        scheduler.Start(services);
+        var scheduler = new UserDbScheduler();
+        //scheduler.Start(services);
+
+        services.AddSingleton<IMetricsRepository, MetricsRepository>();
         
         return services;
     }

@@ -38,3 +38,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Events.GroupEvent\obj\Debug\net8.0\Bac
 G:\DotNetProjects\BackingShop\BackingShop.Events.GroupEvent\obj\Debug\net8.0\refint\BackingShop.Events.GroupEvent.dll
 G:\DotNetProjects\BackingShop\BackingShop.Events.GroupEvent\obj\Debug\net8.0\BackingShop.Events.GroupEvent.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Events.GroupEvent\obj\Debug\net8.0\ref\BackingShop.Events.GroupEvent.dll
+G:\DotNetProjects\BackingShop\BackingShop.Events.GroupEvent\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Events.GroupEvent\bin\Debug\net8.0\testhost.dll

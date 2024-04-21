@@ -7,13 +7,12 @@ public static class ApiRoutes
 {
     
     /// <summary>
-    /// Contains the task routes.
+    /// Contains the product routes.
     /// </summary>
-    public static class Task
+    public static class Product
     {
-        public const string Create = "create-task";
+        public const string Create = "create-product";
 
-        public const string DoneTask = "donetask/{taskId:guid}";
 
         public const string GetAuthorTasksByIsDone = "get-authror_tasks-by-is_done";
         

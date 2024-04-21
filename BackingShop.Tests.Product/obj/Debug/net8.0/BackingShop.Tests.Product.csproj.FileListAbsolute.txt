@@ -566,3 +566,4 @@ G:\DotNetProjects\BackingShop\BackingShop.Tests.Product\bin\Debug\net8.0\Backing
 G:\DotNetProjects\BackingShop\BackingShop.Tests.Product\bin\Debug\net8.0\BackingShop.Events.Invitation.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Tests.Product\bin\Debug\net8.0\BackingShop.Micro.Identity.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Tests.Product\bin\Debug\net8.0\BackingShop.RabbitMq.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Tests.Product\bin\Debug\net8.0\BackingShop.Micro.Identity.xml

@@ -28,7 +28,7 @@ public sealed class RabbitMessagesRepository
             dbSettings.Value.Database);
         
         _rabbitMessagesCollection = mongoDatabase.GetCollection<RabbitMessage>(
-            dbSettings.Value.MetricsCollectionName);
+            dbSettings.Value.RabbitMessagesCollectionName);
     }
 
     /// <inheritdoc />

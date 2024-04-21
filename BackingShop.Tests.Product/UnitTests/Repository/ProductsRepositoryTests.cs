@@ -32,7 +32,7 @@ public sealed class ProductsRepositoryTests
         Domain.Product.Entities.Product product = Fixture.Create<Domain.Product.Entities.Product>();
         product.UserId = Guid.Empty;
 
-        var result = await _userRepository.Insert(product);
+        var result = await _userRepository.Insert(product); 
 
         result.IsSuccess.Should().BeTrue();
     }
@@ -151,6 +151,7 @@ public sealed class ProductsRepositoryTests
     {
         Maybe<Domain.Product.Entities.Product> product = (await DbContext.Set<Domain.Product.Entities.Product>()
             .FirstOrDefaultAsync())!;
+
 
         if (product.HasValue)
         {

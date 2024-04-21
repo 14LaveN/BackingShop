@@ -10,9 +10,7 @@ namespace BackingShop.Micro.Identity.Mediatr.Commands.ChangeName;
 /// </summary>
 /// <param name="FirstName">The first name.</param>
 /// <param name="LastName">The last name.</param>
-/// <param name="UserId">The user identifier.</param>
 public sealed record ChangeNameCommand(
     FirstName FirstName,
-    LastName LastName,
-    Guid UserId)
+    LastName LastName)
     : ICommand<IBaseResponse<Result>>;

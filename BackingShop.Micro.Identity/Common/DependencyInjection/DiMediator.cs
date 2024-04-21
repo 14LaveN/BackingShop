@@ -1,5 +1,5 @@
 using BackingShop.Application.Core.Behaviours;
-using BackingShop.Micro.Identity.Mediatr.Behaviors;
+using BackingShop.Micro.Identity.Mediatr.Behaviour;
 using BackingShop.Micro.Identity.Mediatr.Commands.ChangeName;
 using BackingShop.Micro.Identity.Mediatr.Commands.ChangePassword;
 using BackingShop.Micro.Identity.Mediatr.Commands.Login;

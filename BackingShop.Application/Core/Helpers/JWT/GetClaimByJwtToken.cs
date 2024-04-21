@@ -22,4 +22,20 @@ public static class GetClaimByJwtToken
         var name = claimsPrincipal.FirstOrDefault(x=> x.Type == "name")?.Value;
         return name!;
     }
+    
+    /// <summary>
+    /// Get identifier by JWT.
+    /// </summary>
+    /// <param name="token">The JWT.</param>
+    /// <returns>Return the identifier from token.</returns>
+    public static string GetIdByToken(string? token)
+    {
+        JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+        JwtSecurityToken tokenInfo = handler.ReadJwtToken(token);
+        
+        var claimsPrincipal = tokenInfo.Claims;
+        
+        var name = claimsPrincipal.FirstOrDefault(x=> x.Type == "nameid")?.Value;
+        return name!;
+    }
 }

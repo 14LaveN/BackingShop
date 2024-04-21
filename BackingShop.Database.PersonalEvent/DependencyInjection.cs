@@ -13,10 +13,8 @@ public static class DependencyInjection
     /// Registers the necessary services with the DI framework.
     /// </summary>
     /// <param name="services">The service collection.</param>
-    /// <param name="configuration">The configuration.</param>
     /// <returns>The same service collection.</returns>
-    public static IServiceCollection AddPersonalEventDatabase(this IServiceCollection services,
-        IConfiguration configuration)
+    public static IServiceCollection AddPersonalEventDatabase(this IServiceCollection services)
     {
         if (services is null)
         {

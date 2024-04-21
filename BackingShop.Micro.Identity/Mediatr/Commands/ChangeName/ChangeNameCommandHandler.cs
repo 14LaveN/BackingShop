@@ -1,4 +1,5 @@
 using BackingShop.Application.ApiHelpers.Responses;
+using BackingShop.Application.Core.Abstractions.Helpers.JWT;
 using BackingShop.Application.Core.Abstractions.Messaging;
 using BackingShop.Database.Common.Abstractions;
 using BackingShop.Domain.Common.Core.Errors;
@@ -18,18 +19,22 @@ internal sealed class ChangeNameCommandHandler : ICommandHandler<ChangeNameComma
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly UserManager<User> _userManager;
+    private readonly IUserIdentifierProvider _userIdentifier;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ChangeNameCommandHandler"/> class.
     /// </summary>
     /// <param name="unitOfWork">The unit of work.</param>
-    /// <param name="userManager"></param>
+    /// <param name="userManager">The user manager.</param>
+    /// <param name="userIdentifier">The user identifier provider.</param>
     public ChangeNameCommandHandler(
         IUnitOfWork unitOfWork,
-        UserManager<User> userManager)
+        UserManager<User> userManager,
+        IUserIdentifierProvider userIdentifier)
     {
         _unitOfWork = unitOfWork;
         _userManager = userManager;
+        _userIdentifier = userIdentifier;
     }
 
     /// <inheritdoc />
@@ -59,7 +64,7 @@ internal sealed class ChangeNameCommandHandler : ICommandHandler<ChangeNameComma
             };
         }
         
-        Maybe<User> maybeUser = await _userManager.FindByIdAsync(request.UserId.ToString()) 
+        Maybe<User> maybeUser = await _userManager.FindByIdAsync(_userIdentifier.UserId.ToString()) 
                                 ?? throw new ArgumentException();
 
         if (maybeUser.HasNoValue)

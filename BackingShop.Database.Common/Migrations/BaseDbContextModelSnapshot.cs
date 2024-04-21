@@ -641,13 +641,33 @@ namespace BackingShop.Database.Common.Migrations
 
             modelBuilder.Entity("BackingShop.Domain.Product.Entities.Product", b =>
                 {
-                    b.HasOne("BackingShop.Domain.Identity.Entities.User", "Author")
+                    b.HasOne("BackingShop.Domain.Identity.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Author");
+                    b.OwnsOne("BackingShop.Domain.Common.ValueObjects.Name", "Title", b1 =>
+                        {
+                            b1.Property<Guid>("ProductId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("Value")
+                                .IsRequired()
+                                .HasMaxLength(100)
+                                .HasColumnType("character varying(100)")
+                                .HasColumnName("Title");
+
+                            b1.HasKey("ProductId");
+
+                            b1.ToTable("products", "dbo");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ProductId");
+                        });
+
+                    b.Navigation("Title")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
@@ -724,6 +744,9 @@ namespace BackingShop.Database.Common.Migrations
                             b1.Property<Guid>("GroupEventId")
                                 .HasColumnType("uuid");
 
+                            b1.Property<Guid>("ProductId")
+                                .HasColumnType("uuid");
+
                             b1.Property<string>("Value")
                                 .IsRequired()
                                 .HasMaxLength(100)
@@ -761,6 +784,9 @@ namespace BackingShop.Database.Common.Migrations
                     b.OwnsOne("BackingShop.Domain.Common.ValueObjects.Name", "Name", b1 =>
                         {
                             b1.Property<Guid>("PersonalEventId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<Guid>("ProductId")
                                 .HasColumnType("uuid");
 
                             b1.Property<string>("Value")

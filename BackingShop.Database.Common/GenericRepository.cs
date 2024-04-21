@@ -39,7 +39,7 @@ public abstract class GenericRepository<TEntity>
     /// <param name="entity">The entity to be inserted into the database.</param>
     public async Task<Result> Insert(TEntity entity)
     {
-        await DbContext.Insert(entity);
+        await DbContext.Set<TEntity>().AddAsync(entity);
 
         return await Result.Success();
     }

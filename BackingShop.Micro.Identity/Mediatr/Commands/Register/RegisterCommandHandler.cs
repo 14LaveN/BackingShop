@@ -21,6 +21,7 @@ namespace BackingShop.Micro.Identity.Mediatr.Commands.Register;
 /// <param name="userManager">The user manager.</param>
 /// <param name="sender">The sender.</param>
 /// <param name="signInManager">The sign in manager.</param>
+/// <param name="jwtOptions">The json web token options.</param>
 internal sealed class RegisterCommandHandler(
         ILogger<RegisterCommandHandler> logger,
         UserManager<User> userManager,

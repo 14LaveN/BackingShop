@@ -6,7 +6,7 @@ namespace BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 /// Represents the generic mongo repository interface.
 /// </summary>
 /// <typeparam name="T">The <see cref="BaseMongoEntity"/> type.</typeparam>
-internal interface IMongoRepository<T> 
+public interface IMongoRepository<T> 
     where T : BaseMongoEntity
 {
     /// <summary>

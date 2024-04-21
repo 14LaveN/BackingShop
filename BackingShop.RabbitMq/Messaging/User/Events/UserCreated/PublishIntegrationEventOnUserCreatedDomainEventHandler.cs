@@ -21,10 +21,6 @@ internal sealed class PublishIntegrationEventOnUserCreatedDomainEventHandler : I
         _integrationEventPublisher = integrationEventPublisher;
 
     /// <inheritdoc />
-    public async Task Handle(UserCreatedDomainEvent notification, CancellationToken cancellationToken)
-    {
+    public async Task Handle(UserCreatedDomainEvent notification, CancellationToken cancellationToken) =>
         await _integrationEventPublisher.Publish(new UserCreatedIntegrationEvent(notification));
-
-        await Task.CompletedTask;
-    }
 }

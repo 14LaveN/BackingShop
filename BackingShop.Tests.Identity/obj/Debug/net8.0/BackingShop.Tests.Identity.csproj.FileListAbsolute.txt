@@ -562,3 +562,4 @@ G:\DotNetProjects\BackingShop\BackingShop.Tests.Identity\bin\Debug\net8.0\Backin
 G:\DotNetProjects\BackingShop\BackingShop.Tests.Identity\bin\Debug\net8.0\BackingShop.Events.GroupEvent.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Tests.Identity\bin\Debug\net8.0\BackingShop.Events.Invitation.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Tests.Identity\bin\Debug\net8.0\BackingShop.RabbitMq.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Tests.Identity\bin\Debug\net8.0\BackingShop.Micro.Identity.xml

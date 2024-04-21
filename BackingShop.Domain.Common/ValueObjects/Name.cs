@@ -23,13 +23,15 @@ public class Name : ValueObject
     /// <summary>
     /// Gets the name value.
     /// </summary>
-    public string Value { get; }
+    public string Value { get; set; }
 
     public static implicit operator string(Name name) =>
         name.Value;
 
     public static implicit operator Name(string name) =>
         new(name);
+    
+    public Guid ProductId { get; set; }
     
     /// <summary>
     /// Creates a new <see cref="Name"/> instance based on the specified value.

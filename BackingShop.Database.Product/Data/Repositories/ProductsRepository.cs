@@ -20,8 +20,17 @@ public sealed class ProductsRepository
 {
     /// <inheritdoc />
     public async Task<Maybe<Domain.Product.Entities.Product>> GetByTitleAsync(Name title) =>
-        await dbContext.Set<Domain.Product.Entities.Product>().FirstOrDefaultAsync(p => p.Title == title)
-        ?? throw new AggregateException(nameof(title));
+        (await DbContext.Set<Domain.Product.Entities.Product>()
+            .FirstOrDefaultAsync(p => p.Title.Value == title.Value))!;
+
+    /// <inheritdoc cref="" />
+    public new async Task<Result> Insert(Domain.Product.Entities.Product entity)
+    {
+        await DbContext.Set<Domain.Product.Entities.Product>().AddAsync(entity);
+        await DbContext.SaveChangesAsync();
+
+        return await Result.Success();
+    }
 
     /// <inheritdoc />
     public new async Task<Result> Remove(Domain.Product.Entities.Product product)
@@ -65,7 +74,7 @@ public sealed class ProductsRepository
 
     /// <inheritdoc />
     public async Task<IOrderedQueryable<ProductDto>> GetProductsByProductType(ProductType productType) =>
-        await GetProductsByProductTypeDelegate(dbContext, productType);
+        await GetProductsByProductTypeDelegate(DbContext, productType);
 
     private static readonly Func<BaseDbContext, ProductType, Task<IOrderedQueryable<ProductDto>>>
         GetProductsByProductTypeDelegate =
@@ -79,7 +88,7 @@ public sealed class ProductsRepository
     
     /// <inheritdoc />
     public async Task<IOrderedQueryable<ProductDto>> GetProductsByProductType(ProductType productType, int batchSize) =>
-        await GetProductsByProductTypeWithBatchSizeDelegate(dbContext, productType, batchSize);
+        await GetProductsByProductTypeWithBatchSizeDelegate(DbContext, productType, batchSize);
     
     private static readonly Func<BaseDbContext, ProductType,int, Task<IOrderedQueryable<ProductDto>>>
         GetProductsByProductTypeWithBatchSizeDelegate =
@@ -94,7 +103,7 @@ public sealed class ProductsRepository
 
     /// <inheritdoc />
     public async Task<IQueryable<ProductDto>> GetProductsByCompanyName(string companyName) =>
-        await GetProductsByCompanyNameDelegate(dbContext, companyName);
+        await GetProductsByCompanyNameDelegate(DbContext, companyName);
     
     private static readonly Func<BaseDbContext, string, Task<IOrderedQueryable<ProductDto>>>
         GetProductsByCompanyNameDelegate =

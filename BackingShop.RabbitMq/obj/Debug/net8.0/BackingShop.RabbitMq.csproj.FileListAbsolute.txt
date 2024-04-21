@@ -26,3 +26,5 @@ G:\DotNetProjects\BackingShop\BackingShop.RabbitMq\obj\Debug\net8.0\BackingShop.
 G:\DotNetProjects\BackingShop\BackingShop.RabbitMq\obj\Debug\net8.0\refint\BackingShop.RabbitMq.dll
 G:\DotNetProjects\BackingShop\BackingShop.RabbitMq\obj\Debug\net8.0\BackingShop.RabbitMq.pdb
 G:\DotNetProjects\BackingShop\BackingShop.RabbitMq\obj\Debug\net8.0\ref\BackingShop.RabbitMq.dll
+G:\DotNetProjects\BackingShop\BackingShop.RabbitMq\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.RabbitMq\bin\Debug\net8.0\testhost.dll

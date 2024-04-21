@@ -28,3 +28,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Events.Attendee\obj\Debug\net8.0\Backi
 G:\DotNetProjects\BackingShop\BackingShop.Events.Attendee\obj\Debug\net8.0\refint\BackingShop.Events.Attendee.dll
 G:\DotNetProjects\BackingShop\BackingShop.Events.Attendee\obj\Debug\net8.0\BackingShop.Events.Attendee.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Events.Attendee\obj\Debug\net8.0\ref\BackingShop.Events.Attendee.dll
+G:\DotNetProjects\BackingShop\BackingShop.Events.Attendee\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Events.Attendee\bin\Debug\net8.0\testhost.dll

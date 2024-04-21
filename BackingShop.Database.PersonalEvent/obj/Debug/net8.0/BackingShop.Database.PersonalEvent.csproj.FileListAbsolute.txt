@@ -20,3 +20,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.PersonalEvent\obj\Debug\net8.
 G:\DotNetProjects\BackingShop\BackingShop.Database.PersonalEvent\obj\Debug\net8.0\refint\BackingShop.Database.PersonalEvent.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.PersonalEvent\obj\Debug\net8.0\BackingShop.Database.PersonalEvent.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.PersonalEvent\obj\Debug\net8.0\ref\BackingShop.Database.PersonalEvent.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.PersonalEvent\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Database.PersonalEvent\bin\Debug\net8.0\testhost.dll

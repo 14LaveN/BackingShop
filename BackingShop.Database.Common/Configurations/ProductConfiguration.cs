@@ -1,3 +1,4 @@
+using BackingShop.Domain.Common.ValueObjects;
 using BackingShop.Domain.Identity.Entities;
 using BackingShop.Domain.Product.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,16 @@ internal sealed class ProductConfiguration: IEntityTypeConfiguration<Product>
             .OnDelete(DeleteBehavior.Restrict);
         
         //TODO builder.HasChangeTrackingStrategy(ChangeTrackingStrategy.ChangingAndChangedNotificationsWithOriginalValues);
+        
+        builder.OwnsOne(product => product.Title, titleBuilder =>
+        {
+            titleBuilder.WithOwner();
+
+            titleBuilder.Property(title => title.Value)
+                .HasColumnName(nameof(Product.Title))
+                .HasMaxLength(Name.MaxLength)
+                .IsRequired();
+        });
         
         builder
             .Property(product => product.CreatedOnUtc)

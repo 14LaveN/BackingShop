@@ -3,6 +3,7 @@ using BackingShop.Database.Common;
 using BackingShop.Database.GroupEvent;
 using BackingShop.Database.Identity;
 using BackingShop.Database.Invitation;
+using BackingShop.Database.MetricsAndRabbitMessages;
 using BackingShop.Database.Notification;
 using BackingShop.Database.PersonalEvent;
 
@@ -26,11 +27,12 @@ public static class DiDatabase
         
         services.AddBaseDatabase(configuration);
         services.AddUserDatabase();
-        services.AddInvitationsDatabase(configuration);
-        services.AddGroupEventDatabase(configuration);
-        services.AddPersonalEventDatabase(configuration);
-        services.AddAttendeesDatabase(configuration);
-        services.AddNotificationsDatabase(configuration);
+        services.AddInvitationsDatabase();
+        services.AddGroupEventDatabase();
+        services.AddMongoDatabase(configuration);
+        services.AddPersonalEventDatabase();
+        services.AddAttendeesDatabase();
+        services.AddNotificationsDatabase();
         
         return services;
     }

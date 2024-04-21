@@ -16,10 +16,6 @@ public sealed class ChangeNameCommandValidator
     /// </summary>
     public ChangeNameCommandValidator()
     {
-        RuleFor(x => x.UserId)
-            .NotEmpty()
-            .WithError(ValidationErrors.ChangeName.UserIdIsRequired);
-
         RuleFor(x => x.FirstName)
             .NotEmpty()
             .WithError(ValidationErrors.ChangeName.NameIsRequired);

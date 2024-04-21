@@ -15,10 +15,10 @@ public sealed class UserIdentifierProvider : IUserIdentifierProvider
     /// <param name="httpContextAccessor">The HTTP context accessor.</param>
     public UserIdentifierProvider(IHttpContextAccessor httpContextAccessor)
     {
-        Claim userIdClaim = httpContextAccessor.HttpContext?.User?.FindFirst("nameId")
-                            ?? throw new ArgumentException("The user identifier claim is required.", nameof(httpContextAccessor));
+        string userId = httpContextAccessor.HttpContext?.User.FindFirst("nameId")?.Value
+                             ?? GetClaimByJwtToken.GetIdByToken(httpContextAccessor.HttpContext?.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last());
         
-        UserId = new Guid(userIdClaim.Value);
+        UserId = new Guid(userId);
     }
 
     /// <inheritdoc />

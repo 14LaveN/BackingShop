@@ -1,6 +1,7 @@
 using BackingShop.Application.ApiHelpers.Contracts;
 using BackingShop.Application.ApiHelpers.Infrastructure;
 using BackingShop.Application.ApiHelpers.Policy;
+using BackingShop.Application.Core.Abstractions.Helpers.JWT;
 using BackingShop.Database.Identity.Data.Interfaces;
 using BackingShop.Domain.Common.Core.Errors;
 using BackingShop.Domain.Common.Core.Primitives.Result;
@@ -13,6 +14,7 @@ using BackingShop.Micro.Identity.Mediatr.Commands.ChangePassword;
 using BackingShop.Micro.Identity.Mediatr.Commands.Login;
 using BackingShop.Micro.Identity.Mediatr.Commands.Register;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackingShop.Micro.Identity.Controllers.V1;
@@ -26,7 +28,7 @@ namespace BackingShop.Micro.Identity.Controllers.V1;
 public sealed class UsersController(
         ISender sender,
         IUserRepository userRepository)
-    : ApiController(sender, userRepository, nameof(UsersController))
+    : IdentityApiController(sender, userRepository)
 {
     #region Commands.
     
@@ -93,7 +95,7 @@ public sealed class UsersController(
     [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> ChangePassword([FromBody] string password) =>
         await Result.Create(password, DomainErrors.General.UnProcessableRequest)
-            .Map(changePasswordRequest => new ChangePasswordCommand(UserId,changePasswordRequest))
+            .Map(changePasswordRequest => new ChangePasswordCommand(changePasswordRequest))
             .Bind(command => BaseRetryPolicy.Policy.Execute(async () =>
                 await Sender.Send(command)))
             .Match(Ok, BadRequest);
@@ -116,8 +118,7 @@ public sealed class UsersController(
         await Result.Create(request, DomainErrors.General.UnProcessableRequest)
             .Map(changeNameRequest => new ChangeNameCommand(
                 FirstName.Create(changeNameRequest.FirstName).Value,
-                LastName.Create(changeNameRequest.LastName).Value,
-                UserId))
+                LastName.Create(changeNameRequest.LastName).Value))
             .Bind(async command => await BaseRetryPolicy.Policy.Execute(async () =>
                 await Sender.Send(command)).Result.Data)
             .Match(Ok, BadRequest);

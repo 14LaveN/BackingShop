@@ -40,7 +40,7 @@ public static class SwaggerConfiguration
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 });
-            
+                
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {

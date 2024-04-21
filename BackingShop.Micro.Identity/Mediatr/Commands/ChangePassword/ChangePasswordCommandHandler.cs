@@ -1,4 +1,5 @@
-﻿using BackingShop.Application.Core.Abstractions.Messaging;
+﻿using BackingShop.Application.Core.Abstractions.Helpers.JWT;
+using BackingShop.Application.Core.Abstractions.Messaging;
 using BackingShop.Database.Identity.Data.Interfaces;
 using BackingShop.Domain.Common.Core.Errors;
 using BackingShop.Domain.Common.Core.Primitives.Maybe;
@@ -16,18 +17,22 @@ internal sealed class ChangePasswordCommandHandler : ICommandHandler<ChangePassw
 {
     private readonly IUserUnitOfWork _unitOfWork;
     private readonly UserManager<User> _userManager;
+    private readonly IUserIdentifierProvider _userIdentifier;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ChangePasswordCommandHandler"/> class.
     /// </summary>
     /// <param name="unitOfWork">The unit of work.</param>
-    /// <param name="userManager"></param>
+    /// <param name="userManager">The user manager.</param>
+    /// <param name="userIdentifier">The user identifier provider.</param>
     public ChangePasswordCommandHandler(
         IUserUnitOfWork unitOfWork,
-        UserManager<User> userManager)
+        UserManager<User> userManager,
+        IUserIdentifierProvider userIdentifier)
     {
         _unitOfWork = unitOfWork;
         _userManager = userManager;
+        _userIdentifier = userIdentifier;
     }
 
     /// <inheritdoc />
@@ -40,7 +45,7 @@ internal sealed class ChangePasswordCommandHandler : ICommandHandler<ChangePassw
             return await Result.Failure(passwordResult.Error);
         }
 
-        Maybe<User> maybeUser = await _userManager.FindByIdAsync(request.UserId.ToString()) 
+        Maybe<User> maybeUser = await _userManager.FindByIdAsync(_userIdentifier.UserId.ToString()) 
                                 ?? throw new ArgumentException();
 
         if (maybeUser.HasNoValue)

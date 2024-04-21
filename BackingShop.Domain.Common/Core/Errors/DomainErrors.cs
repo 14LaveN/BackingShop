@@ -8,6 +8,15 @@ namespace BackingShop.Domain.Common.Core.Errors;
 public static class DomainErrors
 {
     /// <summary>
+    /// Contains the string errors
+    /// </summary>
+    public static class StringErrors
+    {
+        public static Error IsNull =>
+            new("StringErrors.IsNull", "The string is null.");
+    }
+    
+    /// <summary>
     /// Contains the company errors.
     /// </summary>
     public static class Company
@@ -19,14 +28,15 @@ public static class DomainErrors
     }
     
     /// <summary>
-    /// Contains the message errors.
+    /// Contains the product errors.
     /// </summary>
-    public static class Message
+    public static class Product
     {
         public static Error NotFound =>
-            new("Message.NotFound", "The message with the specified identifier was not found.");
+            new("Product.NotFound", "The product with the specified element was not found.");
         
-        public static Error AlreadyAnswered => new("Message.AlreadyAnswered", "The message with the specified identifier already answered.");
+        public static Error HasAlready =>
+            new("Product.HasAlready", "The message with the specified element has already.");
     }
 
 

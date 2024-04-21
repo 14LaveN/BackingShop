@@ -7,9 +7,9 @@ using static System.Console;
 namespace BackingShop.BackgroundTasks.QuartZ.Jobs;
 
 /// <summary>
-/// Represents the user database job.
+/// Represents the base database job.
 /// </summary>
-public sealed class UserDbJob : IJob
+public sealed class BaseDbJob : IJob
 {
     private readonly BaseDbContext _appDbContext = new();
 
@@ -17,6 +17,6 @@ public sealed class UserDbJob : IJob
     public async Task Execute(IJobExecutionContext context)
     {
         await _appDbContext.SaveChangesAsync();
-        WriteLine($"User.SaveChanges - {DateTime.UtcNow}");
+        WriteLine($"All.SaveChanges - {DateTime.UtcNow}");
     }
 }

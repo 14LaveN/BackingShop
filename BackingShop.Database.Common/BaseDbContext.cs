@@ -12,6 +12,7 @@ using BackingShop.Domain.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using BackingShop.Domain.Identity.Enumerations;
+using BackingShop.Domain.Product.Entities;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace BackingShop.Database.Common;
@@ -23,7 +24,12 @@ public class BaseDbContext
     : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IDbContext
 {
     private readonly IMediator _mediator = null!;
-    
+
+    /// <summary>
+    /// Gets or sets products db set.
+    /// </summary>
+    public DbSet<Product> Products { get; set; }
+
     /// <summary>
     /// Initializes a new instance of the <see cref="BaseDbContext"/> class.
     /// </summary>
@@ -124,6 +130,7 @@ public class BaseDbContext
        UpdateSoftDeletableEntities(utcNow);
 
        await PublishDomainEvents(cancellationToken);
+       await PublishDomainEventsForIdentity(cancellationToken);
 
        return await base.SaveChangesAsync(cancellationToken);
     }
@@ -194,6 +201,28 @@ public class BaseDbContext
                 }
             }
         }
+        
+        /// <summary>
+        /// Publishes and then clears all the domain events that exist within the current transaction.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        private async Task PublishDomainEventsForIdentity(CancellationToken cancellationToken)
+        {
+            List<EntityEntry<User>> aggregateRoots = ChangeTracker
+                .Entries<User>()
+                .Where(entityEntry => entityEntry.Entity.DomainEvents.Any())
+                .ToList();
+
+            List<IDomainEvent> domainEvents = aggregateRoots
+                .SelectMany(entityEntry => entityEntry.Entity.DomainEvents).ToList();
+
+            aggregateRoots.ForEach(entityEntry => entityEntry.Entity.ClearDomainEvents());
+
+            IEnumerable<Task> tasks = domainEvents.Select(async domainEvent => 
+                await _mediator.Publish(domainEvent, cancellationToken));
+
+            await Task.WhenAll(tasks);
+        }
 
         /// <summary>
         /// Publishes and then clears all the domain events that exist within the current transaction.
@@ -205,7 +234,7 @@ public class BaseDbContext
                 .Entries<AggregateRoot>()
                 .Where(entityEntry => entityEntry.Entity.DomainEvents.Any())
                 .ToList();
-
+            
             List<IDomainEvent> domainEvents = aggregateRoots
                 .SelectMany(entityEntry => entityEntry.Entity.DomainEvents).ToList();
 

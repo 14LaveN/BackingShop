@@ -26,3 +26,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.MetricsAndRabbitMessages\obj\
 G:\DotNetProjects\BackingShop\BackingShop.Database.MetricsAndRabbitMessages\obj\Debug\net8.0\refint\BackingShop.Database.MetricsAndRabbitMessages.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.MetricsAndRabbitMessages\obj\Debug\net8.0\BackingShop.Database.MetricsAndRabbitMessages.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.MetricsAndRabbitMessages\obj\Debug\net8.0\ref\BackingShop.Database.MetricsAndRabbitMessages.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.MetricsAndRabbitMessages\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Database.MetricsAndRabbitMessages\bin\Debug\net8.0\testhost.dll

@@ -33,10 +33,16 @@ public sealed class CreateMetricsHelper
 
         Metrics.CreateHistogram("BackingShop_request_duration_seconds", "Request duration in seconds.")
             .Observe(stopwatch.Elapsed.TotalMilliseconds);
+
+        Dictionary<string, string> counter = new Dictionary<string, string>()
+        {
+            {"Name", RequestCounter.Name},
+            {"Value",RequestCounter.Value.ToString()}
+        };
         
         await _distributedCache.SetRecordAsync(
             "metrics_counter-key",
-            RequestCounter,
+            counter,
             TimeSpan.FromMinutes(6),
             TimeSpan.FromMinutes(6));
 

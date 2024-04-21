@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BackingShop.Application.ApiHelpers.Contracts;
 using BackingShop.Application.ApiHelpers.Policy;
+using BackingShop.Application.Core.Abstractions.Helpers.JWT;
 using BackingShop.Application.Core.Helpers.JWT;
 using BackingShop.Database.Identity.Data.Interfaces;
 using BackingShop.Domain.Common.Core.Primitives;
@@ -20,17 +21,21 @@ namespace BackingShop.Application.ApiHelpers.Infrastructure;
 [ApiExplorerSettings(GroupName = "v1")]
 public class ApiController : ControllerBase
 {
+    /// <summary>
+    /// Create the new instance of <see cref="ApiController"/>.
+    /// </summary>
+    /// <param name="sender">The sender.</param>
+    /// <param name="userRepository">The user repository.</param>
+    /// <param name="identifierProvider">The user identifier provider.</param>
     protected ApiController(
         ISender sender,
-        IUserRepository userRepository, string controllerName)
+        IUserRepository userRepository,
+        IUserIdentifierProvider identifierProvider)
     {
-        UserId = GetUserId().GetAwaiter().GetResult();
         Sender = sender;
         UserRepository = userRepository;
-        ControllerName = controllerName;
+        UserId = identifierProvider.UserId;
     }
-
-    protected string ControllerName { get; }
 
     protected ISender Sender { get; }
 
@@ -38,77 +43,6 @@ public class ApiController : ControllerBase
 
     protected IUserRepository UserRepository { get; }
 
-    protected string? Token => 
-        ControllerName is "UsersController" ? "exceptToken" :
-            Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-
-    /// <summary>
-    /// Get name
-    /// </summary>
-    /// <returns>Base information about get name method</returns>
-    /// <remarks>
-    /// Example request:
-    /// </remarks>
-    /// <response code="200">Return name from token.</response>
-    /// <response code="400"></response>
-    /// <response code="500">Internal server error</response>
-    ///
-    /// 
-    [HttpGet("get-name")]
-    public  string GetName()
-    {
-        var name = BaseRetryPolicy.Policy.Execute(() =>
-            GetClaimByJwtToken.GetNameByToken(Token));
-        
-        ArgumentException
-            .ThrowIfNullOrEmpty(
-                name,
-                nameof(name));
-        
-        return name;
-    }
-
-    /// <summary>
-    /// Get profile
-    /// </summary>
-    /// <returns>Base information about get pfoile method</returns>
-    /// <remarks>
-    /// Example request:
-    /// </remarks>
-    /// <response code="200">Return app user</response>
-    /// <response code="400"></response>
-    /// <response code="500">Internal server error</response>
-    ///
-    
-    [HttpGet("get-profile")]
-    public async Task<Maybe<User>> GetProfile()
-    {
-        var name = GetName();
-        var profile = await BaseRetryPolicy.Policy.Execute(async () =>
-            await UserRepository.GetByNameAsync(name));
-
-        return profile;
-    }
-
-    [HttpGet("get-userId")]
-    public async Task<Maybe<Guid>> GetUserId()
-    {
-        string name = GetName();
-        var profile = await BaseRetryPolicy.Policy.Execute(async () =>
-            await UserRepository.GetByNameAsync(name));
-
-        return profile.Value.Id;
-    }
-
-    [HttpGet("get-profile-by-id")]
-    public async Task<Maybe<User>> GetProfileById(Guid authorId)
-    {
-        var profile = 
-            await UserRepository.GetByIdAsync(authorId);
-
-        return profile;
-    }
-        
     /// <summary>
     /// Creates an <see cref="BadRequestObjectResult"/> that produces a <see cref="StatusCodes.Status400BadRequest"/>.
     /// response based on the specified <see cref="Result"/>.

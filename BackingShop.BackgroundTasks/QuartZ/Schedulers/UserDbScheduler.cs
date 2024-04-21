@@ -9,4 +9,4 @@ namespace BackingShop.BackgroundTasks.QuartZ.Schedulers;
 /// Represents the user database scheduler class.
 /// </summary>
 public sealed class UserDbScheduler
-    : AbstractScheduler<UserDbJob>;
+    : AbstractScheduler<BaseDbJob>;

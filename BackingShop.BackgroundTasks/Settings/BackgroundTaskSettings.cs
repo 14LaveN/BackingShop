@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents the background task settings.
 /// </summary>
-public class BackgroundTaskSettings
+public sealed class BackgroundTaskSettings
 {
     public const string SettingsKey = "BackgroundTasks";
 

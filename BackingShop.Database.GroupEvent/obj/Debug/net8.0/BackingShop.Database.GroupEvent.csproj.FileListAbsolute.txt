@@ -20,3 +20,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.GroupEvent\obj\Debug\net8.0\B
 G:\DotNetProjects\BackingShop\BackingShop.Database.GroupEvent\obj\Debug\net8.0\refint\BackingShop.Database.GroupEvent.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.GroupEvent\obj\Debug\net8.0\BackingShop.Database.GroupEvent.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.GroupEvent\obj\Debug\net8.0\ref\BackingShop.Database.GroupEvent.dll
+G:\DotNetProjects\BackingShop\BackingShop.Database.GroupEvent\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Database.GroupEvent\bin\Debug\net8.0\testhost.dll

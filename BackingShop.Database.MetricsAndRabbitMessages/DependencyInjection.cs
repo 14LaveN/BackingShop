@@ -1,4 +1,8 @@
 using BackingShop.Application.Core.Settings;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
+using BackingShop.Database.MetricsAndRabbitMessages.Data.Repositories;
+using BackingShop.Domain.Common.Entities;
+using BackingShop.Domain.Entities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,6 +26,11 @@ public static class DependencyInjection
         
         services.Configure<MongoSettings>(configuration.GetSection(MongoSettings.MongoSettingsKey));
 
+        services.AddSingleton<IMetricsRepository, MetricsRepository>();
+        services.AddScoped<IMongoRepository<RabbitMessage>, RabbitMessagesRepository>();
+
+        services.AddTransient<MongoSettings>();
+        
         services.AddHealthChecks()
             .AddMongoDb(configuration.GetConnectionString("MongoConnection")!);
 

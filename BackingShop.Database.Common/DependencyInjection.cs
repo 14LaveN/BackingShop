@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 using BackingShop.Database.Common.Interceptors;
 using BackingShop.Domain.Identity.Entities;
 using MediatR;
+using MediatR.NotificationPublishers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 
 namespace BackingShop.Database.Common;
 
@@ -51,6 +53,13 @@ public static class DependencyInjection
                 .EnableDetailedErrors());
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        
+        services.AddMediatR(x =>
+        {
+            x.RegisterServicesFromAssemblyContaining<Program>();
+
+            x.NotificationPublisher = new TaskWhenAllPublisher();
+        });
         
         return services;
     }

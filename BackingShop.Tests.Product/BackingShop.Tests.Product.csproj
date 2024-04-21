@@ -31,6 +31,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BackingShop.Database.Common\BackingShop.Database.Common.csproj" />
+      <ProjectReference Include="..\BackingShop.Micro.Product\BackingShop.Micro.Product.csproj" />
       <ProjectReference Include="..\BackingShop.Tests.Common\BackingShop.Tests.Common.csproj" />
       <ProjectReference Include="..\BackingShop.Tests.Identity\BackingShop.Tests.Identity.csproj" />
     </ItemGroup>

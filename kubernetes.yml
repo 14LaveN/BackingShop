@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backing-shop
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backing-shop-product
+  template:
+    metadata:
+      labels:
+        env: prod
+        app: backing-shop-product
+    spec:
+      containers:
+        - name: backing-shop-product
+          image: backing-shop-product:latest
+          ports:
+            - hostPort: 7255
+              containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 100mi
+            limits:
+              cpu: 200m
+              memory: 200mi
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elasticsearch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elasticsearch
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      containers:
+        - name: elasticsearch
+          image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+          ports:
+            - containerPort: 9200
+              name: http
+      volumes:
+        - name: elasticsearch-data
+          persistentVolumeClaim:
+            claimName: elasticsearch-data-pvc
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kibana
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - name: kibana
+          image: docker.elastic.co/kibana/kibana:7.9.2
+          ports:
+            - containerPort: 5601
+              name: http
+          env:
+            - name: ELASTICSEARCH_URL
+              value: http://elasticsearch:9200
+      volumes:
+        - name: kibana-config
+          persistentVolumeClaim:
+            claimName: kibana-config-pvc

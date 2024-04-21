@@ -5,6 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
@@ -14,8 +16,32 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\" />
-      <Folder Include="Common\" />
+      <Folder Include="Mediatr\Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BackingShop.Application\BackingShop.Application.csproj" />
+      <ProjectReference Include="..\BackingShop.BackgroundTasks\BackingShop.BackgroundTasks.csproj" />
+      <ProjectReference Include="..\BackingShop.Database.Product\BackingShop.Database.Product.csproj" />
+      <ProjectReference Include="..\BackingShop.RabbitMq\BackingShop.RabbitMq.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="App.Metrics.AspNetCore.Endpoints" Version="4.4.0-preview.0.10" />
+      <PackageReference Include="App.Metrics.AspNetCore.Hosting" Version="4.4.0-preview.0.10" />
+      <PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="4.4.0-preview.0.10" />
+      <PackageReference Include="App.Metrics.Formatters.Prometheus" Version="4.4.0-preview.0.10" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+      <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.4" />
+      <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
+      <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0" />
+      <PackageReference Include="Serilog" Version="4.0.0-dev-02149" />
+      <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+      <PackageReference Include="Serilog.Formatting.Elasticsearch" Version="10.0.0" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.1-dev-00582" />
+      <PackageReference Include="Serilog.Sinks.ElasticEcsLogstash" Version="1.6.1" />
+      <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="10.0.0" />
     </ItemGroup>
 
 </Project>

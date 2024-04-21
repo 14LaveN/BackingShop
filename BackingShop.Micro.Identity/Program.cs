@@ -9,6 +9,7 @@ using BackingShop.Email;
 using BackingShop.Micro.Identity.Common.DependencyInjection;
 using BackingShop.RabbitMq;
 using BackingShop.Micro.Identity.Common.DependencyInjection;
+using BackingShop.RabbitMq.Messaging.Settings;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -40,13 +41,15 @@ builder.Services.Configure<GzipCompressionProviderOptions>(options =>
     options.Level = System.IO.Compression.CompressionLevel.SmallestSize;
 });
 
+builder.Services.Configure<MessageBrokerSettings>(builder.Configuration.GetSection(MessageBrokerSettings.SettingsKey));
+
 builder.Services.AddValidators();
 
 builder.Services.AddEmailService(builder.Configuration);
 
 builder.Services.AddBackgroundTasks(builder.Configuration);
 
-builder.Services.AddRabbitBackgroundTasks();
+builder.Services.AddRabbitBackgroundTasks(builder.Configuration);
 
 builder.Services.AddRabbitMq(builder.Configuration);
 

@@ -34,3 +34,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Events.Invitation\obj\Debug\net8.0\Bac
 G:\DotNetProjects\BackingShop\BackingShop.Events.Invitation\obj\Debug\net8.0\refint\BackingShop.Events.Invitation.dll
 G:\DotNetProjects\BackingShop\BackingShop.Events.Invitation\obj\Debug\net8.0\BackingShop.Events.Invitation.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Events.Invitation\obj\Debug\net8.0\ref\BackingShop.Events.Invitation.dll
+G:\DotNetProjects\BackingShop\BackingShop.Events.Invitation\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Events.Invitation\bin\Debug\net8.0\testhost.dll

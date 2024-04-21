@@ -2,6 +2,7 @@ using BackingShop.Application.Core.Settings;
 using BackingShop.Database.MetricsAndRabbitMessages.Data.Interfaces;
 using BackingShop.Domain.Common.Core.Primitives.Maybe;
 using BackingShop.Domain.Common.Entities;
+using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace BackingShop.Database.MetricsAndRabbitMessages.Data.Repositories;
@@ -13,22 +14,24 @@ public sealed class MetricsRepository
     : IMongoRepository<MetricEntity>, IMetricsRepository
 {
     private readonly IMongoCollection<MetricEntity> _metricsCollection;
-
+    private readonly MongoSettings _mongoSettings;
+    
     /// <summary>
     /// Create new instance of metrics repository.
     /// </summary>
     /// <param name="dbSettings">The mongo database settings</param>
     public MetricsRepository(
-        MongoSettings dbSettings)
+        IOptions<MongoSettings> dbSettings)
     {
+        _mongoSettings = dbSettings.Value;
         var mongoClient = new MongoClient(
-            dbSettings.ConnectionString);
+            dbSettings.Value.ConnectionString);
 
         var mongoDatabase = mongoClient.GetDatabase(
-            dbSettings.Database);
+            dbSettings.Value.Database);
         
         _metricsCollection = mongoDatabase.GetCollection<MetricEntity>(
-            dbSettings.MetricsCollectionName);
+            dbSettings.Value.MetricsCollectionName);
     }
 
     /// <inheritdoc />

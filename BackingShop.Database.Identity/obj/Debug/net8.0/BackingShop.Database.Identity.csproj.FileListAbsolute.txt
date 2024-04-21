@@ -20,3 +20,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\obj\Debug\net8.0\Bac
 G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\obj\Debug\net8.0\ref\BackingShop.Database.Identity.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\bin\Debug\net8.0\BackingShop.Domain.Product.dll
 G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\bin\Debug\net8.0\BackingShop.Domain.Product.pdb
+G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Database.Identity\bin\Debug\net8.0\testhost.dll

@@ -18,6 +18,5 @@ public sealed class MessageBrokerSettings
     /// <summary>
     /// Gets or sets the queue name.
     /// </summary>
-    [Required]
-    public static string? QueueName { get; set; }
+    public string? QueueName { get; set; }
 }

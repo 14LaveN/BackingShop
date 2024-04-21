@@ -50,3 +50,5 @@ G:\DotNetProjects\BackingShop\BackingShop.BackgroundTasks\obj\Debug\net8.0\Backi
 G:\DotNetProjects\BackingShop\BackingShop.BackgroundTasks\obj\Debug\net8.0\refint\BackingShop.BackgroundTasks.dll
 G:\DotNetProjects\BackingShop\BackingShop.BackgroundTasks\obj\Debug\net8.0\BackingShop.BackgroundTasks.pdb
 G:\DotNetProjects\BackingShop\BackingShop.BackgroundTasks\obj\Debug\net8.0\ref\BackingShop.BackgroundTasks.dll
+G:\DotNetProjects\BackingShop\BackingShop.BackgroundTasks\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.BackgroundTasks\bin\Debug\net8.0\testhost.dll

@@ -12,7 +12,7 @@ namespace BackingShop.Application.Core.Behaviours;
 /// <typeparam name="TResponse">The generic response type.</typeparam>
 public sealed class MetricsBehaviour<TRequest, TResponse>
     : IPipelineBehavior<TRequest, TResponse>
-    where TRequest : class, IRequest
+    where TRequest : IRequest<TResponse>
     where TResponse : class
 {
     private readonly CreateMetricsHelper _createMetricsHelper;
@@ -25,7 +25,10 @@ public sealed class MetricsBehaviour<TRequest, TResponse>
         _createMetricsHelper = createMetricsHelper;
     
     /// <inheritdoc/>
-    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    public async Task<TResponse> Handle(
+        TRequest request,
+        RequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
         Stopwatch stopwatch = Stopwatch.StartNew();
 
@@ -34,9 +37,9 @@ public sealed class MetricsBehaviour<TRequest, TResponse>
             TResponse response = await next();
             stopwatch.Stop();
 
-           await _createMetricsHelper.CreateMetrics(stopwatch);
+            await _createMetricsHelper.CreateMetrics(stopwatch);
 
-           return response;
+            return response;
         }
         catch (Exception e)
         {

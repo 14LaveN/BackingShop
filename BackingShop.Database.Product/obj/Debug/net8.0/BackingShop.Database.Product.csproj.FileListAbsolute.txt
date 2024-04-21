@@ -20,3 +20,5 @@ G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\Back
 G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Identity.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\BackingShop.Domain.Product.pdb
 G:\DotNetProjects\BackingShop\BackingShop.Database.Product\obj\Debug\net8.0\BackingShop.Database.Product.csproj.CopyComplete
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\testhost.exe
+G:\DotNetProjects\BackingShop\BackingShop.Database.Product\bin\Debug\net8.0\testhost.dll

@@ -46,6 +46,7 @@ public static class JwtExtensions
     {
         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Secret.PadRight(64)));
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256Signature);
+        
         if (user.UserName is not null)
         {
             var tokeOptions = new JwtSecurityToken(
