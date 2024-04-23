@@ -1,5 +1,6 @@
 using BackingShop.Domain.Common.Core.Primitives.Result;
 using BackingShop.Domain.Common.Enumerations;
+using BackingShop.Domain.Product.Entities;
 
 namespace BackingShop.Application.ApiHelpers.Responses;
 
@@ -8,13 +9,13 @@ namespace BackingShop.Application.ApiHelpers.Responses;
 /// </summary>
 /// <typeparam name="T">The generic result class.</typeparam>
 public class BaseResponse<T> : IBaseResponse<T>
-    where T : Result
+    where T : class
 {
     /// <inheritdoc />
     public required string Description { get; set; }
 
     /// <inheritdoc />
-    public Task<T> Data { get; set; }
+    public Result<T> Data { get; set; }
 
     /// <inheritdoc />
     public required StatusCode StatusCode { get; set; }

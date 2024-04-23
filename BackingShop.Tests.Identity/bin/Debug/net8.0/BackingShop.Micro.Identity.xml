@@ -251,6 +251,21 @@
             <param name="length">The length.</param>
             <returns>Returns randomizing string.</returns>
         </member>
+        <member name="T:BackingShop.Micro.Identity.Mediatr.Behaviour.UserTransactionBehavior`2">
+            <summary>
+            Represents the <see cref="T:BackingShop.Domain.Identity.Entities.User"/> transaction behaviour class.
+            </summary>
+        </member>
+        <member name="M:BackingShop.Micro.Identity.Mediatr.Behaviour.UserTransactionBehavior`2.#ctor(BackingShop.Database.Common.Abstractions.IUnitOfWork,BackingShop.Database.Common.BaseDbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BackingShop.Micro.Identity.Mediatr.Behaviour.UserTransactionBehavior`2"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+            <param name="userDbContext">The base database context.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Identity.Mediatr.Behaviour.UserTransactionBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
         <member name="T:BackingShop.Micro.Identity.Mediatr.Commands.ChangeName.ChangeNameCommand">
             <summary>
             Represents the change <see cref="T:BackingShop.Domain.Common.ValueObjects.Name"/> command record.

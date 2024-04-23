@@ -83,7 +83,7 @@ internal sealed class AddToGroupEventAttendeeCommandHandler
 
             return new BaseResponse<Result>
             {
-                Data = Result.Success(),
+                Data = await Result.Success(),
                 StatusCode = StatusCode.Ok,
                 Description = "Add to group event attendee"
             };

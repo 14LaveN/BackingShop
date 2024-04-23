@@ -14,6 +14,10 @@ RUN dotnet build "BackingShop.Micro.Product.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "BackingShop.Micro.Product.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
+FROM docker.elastic.co/logstash/logstash:7.10.2
+
+COPY logstash.conf /usr/share/logstash/pipeline/logstash.conf
+
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .

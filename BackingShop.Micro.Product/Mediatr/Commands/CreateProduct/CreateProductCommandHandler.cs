@@ -20,10 +20,10 @@ internal sealed class CreateProductCommandHandler(
     IProductsRepository productsRepository,
     ILogger<CreateProductCommandHandler> logger,
     IUserIdentifierProvider identifierProvider)
-    : ICommandHandler<CreateProductCommand, IBaseResponse<Result>>
+    : ICommandHandler<CreateProductCommand, IBaseResponse<Result<Domain.Product.Entities.Product>>>
 {
     /// <inheritdoc />
-    public async Task<IBaseResponse<Result>> Handle(
+    public async Task<IBaseResponse<Result<Domain.Product.Entities.Product>>> Handle(
         CreateProductCommand request,
         CancellationToken cancellationToken)
     {
@@ -42,7 +42,7 @@ internal sealed class CreateProductCommandHandler(
             if (maybeProduct.HasValue)
             {
                 logger.LogWarning(DomainErrors.Product.HasAlready);
-                return new BaseResponse<Result>
+                return new BaseResponse<Result<Domain.Product.Entities.Product>>
                 {
                     Description = DomainErrors.Product.HasAlready,
                     StatusCode = StatusCode.BadRequest
@@ -56,7 +56,7 @@ internal sealed class CreateProductCommandHandler(
             if (domainEventResult.IsFailure)
             {
                logger.LogWarning(DomainErrors.Event.EventHasPassed);
-               return new BaseResponse<Result>
+               return new BaseResponse<Result<Domain.Product.Entities.Product>>
                {
                    Description = DomainErrors.Event.EventHasPassed,
                    StatusCode = StatusCode.BadRequest
@@ -67,9 +67,9 @@ internal sealed class CreateProductCommandHandler(
             
             logger.LogInformation($"Product created - {product.Title} {product.CreatedOnUtc} {product.Id}");
 
-            return new BaseResponse<Result>
+            return new BaseResponse<Result<Domain.Product.Entities.Product>>
             {
-                Data = Result.Success(),
+                Data = Result.Create(product, DomainErrors.General.UnProcessableRequest),
                 StatusCode = StatusCode.Ok,
                 Description = "Product created"
             };
@@ -77,7 +77,7 @@ internal sealed class CreateProductCommandHandler(
         catch (Exception exception)
         {
             logger.LogError(exception, $"[CreateProductCommandHandler]: {exception.Message}");
-            return new BaseResponse<Result>
+            return new BaseResponse<Result<Domain.Product.Entities.Product>>
             {
                 StatusCode = StatusCode.BadRequest,
                 Description = exception.Message

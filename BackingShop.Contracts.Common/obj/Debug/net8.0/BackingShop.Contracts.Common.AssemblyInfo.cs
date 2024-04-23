@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackingShop.Contracts.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60dd34d53c358829a2a4492221b3bfdb8a8d43e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad532ad1021d666ff4ca761eab933c50686225e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackingShop.Contracts.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackingShop.Contracts.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

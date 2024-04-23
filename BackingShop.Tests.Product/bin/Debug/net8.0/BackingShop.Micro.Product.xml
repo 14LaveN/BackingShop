@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackingShop.Micro.Product</name>
+    </assembly>
+    <members>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiAuthorization.AddAuthorizationExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiCaching.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiHelpers.AddHelpers(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiLogging.AddLoggingExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiMediator.AddMediatr(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Common.DependencyInjection.DiValidator.AddValidators(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="T:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest">
+            <summary>
+            Represents the create product request record.
+            </summary>
+            <param name="Title">The title.</param>
+            <param name="Description">The description.</param>
+            <param name="Tag">The tag.</param>
+            <param name="CompanyName">The company name.</param>
+            <param name="ProductType">The product type.</param>
+            <param name="Price">The price.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.#ctor(System.String,System.String,System.String,System.String,BackingShop.Domain.Product.Enumerations.ProductType,System.Decimal)">
+            <summary>
+            Represents the create product request record.
+            </summary>
+            <param name="Title">The title.</param>
+            <param name="Description">The description.</param>
+            <param name="Tag">The tag.</param>
+            <param name="CompanyName">The company name.</param>
+            <param name="ProductType">The product type.</param>
+            <param name="Price">The price.</param>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.Title">
+            <summary>The title.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.Tag">
+            <summary>The tag.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.CompanyName">
+            <summary>The company name.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.ProductType">
+            <summary>The product type.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest.Price">
+            <summary>The price.</summary>
+        </member>
+        <member name="T:BackingShop.Micro.Product.Controllers.V1.ProductsController">
+            <summary>
+            Represents the <see cref="N:BackingShop.Micro.Product"/> controller class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="userRepository">The user repository.</param>
+            <param name="identifierProvider">The user identifier provider.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Controllers.V1.ProductsController.#ctor(MediatR.ISender,BackingShop.Database.Identity.Data.Interfaces.IUserRepository,BackingShop.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider)">
+            <summary>
+            Represents the <see cref="N:BackingShop.Micro.Product"/> controller class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="userRepository">The user repository.</param>
+            <param name="identifierProvider">The user identifier provider.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Controllers.V1.ProductsController.CreateProduct(BackingShop.Micro.Product.Contracts.Product.CreateProductRequest)">
+            <summary>
+            Create product.
+            </summary>
+            <param name="request">The <see cref="T:BackingShop.Micro.Product.Contracts.Product.CreateProductRequest"/> class.</param>
+            <returns>Return result after creating product.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand">
+            <summary>
+            Represents the create product commands record.
+            </summary>
+            <param name="Title">The title.</param>
+            <param name="Description">The description.</param>
+            <param name="Tag">The tag.</param>
+            <param name="CompanyName">The company name.</param>
+            <param name="ProductType">The product type.</param>
+            <param name="Price">The price.</param>
+            <param name="AuthorId">The author identifier.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.#ctor(System.String,System.String,System.String,System.String,BackingShop.Domain.Product.Enumerations.ProductType,System.Decimal,System.Guid)">
+            <summary>
+            Represents the create product commands record.
+            </summary>
+            <param name="Title">The title.</param>
+            <param name="Description">The description.</param>
+            <param name="Tag">The tag.</param>
+            <param name="CompanyName">The company name.</param>
+            <param name="ProductType">The product type.</param>
+            <param name="Price">The price.</param>
+            <param name="AuthorId">The author identifier.</param>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.Title">
+            <summary>The title.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.Description">
+            <summary>The description.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.Tag">
+            <summary>The tag.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.CompanyName">
+            <summary>The company name.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.ProductType">
+            <summary>The product type.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.Price">
+            <summary>The price.</summary>
+        </member>
+        <member name="P:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.AuthorId">
+            <summary>The author identifier.</summary>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand.op_Implicit(BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand)~BackingShop.Domain.Product.Entities.Product">
+            <summary>
+            Create the new product from <see cref="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand"/> class.
+            </summary>
+            <param name="request">The create product request.</param>
+            <returns>Returns the new product.</returns>
+        </member>
+        <member name="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommandHandler">
+            <summary>
+            Represents the <see cref="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand"/> handler class.
+            </summary>
+            <param name="productsRepository">The <see cref="N:BackingShop.Micro.Product"/> repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="identifierProvider">The <see cref="T:BackingShop.Domain.Identity.Entities.User"/> identifier provider.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommandHandler.#ctor(BackingShop.Database.Product.Data.Interfaces.IProductsRepository,Microsoft.Extensions.Logging.ILogger{BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommandHandler},BackingShop.Application.Core.Abstractions.Helpers.JWT.IUserIdentifierProvider)">
+            <summary>
+            Represents the <see cref="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand"/> handler class.
+            </summary>
+            <param name="productsRepository">The <see cref="N:BackingShop.Micro.Product"/> repository.</param>
+            <param name="logger">The logger.</param>
+            <param name="identifierProvider">The <see cref="T:BackingShop.Domain.Identity.Entities.User"/> identifier provider.</param>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommandHandler.Handle(BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommandValidator">
+            <summary>
+            Represents the <see cref="T:FluentValidation.IValidator"/> for <see cref="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand"/> class.
+            </summary>
+        </member>
+        <member name="M:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommandValidator.#ctor">
+            <summary>
+            Validate the <see cref="T:BackingShop.Micro.Product.Mediatr.Commands.CreateProduct.CreateProductCommand"/>
+            </summary>
+        </member>
+    </members>
+</doc>

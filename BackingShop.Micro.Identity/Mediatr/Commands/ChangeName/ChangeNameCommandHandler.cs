@@ -46,7 +46,7 @@ internal sealed class ChangeNameCommandHandler : ICommandHandler<ChangeNameComma
         {
             return new BaseResponse<Result>
             {
-                Data = Result.Failure(nameResult.Error),
+                Data = await Result.Failure(nameResult.Error),
                 StatusCode = StatusCode.InternalServerError,
                 Description = "First Name result is failure."
             };
@@ -58,7 +58,7 @@ internal sealed class ChangeNameCommandHandler : ICommandHandler<ChangeNameComma
         {
             return new BaseResponse<Result>
             {
-                Data = Result.Failure(lastNameResult.Error),
+                Data =await Result.Failure(lastNameResult.Error),
                 StatusCode = StatusCode.InternalServerError,
                 Description = "Last Name result is failure."
             };
@@ -71,7 +71,7 @@ internal sealed class ChangeNameCommandHandler : ICommandHandler<ChangeNameComma
         {
             return new BaseResponse<Result>
             {
-                Data = Result.Failure(DomainErrors.User.NotFound),
+                Data =await Result.Failure(DomainErrors.User.NotFound),
                 StatusCode = StatusCode.NotFound,
                 Description = "User not found."
             };
@@ -85,7 +85,7 @@ internal sealed class ChangeNameCommandHandler : ICommandHandler<ChangeNameComma
 
         return new BaseResponse<Result>
         {
-            Data = Result.Success(),
+            Data =await Result.Success(),
             Description = "Change name.",
             StatusCode = StatusCode.Ok
         };

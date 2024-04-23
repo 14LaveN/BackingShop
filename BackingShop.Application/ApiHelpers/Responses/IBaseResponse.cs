@@ -1,4 +1,6 @@
+using BackingShop.Domain.Common.Core.Primitives.Result;
 using BackingShop.Domain.Common.Enumerations;
+using BackingShop.Domain.Product.Entities;
 
 namespace BackingShop.Application.ApiHelpers.Responses;
 
@@ -21,5 +23,5 @@ public interface IBaseResponse<T>
     /// <summary>
     /// Gets or sets data.
     /// </summary>
-    public Task<T> Data { get; set; }
+    public Result<T> Data { get; set; }
 }

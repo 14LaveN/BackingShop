@@ -34,6 +34,9 @@
      volumes:
        - elasticsearch-data:/usr/share/elasticsearch/data
      environment:
+       - xpack.monitoring.enabled=true
+       - xpack.watcher.enabled=false
+       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
        - discovery.type=single-node
      networks:
        - elastic

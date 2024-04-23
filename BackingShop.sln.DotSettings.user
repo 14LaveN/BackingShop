@@ -24,7 +24,7 @@
     &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests.InsertProduct_AssertWithOk&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=caf79e49_002D6446_002D4219_002D804d_002Df7c74ff21018/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProducts_AssertWithOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=caf79e49_002D6446_002D4219_002D804d_002Df7c74ff21018/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="InsertProducts_AssertWithOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;Project Location="G:\DotNetProjects\BackingShop\BackingShop.Tests.Product" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;BackingShop.Tests.Product&amp;gt;" /&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
@@ -32,8 +32,8 @@
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8ac6691_002Da91f_002D4ace_002D82c8_002D7003daa8dec3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="InsertProduct_AssertWithOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8ac6691_002Da91f_002D4ace_002D82c8_002D7003daa8dec3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="InsertProduct_AssertWithOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Repository.UserRepositoryTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7::net8.0::BackingShop.Tests.Product.UnitTests.Commands.CreateProductCommandHandlerTests.CreateProduct_AssertWithStatusCodeOk&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

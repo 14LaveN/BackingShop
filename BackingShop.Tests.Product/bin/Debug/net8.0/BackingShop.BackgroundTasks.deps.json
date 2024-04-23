@@ -22,7 +22,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
           "Quartz": "3.8.1",
           "Quartz.Extensions.Hosting": "3.8.1",
-          "RabbitMQ.Client": "7.0.0-alpha.4"
+          "RabbitMQ.Client": "7.0.0-alpha.4",
+          "prometheus-net.AspNetCore": "8.2.1"
         },
         "runtime": {
           "BackingShop.BackgroundTasks.dll": {}

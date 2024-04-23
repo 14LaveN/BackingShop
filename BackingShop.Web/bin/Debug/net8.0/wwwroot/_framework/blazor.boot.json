@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BackingShop.Web",
   "resources": {
-    "hash": "sha256-a0Pjq2APtUfdVV4GpVm2J4n5l7WOuohZQELDa0+ewU0=",
+    "hash": "sha256-raDr9p13HLAkwbDtW5ayDJ127aRn0Ck8V4sninLccLo=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.0agj2xtcgg.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "BackingShop.Web.wasm": "sha256-ePjqf3XHyiG2M5nKzQd7GCWQ2ZAMOKZwbPLVB8OA3ls="
+      "BackingShop.Web.wasm": "sha256-DAm0hpQ7VP3DH/IpASK5q3zbX+6e0NOBakhN9E0CFh8="
     },
     "pdb": {
-      "BackingShop.Web.pdb": "sha256-h8sMwLWZkOfJCbSsaK+AC5OaznLOgS0M5mPFVlg1wkc="
+      "BackingShop.Web.pdb": "sha256-KFVLKDPC3KUmakIP1HhOfV2Yt7i+QKduqHJpweyEs04="
     }
   },
   "cacheBootResources": true,

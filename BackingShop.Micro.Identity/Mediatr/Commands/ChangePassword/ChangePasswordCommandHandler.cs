@@ -50,7 +50,7 @@ internal sealed class ChangePasswordCommandHandler : ICommandHandler<ChangePassw
 
         if (maybeUser.HasNoValue)
         {
-            return await Result.Failure(DomainErrors.User.NotFound);
+            return  await Result.Failure(DomainErrors.User.NotFound);
         }
 
         User user = maybeUser.Value;

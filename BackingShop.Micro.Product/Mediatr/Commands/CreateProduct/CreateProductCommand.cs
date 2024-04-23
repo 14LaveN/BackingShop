@@ -25,7 +25,7 @@ public sealed record CreateProductCommand(
     ProductType ProductType,
     decimal Price,
     Guid AuthorId)
-    : ICommand<IBaseResponse<Result>>
+    : ICommand<IBaseResponse<Result<Domain.Product.Entities.Product>>>
 {
     /// <summary>
     /// Create the new product from <see cref="CreateProductCommand"/> class.

@@ -38,6 +38,6 @@ public sealed class CreateProductCommandHandlerTests(IntegrationTestWebAppFactor
 
         var result = await Sender.Send(command);
 
-        result.Data.Result.IsSuccess.Should().BeTrue();
+        result.Data.IsSuccess.Should().BeTrue();
     }
 }

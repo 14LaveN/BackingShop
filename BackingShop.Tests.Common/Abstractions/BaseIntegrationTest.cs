@@ -6,10 +6,17 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace BackingShop.Tests.Common.Abstractions;
 
+/// <summary>
+/// Represents the base integration test class.
+/// </summary>
 public abstract class BaseIntegrationTest : IClassFixture<IntegrationTestWebAppFactory>, IDisposable
 { 
     private readonly IServiceScope _scope;
 
+    /// <summary>
+    /// Initialize the instance of <see cref="BaseIntegrationTest"/>.
+    /// </summary>
+    /// <param name="factory">The integration test web app factory.</param>
     protected BaseIntegrationTest(IntegrationTestWebAppFactory factory)
     {
         _scope = factory.Services.CreateScope();
@@ -19,14 +26,27 @@ public abstract class BaseIntegrationTest : IClassFixture<IntegrationTestWebAppF
         Fixture = new Fixture();
     }
 
+    /// <summary>
+    /// Gets mediatr sender.
+    /// </summary>
     protected readonly ISender Sender;
 
+    /// <summary>
+    /// Gets Base database context.
+    /// </summary>
     protected readonly BaseDbContext DbContext;
 
+    /// <summary>
+    /// Gets Fixture.
+    /// </summary>
     protected readonly Fixture Fixture;
 
+    /// <summary>
+    /// Gets Faker.
+    /// </summary>
     protected readonly Faker Faker;
 
+    /// <inheritdoc/>
     public void Dispose()
     {
         DbContext.Dispose();

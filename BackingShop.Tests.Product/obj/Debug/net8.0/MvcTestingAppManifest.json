@@ -20,6 +20,7 @@
   "BackingShop.Events.GroupEvent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.GroupEvent",
   "BackingShop.Events.Invitation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Events.Invitation",
   "BackingShop.Micro.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Micro.Identity",
+  "BackingShop.Micro.Product, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Micro.Product",
   "BackingShop.RabbitMq, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.RabbitMq",
   "BackingShop.Tests.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Tests.Common",
   "BackingShop.Tests.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\DotNetProjects\\BackingShop\\BackingShop.Tests.Identity"

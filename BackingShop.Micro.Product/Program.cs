@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Prometheus;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.HttpRequestDurations;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,15 +45,11 @@ builder.Services.Configure<GzipCompressionProviderOptions>(options =>
 });
 
 builder.Host.UseMetricsWebTracking(options => 
-        options.OAuth2TrackingEnabled = true)
-    .UseMetricsEndpoints(options =>
-    {
-        options.EnvironmentInfoEndpointEnabled = true;
-        options.MetricsTextEndpointOutputFormatter = new MetricsPrometheusTextOutputFormatter();
-        options.MetricsEndpointOutputFormatter = new MetricsPrometheusProtobufOutputFormatter();
-    });
+        options.OAuth2TrackingEnabled = true);
 
 builder.Services.AddControllers();
+
+builder.Host.UseSerilog();
 
 builder.Services.AddValidators();
 
@@ -77,6 +74,8 @@ builder.Services.AddCaching();
 builder.Services.AddApplication();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddLoggingExtension(builder.Configuration);
 
 builder.Services.AddAuthorizationExtension(builder.Configuration);
 

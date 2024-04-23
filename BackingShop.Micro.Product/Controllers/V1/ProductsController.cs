@@ -51,8 +51,8 @@ public sealed class ProductsController(
                 createProductRequest.ProductType,
                 createProductRequest.Price,
                 UserId))
-            .Bind(async command => await BaseRetryPolicy.Policy.Execute(async () =>
-                await Sender.Send(command)).Result.Data)
+            .Bind(command => Task.FromResult(BaseRetryPolicy.Policy.Execute(async () =>
+                await Sender.Send(command)).Result.Data))
             .Match(Ok, Unauthorized);
 
     #endregion

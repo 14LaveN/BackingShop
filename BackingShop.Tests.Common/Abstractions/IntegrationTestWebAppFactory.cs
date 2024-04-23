@@ -12,25 +12,32 @@ using Testcontainers.Redis;
 
 namespace BackingShop.Tests.Common.Abstractions;
 
+/// <summary>
+/// Represents the integration test web app factory class.
+/// </summary>
 public class IntegrationTestWebAppFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {
     private readonly RedisContainer _redisContainer = new RedisBuilder()
         .WithImage("redis:7.0")
         .Build();
     
-    private readonly PostgreSqlContainer _databaseContainer = new PostgreSqlBuilder()
-        .WithImage("postgres:latest")
-        .WithDatabase("BSGenericDb")
-        .WithUsername("postgres")
-        .WithCommand("1111")
-        .Build();
+    //private readonly PostgreSqlContainer _databaseContainer = new PostgreSqlBuilder()
+    //    .WithImage("postgres:latest")
+    //    .WithDatabase("BSGenericDb")
+    //    .WithUsername("postgres")
+    //    .WithCommand("postgres")
+    //    .Build();
     
+    /// <summary>
+    /// Initialize docker elements.
+    /// </summary>
     public async Task InitializeAsync()
     {
-        await _databaseContainer.StartAsync();
+        //await _databaseContainer.StartAsync();
         await _redisContainer.StartAsync();
     }
 
+    /// <inheritdoc/>
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.ConfigureTestServices(services =>
@@ -47,7 +54,7 @@ public class IntegrationTestWebAppFactory : WebApplicationFactory<Program>, IAsy
             }
 
             services.AddDbContext<BaseDbContext>(o => 
-                o.UseNpgsql(_databaseContainer.GetConnectionString(), act 
+                o.UseNpgsql("Server=localhost;Port=5433;Database=BSGenericDb;User Id=postgres;Password=1111;", act 
                         =>
                     {
                         act.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
@@ -63,12 +70,17 @@ public class IntegrationTestWebAppFactory : WebApplicationFactory<Program>, IAsy
 
             services.AddStackExchangeRedisCache(options =>
                 options.Configuration = _redisContainer.GetConnectionString());
+
+            services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<Program>());
         });
     }
 
+    /// <summary>
+    /// Dispose docker elements.
+    /// </summary>
     public new async Task DisposeAsync()
     {
-        await _databaseContainer.StopAsync();
+        //await _databaseContainer.StopAsync();
         await _redisContainer.StopAsync();
     }
 }
