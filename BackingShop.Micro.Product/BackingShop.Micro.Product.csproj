@@ -32,6 +32,9 @@
       <PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="4.4.0-preview.0.10" />
       <PackageReference Include="App.Metrics.Formatters.Prometheus" Version="4.4.0-preview.0.10" />
       <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+      <PackageReference Include="FirebaseAdmin" Version="2.4.1" />
+      <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
+      <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
       <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.4" />
       <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />

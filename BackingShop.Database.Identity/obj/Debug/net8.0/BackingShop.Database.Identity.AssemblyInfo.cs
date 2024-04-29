@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackingShop.Database.Identity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad532ad1021d666ff4ca761eab933c50686225e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+769f8ae552ab021a7715a30ebc7431999a1baa7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackingShop.Database.Identity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackingShop.Database.Identity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

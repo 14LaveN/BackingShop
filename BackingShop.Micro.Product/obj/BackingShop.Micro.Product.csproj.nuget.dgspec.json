@@ -1673,6 +1673,18 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.4, )"

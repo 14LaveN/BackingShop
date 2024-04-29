@@ -9,6 +9,10 @@ using BackingShop.Database.MetricsAndRabbitMessages.Data.Repositories;
 using BackingShop.Database.Notification;
 using BackingShop.Database.PersonalEvent;
 using BackingShop.Database.Product;
+using Firebase.Storage;
+using FirebaseAdmin;
+using FirebaseAdmin.Auth;
+using Google.Apis.Auth.OAuth2;
 
 namespace BackingShop.Micro.Product.Common.DependencyInjection;
 
@@ -38,6 +42,13 @@ public static class DiDatabase
         services.AddPersonalEventDatabase();
         services.AddInvitationsDatabase();
         services.AddNotificationsDatabase();
+        
+        string pathToFirebaseConfig = @"G:\DotNetProjects\BackingShop\firebase.json";
+
+        FirebaseApp.Create(new AppOptions
+        {
+            Credential = GoogleCredential.FromFile(pathToFirebaseConfig),
+        });
         
         return services;
     }

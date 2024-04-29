@@ -32,7 +32,7 @@ public class IdentityApiController
     protected IUserRepository UserRepository { get; }
 
     [HttpGet("get-profile-by-id/{authorId}")]
-    public async Task<Maybe<User>> GetProfileById(Guid authorId)
+    public async Task<Maybe<User>> GetProfileById([FromRoute] Guid authorId)
     {
         var profile = 
             await UserRepository.GetByIdAsync(authorId);

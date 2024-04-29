@@ -1,0 +1,100 @@
+{
+  "type": "service_account",
+  "project_id": "backingshop",
+  "private_key_id": "a3b0972f3c59078060403d9ea8a664124cc77f10",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDFG2VxzTxUDgFW\n1ObfiUkvg9o/XSJNC9M53t45mWQI8poHXGkrZR35ZH3P+lAWiCSv99XQE2E22or0\nzkDSLXMxefD/Ql2x3L+PhtZTgrqFQqFS43KKLrmWTYUP0SrcxAc5DZXl8+pNvGHj\nWU4NsXpJgVkLeBEs7g3aVV0PGBn/AmFiIV8aJmM14WYRJrtKC62OBEnc9hhWuzU0\n5GtprrVm0VuhxomQNS3WiTOil4mG3zJ4u0g0xmITJTvpDVg3QVtmcMee1a/obysH\nwgfn/v7kZMTdQDKaTZQiAU7NhXvjsJIe+z9JVp2rkvZymG0yBYavB5ZKrfO9SobU\n1iI9CsLTAgMBAAECggEAWMuiw8XFq8gzaj63U3Sxd6pao7j9PuBY4/U2/5POsQk5\nwp8q8dW3zyYqV4tYkQ38GRn5RKe2X9PMTcStBwJapqtcmmH3e60Kz0nbO/vksyv1\nKTY133J1QPTjQODmAlZ9OoKYSOO9Zg+7uYP92cVeZcbTqosIkckcjINwTOB6tZo9\n38qUpGoVDTkErx9OZYspISIP+47pZBgujf8CzJZew09l69dDhQZz/D+P5/AGQz92\n8J8Y54oFso7Hfe8TyfbLYMemOldL/RcOntCaRmpNLlj2lj46Qo+9+ZovU/Njqa0P\n/hhFSfQxIamDOdINrdpdKcvhotiBp6M6sr5zXvHEQQKBgQDze0NG0xqdI6Yy9aVY\ndzp0ADgw0fG4pW4w+LLlTP2Lw5BpV1iqdiUA1Gu5OcFDZGfk+sCl/pZNWZFqN+DX\nRYwcYq5atz7GD1+LYeJWCzBvZ5cVy9bjXDIu4TGv6LMu8Ns7B5sb/vR92vDB0P3E\nIBKKbv0xWcM9BAbuZ04/idBXewKBgQDPPb8DuAWNeTlGh3Dl65pDQ0TkK81+/GCW\n/1hCNHmSBVrhDz+ky8y99mVgQyvRxv2CaymvpWSUznzOWzSazyQDmvQ0feUsnE21\nuaZ1EhNyGtaW5oApZVn+rpVYFgOW4oaYBsKBiprFRkrUbLNTKNcJ8uUmI9k6lvRJ\n0U5B9sg2iQKBgEYtC8n5BF2wLbHYXSyvSJiwi4F+sUW/4I+azq0KULWcyx2hgDu5\nS5b+ooHDZLGQ2eUEZMwzIYzvuNq9ej9xmx1/T7Nzx1L8kVQyBTM5jF8/oys0Eh57\nrzcVzuVdk29/GiDcY1dhV4SCuwuRueJyQAXIUY+MyJnodDr4aXQku3jLAoGAEaXz\nd1CbgHG7U+tCzQGkUGgRHNEyHcdGPnWeQX0QgUPdel7/D3yfgenStkDiIWotuoZ/\ntUqDZzyyWixgLXLIYVo3w6SY+JSS9Y/Kwht49nWcopscfOn5oPujEi5FvfqqdZXV\nyIxSI8yZoL9lAgbvURSTOQ1CeX/Ta9ncLTfj0ukCgYBkHtXwXX88+JUCQ8zWD+r7\nWD0r/QUGBzKamhpD3//uB745UVnyqn72CRcUSP1FJpwGZAcSgIQXsa/TKH0RRg9r\n+MYGXDWhu+kknH6J4IrKSIbfog3SMg3xCrnoZSFH9YJR7oV8hXM426Zobdeoxq5I\n0JkDTbXdyfhGh+iUyvncWw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-srm99@backingshop.iam.gserviceaccount.com",
+  "client_id": "105718856197878630317",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-srm99%40backingshop.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com",
+  
+  "apiKey": "AIzaSyBVAppWtnPPoSlGHIajT0WDKTNJDJk4YIE",
+  "authDomain": "backingshop.firebaseapp.com",
+  "databaseURL": "https://backingshop-default-rtdb.firebaseio.com",
+  "projectId": "backingshop",
+  "storageBucket": "backingshop.appspot.com",
+  "messagingSenderId": "107340620491",
+  "appId": "1:107340620491:web:31f8209946dedea406b14e",
+  "measurementId": "G-QH4QC1NNDB",
+  "functions": [
+    {
+      "source": "FirebaseHostingDemo",
+      "codebase": "default"
+    },
+    {
+      "source": "backing-shop",
+      "codebase": "backing-shop",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "pubsub": {
+      "port": 8085
+    },
+    "storage": {
+      "port": 9199
+    },
+    "eventarc": {
+      "port": 9299
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  },
+  "extensions": {}
+}

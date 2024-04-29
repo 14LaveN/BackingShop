@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackingShop.Web", "BackingShop.Web\BackingShop.Web.csproj", "{E9B65212-9E32-4050-A61E-75B31D6931C8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{D1A2A581-7BAD-4EF6-ABAB-FBD49B0082CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A05C3EF7-B61C-4E0A-B73A-8C6054DDC1FA}"
@@ -97,7 +95,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		docker-compose.yml = docker-compose.yml
 		kubernetes.yml = kubernetes.yml
 		prometheus.yml = prometheus.yml
+		firebase.json = firebase.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackingShop.Web", "BackingShop.Web\BackingShop.Web.csproj", "{7B5BB774-6CCB-476F-B310-0171FD4D2CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,10 +106,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9B65212-9E32-4050-A61E-75B31D6931C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9B65212-9E32-4050-A61E-75B31D6931C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9B65212-9E32-4050-A61E-75B31D6931C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9B65212-9E32-4050-A61E-75B31D6931C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C2E4252E-7B70-4391-8E54-7924635B67AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2E4252E-7B70-4391-8E54-7924635B67AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2E4252E-7B70-4391-8E54-7924635B67AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -257,9 +254,12 @@ Global
 		{1E00076D-9C4E-47EC-BB73-FD3E9DCB0C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E00076D-9C4E-47EC-BB73-FD3E9DCB0C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E00076D-9C4E-47EC-BB73-FD3E9DCB0C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5BB774-6CCB-476F-B310-0171FD4D2CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5BB774-6CCB-476F-B310-0171FD4D2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5BB774-6CCB-476F-B310-0171FD4D2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5BB774-6CCB-476F-B310-0171FD4D2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E9B65212-9E32-4050-A61E-75B31D6931C8} = {D1A2A581-7BAD-4EF6-ABAB-FBD49B0082CB}
 		{C2E4252E-7B70-4391-8E54-7924635B67AF} = {9EC9BC66-1221-4612-A3CB-6F897D44CD75}
 		{8CF7BEB3-0B31-4A23-A9D4-3CE45362788E} = {470F60CA-12BC-4012-BC6A-1BA6FE1921E3}
 		{D45BA2DD-3466-42ED-8797-A0463041C6AE} = {CE040079-325D-46C7-A4BD-4D4CF197B4AC}
@@ -297,5 +297,6 @@ Global
 		{060112DE-2008-4AEF-829E-76839854DC8C} = {A05C3EF7-B61C-4E0A-B73A-8C6054DDC1FA}
 		{AAA44E3B-12AE-4FE0-A9A0-2127E4B319B7} = {470F60CA-12BC-4012-BC6A-1BA6FE1921E3}
 		{1E00076D-9C4E-47EC-BB73-FD3E9DCB0C6A} = {470F60CA-12BC-4012-BC6A-1BA6FE1921E3}
+		{7B5BB774-6CCB-476F-B310-0171FD4D2CEB} = {D1A2A581-7BAD-4EF6-ABAB-FBD49B0082CB}
 	EndGlobalSection
 EndGlobal

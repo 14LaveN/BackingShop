@@ -278,3 +278,11 @@ G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Serilog
 G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
 G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Serilog.Sinks.RollingFile.dll
 G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\UAParser.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\FirebaseAdmin.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Firebase.Storage.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Google.Api.Gax.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Google.Api.Gax.Rest.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Google.Apis.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Google.Apis.Auth.PlatformServices.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Google.Apis.Auth.dll
+G:\DotNetProjects\BackingShop\BackingShop.Micro.Product\bin\Debug\net8.0\Google.Apis.Core.dll

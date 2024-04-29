@@ -1,3 +1,4 @@
+using System.Text;
 using BackingShop.Application.ApiHelpers.Responses;
 using BackingShop.Application.Core.Abstractions.Helpers.JWT;
 using BackingShop.Application.Core.Abstractions.Messaging;
@@ -30,7 +31,7 @@ internal sealed class CreateProductCommandHandler(
         try
         {
             logger.LogInformation($"Request for create the product - {request.Title} {DateTime.UtcNow}");
-
+            
             if (identifierProvider.UserId != request.AuthorId && identifierProvider.UserId == Guid.Empty)
             {
                 logger.LogWarning("You don't authorized");
