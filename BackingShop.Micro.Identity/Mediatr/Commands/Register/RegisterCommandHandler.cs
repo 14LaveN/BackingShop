@@ -8,7 +8,6 @@ using BackingShop.Domain.Common.Enumerations;
 using BackingShop.Domain.Common.ValueObjects;
 using BackingShop.Domain.Identity.Entities;
 using BackingShop.Micro.Identity.Extensions;
-using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
@@ -19,13 +18,11 @@ namespace BackingShop.Micro.Identity.Mediatr.Commands.Register;
 /// </summary>
 /// <param name="logger">The logger.</param>
 /// <param name="userManager">The user manager.</param>
-/// <param name="sender">The sender.</param>
 /// <param name="signInManager">The sign in manager.</param>
 /// <param name="jwtOptions">The json web token options.</param>
 internal sealed class RegisterCommandHandler(
         ILogger<RegisterCommandHandler> logger,
         UserManager<User> userManager,
-        ISender sender,
         SignInManager<User> signInManager,
         IOptions<JwtOptions> jwtOptions)
     : ICommandHandler<RegisterCommand, LoginResponse<Result>>

@@ -36,7 +36,7 @@ public sealed class ProductsRepositoryTests
 
         result.IsSuccess.Should().BeTrue();
     }
-    
+     
     /// <summary>
     /// Update product and returns OK result.
     /// </summary>

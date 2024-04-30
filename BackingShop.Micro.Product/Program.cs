@@ -51,6 +51,9 @@ builder.Services.AddControllers();
 
 builder.Host.UseSerilog();
 
+builder.Services.AddAntiforgery(options =>
+    options.HeaderName = "X-CSRF_TOKEN");
+
 builder.Services.AddValidators();
 
 builder.Services.AddEmailService(builder.Configuration);

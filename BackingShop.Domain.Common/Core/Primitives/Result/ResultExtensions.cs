@@ -47,7 +47,7 @@ public static class ResultExtensions
     /// <returns>
     /// The success result with the bound value if the current result is a success result, otherwise a failure result.
     /// </returns>
-    public static async Task<Result> Bind<TIn>(this Result<TIn> result, Func<TIn, Task<Common.Core.Primitives.Result.Result>> func) =>
+    public static async Task<Result> Bind<TIn>(this Result<TIn> result, Func<TIn, Task<Result>> func) =>
         result.IsSuccess ? await func(result.Value) : await Result.Failure(result.Error);
 
     /// <summary>
